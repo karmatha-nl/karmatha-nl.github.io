@@ -1,0 +1,109 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+html {}
+
+// Animation
+$anim-duration: 1s; // Duration of change language animation
+$anim-timing: cubic-bezier(.68,-0.55,.27,1.55); //ease-in-out; // Animation timing function
+
+
+// The language selection menu
+.lang-selector {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+}
+
+// A `multi-lang-block` contains several block level elements with `lang` attribute set
+.multi-lang-block {
+    display: flex;
+    overflow: hidden;
+}
+
+.multi-lang-block *[lang] {
+    display: block;
+    width: 100%;
+}
+
+// ENGLISH (is to the left of Dutch) 
+html[lang=en] .multi-lang-block *[lang=en] {
+    margin-left: 0;
+}
+
+html[lang=en] .multi-lang-block *[lang=nl] {
+    margin-right: -100%;
+}
+
+html[lang=en].lang-animate .multi-lang-block *[lang=en] {
+    animation-duration: $anim-duration;
+    animation-timing-function: $anim-timing;    
+    animation-name: en_to_en;
+}
+
+html[lang=en].lang-animate .multi-lang-block *[lang=nl] {
+    animation-duration: $anim-duration;
+    animation-timing-function: $anim-timing;    
+    animation-name: nl_to_en;
+}
+
+@keyframes en_to_en {
+    from {
+        margin-left: -100%;        
+    }
+  
+    to {
+        margin-left: 0;        
+    }
+}
+
+@keyframes en_to_nl {
+    from {
+        margin-right: 0;
+    }
+  
+    to {
+        margin-right: -100%;
+    }
+}
+
+// DUTCH (is to the right of English)
+html[lang=nl] .multi-lang-block *[lang=en] {
+    margin-left: -100%;
+}
+
+html[lang=nl].lang-animate .multi-lang-block *[lang=en] {
+    animation-duration: $anim-duration;
+    animation-timing-function: $anim-timing;    
+    animation-name: en_to_nl;
+}
+
+html[lang=nl] .multi-lang-block *[lang=nl] {
+    margin-right: 0;
+}
+
+html[lang=nl].lang-animate .multi-lang-block *[lang=nl] {
+    animation-duration: $anim-duration;
+    animation-timing-function: $anim-timing;
+    animation-name: nl_to_nl;
+}
+
+@keyframes en_to_nl {
+    from {
+        margin-left: 0;        
+    }
+  
+    to {
+        margin-left: -100%;        
+    }
+}
+
+@keyframes nl_to_nl {
+    from {
+        margin-right: -100%;
+    }
+  
+    to {
+        margin-right: 0;
+    }
+}

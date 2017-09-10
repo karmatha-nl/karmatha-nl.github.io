@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl" class="lang-animate">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }}</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>   
+        <link rel="stylesheet" type="text/css" href="/css/verydarkpink.css">
+        <link rel="stylesheet" type="text/css" href="/css/language.css">
+        <link rel="icon" type="image/png" href="css/images/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="css/images/favicon-16x16.png" sizes="16x16" />
+    </head>
+    <body>
+        <ul class="lang-selector">
+            <li>en</li>
+            <li>nl</li>
+        </ul>
+        <header>
+            <h1>karmaṭha</h1>
+            <div class="multi-lang-block">
+                    <ol lang="en">
+                        <li>Proficient in any work, clever. skilful. </li>
+                        <li>Working diligently</li>
+                    </ol>
+                    <ol lang="nl">
+                        <li>Bedreven in werk, handig. bekwaam. </li>
+                        <li>IJverig werkend</li>
+                    </ol>
+            </div>
+                
+            <div class="multi-lang-block">
+                <p lang="en">
+                    Portfolio of Wouter van den Heuvel
+                </p>
+                <p lang="nl">
+                    Portfolio van Wouter van den Heuvel
+                </p>
+            </div>
+        </header>
+        {% include banner.html %}
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/cv">CV</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+        
+        {{ content }}
+        
+        </div>
+        <footer>
+            <ul>
+                    w.vandenheuvel@gmail.com
+                    linked in
+                    skype
+                    github
+            </ul>
+        </footer>
+    </body>
+</html>
