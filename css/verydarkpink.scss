@@ -4,14 +4,28 @@
 html {}
 
 body {
-    font: 300 21px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font: 300 17px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background: #440022;
     color: #fff;
+    padding: 0 40px 0 40px;
 }
 
 header {
     min-height: 300px;
     text-align: center;
+}
+
+header h1 {
+    font-size: 80px;
+    line-height: 40px;
+}
+
+header ol {
+    text-align: center;
+}
+
+header .portfolio {
+    margin-top: 40px;
 }
 
 .banner {
@@ -21,4 +35,10 @@ header {
     margin: auto;
     background: #000;
     border-radius: 5px;
+}
+
+footer .trademark {
+    color: white;
+    opacity: .3;
+    font-size: small;
 }

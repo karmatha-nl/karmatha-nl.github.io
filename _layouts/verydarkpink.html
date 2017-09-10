@@ -1,5 +1,6 @@
+{% assign text = page.text %}
 <!DOCTYPE html>
-<html lang="nl" class="lang-animate">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <title>{{ page.title }}</title>
@@ -9,35 +10,45 @@
         <link rel="stylesheet" type="text/css" href="/css/language.css">
         <link rel="icon" type="image/png" href="css/images/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="css/images/favicon-16x16.png" sizes="16x16" />
+        <script src="/lib/jquery-3.2.1.min.js"></script>
+        <script src="/src/language.js"></script>
     </head>
     <body>
         <ul class="lang-selector">
-            <li>en</li>
-            <li>nl</li>
+            <li lang="en" title="Select English language">en</li>
+            <li lang="nl" title="Selecteer Nederlandse taal">nl</li>
         </ul>
         <header>
             <h1>karmaṭha</h1>
-            <div class="multi-lang-block">
-                    <ol lang="en">
-                        <li>Proficient in any work, clever. skilful. </li>
-                        <li>Working diligently</li>
-                    </ol>
-                    <ol lang="nl">
-                        <li>Bedreven in werk, handig. bekwaam. </li>
-                        <li>IJverig werkend</li>
-                    </ol>
+            <div class="multi-lang-block definition">
+                <ol lang="en">
+                    <li>Proficient in any work, clever. skilful. </li>
+                    <li>Working diligently</li>
+                </ol>
+                <ol lang="nl">
+                    <li>Bedreven in werk, handig. bekwaam. </li>
+                    <li>IJverig werkend</li>
+                </ol>
             </div>
                 
-            <div class="multi-lang-block">
+            <div class="multi-lang-block portfolio">
                 <p lang="en">
-                    Portfolio of Wouter van den Heuvel
+                    {{ text.en.portfolio }}
                 </p>
                 <p lang="nl">
-                    Portfolio van Wouter van den Heuvel
+                    {{ text.nl.portfolio }}
                 </p>
             </div>
         </header>
         {% include banner.html %}
+        <section class="multi-lang-block introduction">
+            <p lang="en">
+                {{ text.en.introduction }}
+            </p>
+            <p lang="nl">
+                {{ text.nl.introduction }}
+            </p>
+        </section>
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
@@ -58,6 +69,14 @@
                     skype
                     github
             </ul>
+            <section class="multi-lang-block trademark">
+                <p lang="en">
+                    All logos, trademarks and registered trademarks are the property of their respective owners.
+                </p>
+                <p lang="nl">
+                    Alle woord- en beeldmerken op deze site zijn eigendom van haar rechtmatige eigenaars.
+                </p>
+            </section>
         </footer>
     </body>
 </html>

@@ -10,9 +10,24 @@ $anim-timing: cubic-bezier(.68,-0.55,.27,1.55); //ease-in-out; // Animation timi
 
 // The language selection menu
 .lang-selector {
-    position: absolute;
-    right: 20px;
-    top: 6px;
+    position: fixed;
+    right: 6px;
+	top: 6px;
+	cursor: pointer;
+	list-style: none;
+	margin: 0;
+	border: 1px solid #fff;
+	min-width: 40px;
+	padding: 0 0 3px;
+	text-align: center;
+}
+
+html[lang=en] .lang-selector li[lang=en] {
+    display: none;
+}
+
+html[lang=nl] .lang-selector li[lang=nl] {
+    display: none;
 }
 
 // A `multi-lang-block` contains several block level elements with `lang` attribute set
@@ -91,7 +106,7 @@ html[lang=nl].lang-animate .multi-lang-block *[lang=nl] {
 @keyframes en_to_nl {
     from {
         margin-left: 0;        
-    }
+	}
   
     to {
         margin-left: -100%;        
