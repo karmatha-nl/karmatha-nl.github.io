@@ -1,4 +1,7 @@
+{% assign max_scroll = 600 	// After this amount of scroll pixels, stop animaating	%}
 <div class="banner">
-
-
+	<div class="banner-bg banner-bg1"  data-0="background-position: 0px 0px" data-{{ max_scroll }}="background-position: 0px -{{ max_scroll }}px"></div>
+	<div class="banner-bg banner-bg2"  data-0="background-position: 0px 0px" data-{{ max_scroll }}="background-position: 0px -{{ max_scroll | times: 0.6 }}px"></div>
+	<div class="banner-bg banner-bg3"  data-0="background-position: 0px 0px" data-{{ max_scroll }}="background-position: 0px -{{ max_scroll | times: 0.3 }}px"></div>
+	<div class="wouter" title="{{ include.text }}"></div>
 </div>

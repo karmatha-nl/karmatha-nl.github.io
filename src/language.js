@@ -12,11 +12,11 @@ $(document).ready(function() {
 
 });
 
-	// Set initial language to browser language
-	var lang = navigator.language.substr(0, 2);
+// Set initial language to browser language
+var lang = navigator.language.substr(0, 2);
+console.log(lang)
+
+if(['en', 'nl'].indexOf(lang) > -1){
 	console.log(lang)
-	
-	if(['en', 'nl'].indexOf(lang) > -1){
-		console.log(lang)
-		$('html').attr('lang', lang);
-	}
+	$('html').attr('lang', lang);
+}

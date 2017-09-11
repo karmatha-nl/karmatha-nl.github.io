@@ -8,30 +8,37 @@
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>   
         <link rel="stylesheet" type="text/css" href="/css/verydarkpink.css">
         <link rel="stylesheet" type="text/css" href="/css/language.css">
+        <link rel="stylesheet" type="text/css" href="/css/banner.css">
         <link rel="icon" type="image/png" href="css/images/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="css/images/favicon-16x16.png" sizes="16x16" />
+
         <script src="/lib/jquery-3.2.1.min.js"></script>
+        <script src="/lib/skrollr.min.js"></script>
+
         <script src="/src/language.js"></script>
+        <script src="/src/banner.js"></script>
     </head>
     <body>
         <ul class="lang-selector">
-            <li lang="en" title="Select English language">en</li>
-            <li lang="nl" title="Selecteer Nederlandse taal">nl</li>
+            <li lang="en" title="{{ text.en.select_lang }}">en</li>
+            <li lang="nl" title="{{ text.nl.select_lang }}">nl</li>
         </ul>
         <header>
             <h1>karmaṭha</h1>
             <div class="multi-lang-block definition">
                 <ol lang="en">
-                    <li>Proficient in any work, clever. skilful. </li>
-                    <li>Working diligently</li>
+                    {% for item in text.en.definitions %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
                 </ol>
                 <ol lang="nl">
-                    <li>Bedreven in werk, handig. bekwaam. </li>
-                    <li>IJverig werkend</li>
+                    {% for item in text.nl.definitions %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
                 </ol>
             </div>
                 
-            <div class="multi-lang-block portfolio">
+            <div class="multi-lang-block content-block portfolio">
                 <p lang="en">
                     {{ text.en.portfolio }}
                 </p>
@@ -40,8 +47,8 @@
                 </p>
             </div>
         </header>
-        {% include banner.html %}
-        <section class="multi-lang-block introduction">
+        {% include banner.html text=text.en.introduction %}
+        <section class="multi-lang-block content-block introduction">
             <p lang="en">
                 {{ text.en.introduction }}
             </p>
@@ -50,16 +57,24 @@
             </p>
         </section>
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/cv">CV</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
         </nav>
-        <div class="container">
+        <div class="container content-block">
         
         {{ content }}
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Addidisti ad extremum etiam indoctum fuisse. Ne in odium veniam, si amicum destitero tueri. Hanc quoque iucunditatem, si vis, transfer in animum; Quid affers, cur Thorius, cur Caius Postumius, cur omnium horum magister, Orata, non iucundissime vixerit? Respondeat totidem verbis. Cur igitur easdem res, inquam, Peripateticis dicentibus verbum nullum est, quod non intellegatur?
+        
+        Duo Reges: constructio interrete. Conferam avum tuum Drusum cum C. Quod non faceret, si in voluptate summum bonum poneret. Satisne vobis videor pro meo iure in vestris auribus commentatus? Maximas vero virtutes iacere omnis necesse est voluptate dominante. Ut placet, inquit, etsi enim illud erat aptius, aequum cuique concedere. Quo modo autem optimum, si bonum praeterea nullum est? Nam memini etiam quae nolo, oblivisci non possum quae volo. Satis est tibi in te, satis in legibus, satis in mediocribus amicitiis praesidii.
+        
+        Venit enim mihi Platonis in mentem, quem accepimus primum hic disputare solitum; Expressa vero in iis aetatibus, quae iam confirmatae sunt. At modo dixeras nihil in istis rebus esse, quod interesset. Causa autem fuit huc veniendi ut quosdam hinc libros promerem.
+        
+        Dolere malum est: in crucem qui agitur, beatus esse non potest. Hosne igitur laudas et hanc eorum, inquam, sententiam sequi nos censes oportere? In qua quid est boni praeter summam voluptatem, et eam sempiternam? Nos paucis ad haec additis finem faciamus aliquando; Mihi quidem Antiochum, quem audis, satis belle videris attendere. Quis istud, quaeso, nesciebat?
+        
+        An potest, inquit ille, quicquam esse suavius quam nihil dolere? Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio? Nec enim, omnes avaritias si aeque avaritias esse dixerimus, sequetur ut etiam aequas esse dicamus. Qui ita affectus, beatum esse numquam probabis; Hoc ne statuam quidem dicturam pater aiebat, si loqui posset. Mihi, inquam, qui te id ipsum rogavi?
+        
+            Ut bacillum aliud est inflexum et incurvatum de industria, aliud ita natum, sic ferarum natura non est illa quidem depravata mala disciplina, sed natura sua. 
+        
+        
         
         </div>
         <footer>
@@ -71,10 +86,11 @@
             </ul>
             <section class="multi-lang-block trademark">
                 <p lang="en">
-                    All logos, trademarks and registered trademarks are the property of their respective owners.
+                    {{ text.en.trademark }}
+                        
                 </p>
                 <p lang="nl">
-                    Alle woord- en beeldmerken op deze site zijn eigendom van haar rechtmatige eigenaars.
+                    {{ text.nl.trademark }}
                 </p>
             </section>
         </footer>
