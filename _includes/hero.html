@@ -1,0 +1,7 @@
+{% assign max_scroll = 600 	// After this amount of scroll pixels, stop animaating	%}
+<div class="hero">
+	<div class="hero-bg hero-bg1"  data-0="background-position: 0px 0px" data-{{ max_scroll }}="background-position: 0px -{{ max_scroll }}px"></div>
+	<div class="hero-bg hero-bg2"  data-0="background-position: 0px 0px" data-{{ max_scroll }}="background-position: 0px -{{ max_scroll | times: 0.6 }}px"></div>
+	<div class="hero-bg hero-bg3"  data-0="background-position: 0px 0px" data-{{ max_scroll }}="background-position: 0px -{{ max_scroll | times: 0.3 }}px"></div>
+	<div class="doom looking" title="{{ include.text }}"></div>
+</div>

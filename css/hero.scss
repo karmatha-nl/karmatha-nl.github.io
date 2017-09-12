@@ -3,7 +3,7 @@
 ---
 html {}
 
-.banner {
+.hero {
     height: 300px;
     width: 85%;
     min-width: 500px;
@@ -13,7 +13,7 @@ html {}
     position: relative;
 }
 
-.banner .wouter {
+.hero .wouter {
     border: 2px solid purple;
     width: 300px;
     height: 90%;
@@ -23,7 +23,7 @@ html {}
     bottom: 0;
 }
 
-.banner .banner-bg {
+.hero .hero-bg {
     position: absolute;
     top: 0;
     background-repeat: repeat;
@@ -31,23 +31,23 @@ html {}
     height: 100%;
 }
 
-.banner .banner-bg1 {
+.hero .hero-bg1 {
 	background-image: url(images/scroller_bg1.png);
     opacity: 0.8;
 }
 
 
-.banner .banner-bg2 {
+.hero .hero-bg2 {
 	background-image: url(images/scroller_bg2.png);
     opacity: 0.6;
 }
 
-.banner .banner-bg3 {
+.hero .hero-bg3 {
 	background-image: url(images/scroller_bg3.png);
     opacity: 0.3;
 }
 
-.banner .doom {
+.hero .doom {
     border: 2px solid purple;
     width: 300px;
     height: 90%;
@@ -57,7 +57,7 @@ html {}
     bottom: 0;
 }
 
-.banner .doom::before {
+.hero .doom::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -71,19 +71,19 @@ html {}
     transform-origin: 37.5px bottom;
   }
 
-.banner .doom.forward::before {
+.hero .doom.forward::before {
     background-position: #{-52 * 4}px 0px;
 }
 
-.banner .doom.look_right::before {
+.hero .doom.look_right::before {
     background-position: #{-52 * 3}px 0px;
 }
 
-.banner .doom.look_left::before {
+.hero .doom.look_left::before {
     background-position: #{-52 * 5}px 0px;
 }
 
-.banner .doom.looking::before {
+.hero .doom.looking::before {
     animation: looking 0.8s steps(3) infinite;
     //background-position: #{-52 * 3}px 0px;
     
