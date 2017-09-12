@@ -5,7 +5,7 @@ html {}
 
 .banner {
     height: 300px;
-    width: 80%;
+    width: 85%;
     min-width: 500px;
     margin: auto;
     background: #000;
@@ -46,3 +46,49 @@ html {}
 	background-image: url(images/scroller_bg3.png);
     opacity: 0.3;
 }
+
+.banner .doom {
+    border: 2px solid purple;
+    width: 300px;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.banner .doom::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: url(images/doom_face.png) no-repeat;
+    
+    width: 52px;
+    height: 64px;
+    transform: scale(3.5);
+    left: 50%;
+    bottom: 20px;
+    transform-origin: 37.5px bottom;
+  }
+
+.banner .doom.forward::before {
+    background-position: #{-52 * 4}px 0px;
+}
+
+.banner .doom.look_right::before {
+    background-position: #{-52 * 3}px 0px;
+}
+
+.banner .doom.look_left::before {
+    background-position: #{-52 * 5}px 0px;
+}
+
+.banner .doom.looking::before {
+    animation: looking 0.8s steps(3) infinite;
+    //background-position: #{-52 * 3}px 0px;
+    
+}
+@keyframes looking {
+    0% { background-position: #{-52 * 5}px 0px; }
+    100% { background-position: #{-52 * 2}px 0px; }
+ }
