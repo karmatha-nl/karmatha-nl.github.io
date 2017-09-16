@@ -20,12 +20,12 @@ body {
 }
 
 // Links
-a {
+a[href] {
     text-decoration: none;
     position: relative;
     color: $color-text;
 }
-a:before {
+a[href]:before {
     content: '';
 
     width: 100%;
@@ -37,42 +37,64 @@ a:before {
     background-color: $color-link;
 }
 
-a:after {
+a[href]:after {
     content: '';
 
-    width: 0%;
+
+}
+
+a[href]:hover:after {
+    content: '';
+    width: 20%;
     height: 2px;
     position: absolute;
-    left: 50%;
     bottom: -2px;
-
     background-color:  $color-link-hover;
-    transition: width .3s, left .3s ease;    
-}
 
-a:hover:after {
-    content: '';
-
-    width: 100%;
     left: 0;
-    
+    animation: myfirst 1s infinite;
+    animation-direction: alternate;    
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes myfirst {
+    50% { transform: scale(2, 1) translate(0, 0);}
+    //99% {  transform: scale(1, 1) }
+    100% { left: 100%; transform: translate(-100%, 0); }
+}    
+
+// blue bar from the middle
+// a[href]:after {
+//     content: '';
+
+//     width: 0%;
+//     height: 2px;
+//     position: absolute;
+//     left: 50%;
+//     bottom: -2px;
+
+//     background-color:  $color-link-hover;
+//     transition: width .3s, left .3s ease;    
+// }
+
+// a[href]:hover:after {
+//     content: '';
+
+//     width: 100%;
+//     left: 0;
+// }
 
 // Two-column
 .flex-grid {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col {
     flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
 }
-
-@media (max-width: 600px) {
-    .flex-grid {
-        display: block;
-    }
-}
-
 
 header {
     min-height: 300px;
@@ -84,36 +106,87 @@ header h1 {
     text-align: center;    
 }
 
-header .definition {
+#definition {
     text-align: center;
     list-style-position: inside;
 }
 
-header .portfolio {
+#portfolio {
     margin-top: 40px;
 }
 
-.about {
+#about {
     margin-top: 40px;
 }
 
-.contact .links {
+#projects {
     list-style: none;
 }
 
-.contact .links li {
+#projects li {
+    width: 300px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0;
+    margin-bottom: 6px;
+    //background: $color-background;
+    //color: $color-text;
+
+    border-bottom: 4px solid $color-text;
+    font-size: 1em;
+}
+
+#contact input:focus, #contact textarea:focus {
+     border-bottom-color: $color-link-hover;
+}    
+
+#contact input[type=submit] {
+    background: $color-link-hover;
+    border-bottom-color: $color-link-hover;    
+}    
+
+#contact input[type=submit]:hover {
+    background: $color-link-hover;
+    border-bottom-color: $color-text;    
+}    
+
+#contact textarea {
+    resize: none;
+    min-height: 180px;
+}
+
+#contact input {
+}
+
+
+#contact .links {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#contact .links li {
     position: relative;
 }
 
-.contact .links li i {
+#contact .links li i {
     width: 25px;
     position: absolute;
     top: 5px;
     left: -35px;
     text-align: center;
+    color: $color-link-hover;
+    
 }
 
-.contact .links li.phone i {
+#contact .links li.phone i {
     top: 0px;
     font-size: 1.5em;
 }

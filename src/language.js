@@ -11,7 +11,6 @@ $(document).ready(function() {
 
 // Set initial language to browser language
 var lang = navigator.language.substr(0, 2);
-console.log(lang)
 
 if(['en', 'nl'].indexOf(lang) > -1){
 	$('html').attr('lang', lang);

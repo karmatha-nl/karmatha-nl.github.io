@@ -3,6 +3,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.75">
+
         <title>{{ page.title }}</title>
 
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -20,14 +22,14 @@
         <script src="/src/language.js"></script>
         <script src="/src/hero.js"></script>
     </head>
-    <body>
+    <body id="skrollr-body">
         <ul class="lang-selector">
             <li lang="en" title="{{ text.en.select_lang }}">en</li>
             <li lang="nl" title="{{ text.nl.select_lang }}">nl</li>
         </ul>
         <header>
             <h1>karmaṭha</h1>
-            <div class="multi-lang-block definition">
+            <div class="multi-lang-block" id="definition">
                 <ol lang="en">
                     {% for item in text.en.definitions %}
                     <li>{{ item }}</li>
@@ -40,7 +42,7 @@
                 </ol>
             </div>
                 
-            <div class="multi-lang-block content-block portfolio">
+            <div class="multi-lang-block content-block" id="portfolio">
                 <p lang="en">
                     {{ text.en.portfolio | markdownify | remove: '<p>' | remove: '</p>'}}
                 </p>
@@ -50,38 +52,93 @@
             </div>
         </header>
         {% include hero.html text="" %}
-        <section class="multi-lang-block content-block about">
+        <section class="multi-lang-block content-block" id="about">
             <section lang="en">
-                <h2>About</h2>
+                <h2>{{ text.en.about_title }}</h2>
                 {{ text.en.about | markdownify }}
             </section>
             <section lang="nl">
-                <h2>Omtrent</h2>
+                <h2>{{ text.nl.about_title }}</h2>
                 {{ text.nl.about | markdownify }}
             </section>
         </section>
 
-        <section class="content-block portfolio">
-            <h2>Portfolio</h2>
+        <section class="multi-lang-block content-block" id="skills">
+                <section lang="en">
+                    <h2>{{ text.en.skills_title }}</h2>
+                </section>
+                <section lang="nl">
+                    <h2>{{ text.nl.skills_title }}</h2>
+                </section>
+            </section>
             <div class="flex-grid">
                 <div class="col">
-                    
+                    <ul class="skill">
+                        {% for item in page.skills %}
+                        <li class="{{ item | downcase | replace: '.', '' | replace: ' ', '-' }}">
+                            {{ item }}
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </div>
+                {% comment %}
+                #                  
                 <div class="col">
 
                 </div>
-                <div class="col">
-
-                </div>
+                {% endcomment %}
             </div>
         </section>
 
-        <section class="content-block contact">
+        {% comment %}
+        <section class="content-block projects">
+            <h2><a>Projects</a></h2>
+            <ol class="projects">
+                {% for item in page.projects %}
+                <li style="background-image: url({{ item.thumb  }})">
+                    {{ item.name }}
+                </li>
+                {% endfor %}
+            </ol>
+        </section>
+        {% endcomment %}
+
+        <section class="content-block" id="contact">
             <h2>Contact</h2>
             <div class="flex-grid">
                 <div class="col">
-                    <input type="text"/>
-                    <textarea></textarea>
+                    <form action="https://formspree.io/karmatha@outlook.com" method="POST" id="contactForm">
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <section class="multi-lang-block content-block" id="skills">
+                        <section lang="en">
+                            <label for="name">name:</label>
+                        </section>
+                        <section lang="nl">
+                            <label for="name">naam:</label>
+                        </section>
+                    </section>
+                    <input type="text" name="name"/>
+
+                    <section class="multi-lang-block content-block" id="skills">
+                        <section lang="en">
+                            <label for="_email">email:</label>
+                        </section>
+                        <section lang="nl">
+                            <label for="_email">e-mail:</label>
+                        </section>
+                    </section>
+                    <input type="text" name="_email"/>
+
+                    <section class="multi-lang-block content-block" id="skills">
+                        <section lang="en">
+                            <label for="comments">your question/comments:</label>
+                        </section>
+                        <section lang="nl">
+                            <label for="comments">uw vraag/opmerking:</label>
+                        </section>
+                    </section>
+                    <textarea name="comments"></textarea>
+                    <input type="submit" value="Send">
                 </div>
                 <div class="col">
                     <ul class="links">
@@ -94,7 +151,19 @@
                 </div>
             </div>
         </section>
+        <script>
+$("#contactForm").submit(function(e){
+    e.preventDefault();
+    var form = this;
 
+    $.ajax({
+        url: form.action,
+        method: "POST",
+        data: $(form).serialize(),
+        dataType: "json"
+    }); 
+});
+        </script>
 
         <nav>
         </nav>
@@ -127,5 +196,6 @@
                 </p>
             </section>
         </footer>
+        <div vid="skrollr-body2"></div>
     </body>
 </html>
