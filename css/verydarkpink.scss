@@ -1,20 +1,78 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
+
+@import '_colors.scss';
+
 html {}
 
 body {
     font: 300 20px Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.5em;
-    background: #440022;
-    color: #fff;
-    padding: 0 40px 0 40px;
+    background: $color-background;
+    color: $color-text;
+    padding: 0 45px 0 45px;
 }
 
 .content-block {
     margin: auto;
     max-width: 1030px;
 }
+
+// Links
+a {
+    text-decoration: none;
+    position: relative;
+    color: $color-text;
+}
+a:before {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    bottom: -2px;
+
+    background-color: $color-link;
+}
+
+a:after {
+    content: '';
+
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+
+    background-color:  $color-link-hover;
+    transition: width .3s, left .3s ease;    
+}
+
+a:hover:after {
+    content: '';
+
+    width: 100%;
+    left: 0;
+    
+}
+
+// Two-column
+.flex-grid {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .flex-grid {
+        display: block;
+    }
+}
+
 
 header {
     min-height: 300px;
@@ -26,17 +84,46 @@ header h1 {
     text-align: center;    
 }
 
-header ol {
+header .definition {
     text-align: center;
+    list-style-position: inside;
 }
 
 header .portfolio {
     margin-top: 40px;
 }
 
+.about {
+    margin-top: 40px;
+}
+
+.contact .links {
+    list-style: none;
+}
+
+.contact .links li {
+    position: relative;
+}
+
+.contact .links li i {
+    width: 25px;
+    position: absolute;
+    top: 5px;
+    left: -35px;
+    text-align: center;
+}
+
+.contact .links li.phone i {
+    top: 0px;
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+}
 
 footer .trademark {
-    color: white;
+    color: $color-text;
     opacity: .3;
     font-size: small;
 }
