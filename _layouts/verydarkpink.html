@@ -13,14 +13,17 @@
         <link rel="stylesheet" type="text/css" href="/css/language.css">
         <link rel="stylesheet" type="text/css" href="/css/hero.css">
         <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+
         <link rel="icon" type="image/png" href="css/images/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="css/images/favicon-16x16.png" sizes="16x16" />
 
         <script src="/lib/jquery-3.2.1.min.js"></script>
         <script src="/lib/skrollr.min.js"></script>
+        <script src="/lib/skrollr.menu.min.js"></script>
 
         <script src="/src/language.js"></script>
         <script src="/src/hero.js"></script>
+        <script src="/src/form.js"></script>
     </head>
     <body id="skrollr-body">
         <ul class="lang-selector">
@@ -44,33 +47,35 @@
                 
             <div class="multi-lang-block content-block" id="portfolio">
                 <p lang="en">
-                    {{ text.en.portfolio | markdownify | remove: '<p>' | remove: '</p>'}}
+                    {{ text.en.portfolio }}
                 </p>
                 <p lang="nl">
-                    {{ text.nl.portfolio | markdownify | remove: '<p>' | remove: '</p>'}}
+                    {{ text.nl.portfolio }}
                 </p>
             </div>
         </header>
         {% include hero.html text="" %}
         <section class="multi-lang-block content-block" id="about">
-            <section lang="en">
+            <div lang="en">
                 <h2>{{ text.en.about_title }}</h2>
                 {{ text.en.about | markdownify }}
-            </section>
-            <section lang="nl">
+            </div>
+            <div lang="nl">
                 <h2>{{ text.nl.about_title }}</h2>
                 {{ text.nl.about | markdownify }}
-            </section>
+            </div>
         </section>
 
-        <section class="multi-lang-block content-block" id="skills">
-                <section lang="en">
-                    <h2>{{ text.en.skills_title }}</h2>
-                </section>
-                <section lang="nl">
-                    <h2>{{ text.nl.skills_title }}</h2>
-                </section>
-            </section>
+        <section class="content-block" id="skills">
+            <div class="multi-lang-block content-block" id="skills">
+                <h2 lang="en">
+                    {{ text.en.skills_title }}
+                </h2>
+                <h2 lang="nl">
+                    {{ text.nl.skills_title }}
+                </h2>
+            </div>
+        
             <div class="flex-grid">
                 <div class="col">
                     <ul class="skill">
@@ -103,41 +108,29 @@
         </section>
         {% endcomment %}
 
-        <section class="content-block" id="contact">
+        <section class="content-block" id="contact" >
             <h2>Contact</h2>
             <div class="flex-grid">
                 <div class="col">
                     <form action="https://formspree.io/karmatha@outlook.com" method="POST" id="contactForm">
                     <input type="text" name="_gotcha" style="display:none" />
-                    <section class="multi-lang-block content-block" id="skills">
-                        <section lang="en">
-                            <label for="name">name:</label>
-                        </section>
-                        <section lang="nl">
-                            <label for="name">naam:</label>
-                        </section>
-                    </section>
+                    <div class="multi-lang-block content-block">
+                        <label for="name" lang="en">{{ text.en.contact_name }}</label>
+                        <label for="name" lang="nl">{{ text.nl.contact_name }}</label>
+                    </div>
                     <input type="text" name="name"/>
 
-                    <section class="multi-lang-block content-block" id="skills">
-                        <section lang="en">
-                            <label for="_email">email:</label>
-                        </section>
-                        <section lang="nl">
-                            <label for="_email">e-mail:</label>
-                        </section>
-                    </section>
+                    <div class="multi-lang-block content-block">
+                        <label for="_email" lang="en">{{ text.en.contact_email }}</label>
+                        <label for="_email" lang="nl">{{ text.nl.contact_email }}</label>
+                    </div>
                     <input type="text" name="_email"/>
 
-                    <section class="multi-lang-block content-block" id="skills">
-                        <section lang="en">
-                            <label for="comments">your question/comments:</label>
-                        </section>
-                        <section lang="nl">
-                            <label for="comments">uw vraag/opmerking:</label>
-                        </section>
-                    </section>
-                    <textarea name="comments"></textarea>
+                    <div class="multi-lang-block content-block">
+                        <label for="question" lang="en">{{ text.en.contact_question }}</label>
+                        <label for="question" lang="nl">{{ text.nl.contact_question }}</label>
+                    </div>
+                    <textarea name="question"></textarea>
                     <input type="submit" value="Send">
                 </div>
                 <div class="col">
@@ -152,17 +145,7 @@
             </div>
         </section>
         <script>
-$("#contactForm").submit(function(e){
-    e.preventDefault();
-    var form = this;
 
-    $.ajax({
-        url: form.action,
-        method: "POST",
-        data: $(form).serialize(),
-        dataType: "json"
-    }); 
-});
         </script>
 
         <nav>

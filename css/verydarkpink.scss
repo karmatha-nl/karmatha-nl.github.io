@@ -15,8 +15,13 @@ body {
 }
 
 .content-block {
+// 
     margin: auto;
     max-width: 1030px;
+}
+
+h1 {
+    text-shadow: 1px 1px 2px $color-link-hover;    
 }
 
 // Links

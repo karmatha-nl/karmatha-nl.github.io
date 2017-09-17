@@ -18,7 +18,10 @@ text:
 #      More specifically I write concise, well-documented   
     trademark: All logos, trademarks and registered trademarks are the property of their respective owners.
     skills_title: Skills and experience
-    
+    contact_name: "name:"
+    contact_email: "email:"
+    contact_question: "your question:"
+
   nl:
     select_lang: Selecteer Nederlandse taal
     definitions:
@@ -34,6 +37,10 @@ text:
 #      Hoi ik ben Wouter en ik doe iets met computers
     trademark: Alle woord- en beeldmerken op deze site zijn eigendom van haar rechtmatige eigenaars.
     skills_title: Vaardigheden en ervaring
+    contact_name: "naam:"
+    contact_email: "e-mail:"
+    contact_question: "uw vraag:"
+
 projects:
 - name: karmatha.nl
 - name: immersivelanguage
