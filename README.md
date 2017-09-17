@@ -7,4 +7,4 @@ This repo hosts my portfolio website. It is hosted on [GitHub pages](https://pag
 To run locally: 
 - install jekyll
 - clone the repo: `git clone git@github.com:spassvogel/spassvogel.github.io.git` 
-- run jekyll: `$jekyll serve --watch`a
+- run jekyll: `$jekyll serve --watch`
