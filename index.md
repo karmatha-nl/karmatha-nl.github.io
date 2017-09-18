@@ -12,15 +12,17 @@ text:
     about: |
       Hi I'm Wouter and I can help you with *innovative solutions* in *interactive software products*. I enjoy crafting maintainable, elegant, well-documented code for any type of front-end project. I like to collaborate in (small) teams because I truly believe the synergistic effect brings out the best in any situation, but I can also work very effectively on my own.
       
-      My experience is listed [here](#skills) but I am constantly keeping up with new developments and eager to learn now things. I am especially especially passionate about *Virtual Reality*, *games*, and any type of *new technology* . I am available for freelance work, so [get in touch](#contact).
+      My experience is listed [here](#skills) but I am constantly keeping up with new developments and eager to learn and apply new things. I am especially especially passionate about *Virtual Reality*, *games*, and any type of *new technology* . I am available for freelance work, so [get in touch](#contact).
 
 #      Hi I'm Wouter and I do computer stuff.
 #      More specifically I write concise, well-documented   
     trademark: All logos, trademarks and registered trademarks are the property of their respective owners.
     skills_title: Skills and experience
+    letstalk: Are you looking for a developer for your project? Have an idea for a game, a VR experience, web app or something else altogether? Let's talk. I’m available for hire on a freelance or contract basis. 
     contact_name: "name:"
     contact_email: "email:"
     contact_question: "your question:"
+    thanks: "Thank you! I will contact you as soon as possible."
 
   nl:
     select_lang: Selecteer Nederlandse taal
@@ -37,9 +39,11 @@ text:
 #      Hoi ik ben Wouter en ik doe iets met computers
     trademark: Alle woord- en beeldmerken op deze site zijn eigendom van haar rechtmatige eigenaars.
     skills_title: Vaardigheden en ervaring
+    letstalk: Zoekt u een developer voor een project? Heeft u een idee voor een game, VR experience, web app of iets compleets anders? Are you looking for a developer for your project? Have an idea for a game, a VR experience, web app or something else altogether? Dan kunnen we praten. 
     contact_name: "naam:"
     contact_email: "e-mail:"
     contact_question: "uw vraag:"
+    thanks: "Bedankt! Ik neem zo snel mogelijk contact met u op."
 
 projects:
 - name: karmatha.nl
@@ -51,8 +55,8 @@ projects:
   thumb: resources/projects/2014_utopolis/screenshots/carthagenians.png
 
 skills:
-- Unity3D
 - JavaScript
+- Unity3D
 - C#
 - HTML
 - CSS

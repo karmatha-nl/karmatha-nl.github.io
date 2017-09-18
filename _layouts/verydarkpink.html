@@ -4,6 +4,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.75">
+        <meta name="description" content="{{ text.en.portfolio }}" />
+        <meta name="author" content="Wouter van den Heuvel">
 
         <title>{{ page.title }}</title>
 
@@ -110,32 +112,51 @@
 
         <section class="content-block" id="contact" >
             <h2>Contact</h2>
+            <div class="multi-lang-block">
+                <p lang="en">
+                    {{ text.en.letstalk }}
+                </p>
+                <p lang="nl">
+                    {{ text.nl.letstalk }}
+                </p>
+            </div>
             <div class="flex-grid">
                 <div class="col">
                     <form action="https://formspree.io/karmatha@outlook.com" method="POST" id="contactForm">
-                    <input type="text" name="_gotcha" style="display:none" />
-                    <div class="multi-lang-block content-block">
-                        <label for="name" lang="en">{{ text.en.contact_name }}</label>
-                        <label for="name" lang="nl">{{ text.nl.contact_name }}</label>
-                    </div>
-                    <input type="text" name="name"/>
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <div class="multi-lang-block" id="thanks" style="display:none" >
+                            <p lang="en">
+                                {{ text.en.thanks }}
+                            </p>
+                            <p lang="nl">
+                                {{ text.nl.thanks }}
+                            </p>
+                        </div>
+                        <div class="fields">
+                            <div class="multi-lang-block content-block">
+                                <label for="name" lang="en">{{ text.en.contact_name }}</label>
+                                <label for="name" lang="nl">{{ text.nl.contact_name }}</label>
+                            </div>
+                            <input type="text" name="name"/>
 
-                    <div class="multi-lang-block content-block">
-                        <label for="_email" lang="en">{{ text.en.contact_email }}</label>
-                        <label for="_email" lang="nl">{{ text.nl.contact_email }}</label>
-                    </div>
-                    <input type="text" name="_email"/>
+                            <div class="multi-lang-block content-block">
+                                <label for="_email" lang="en">{{ text.en.contact_email }}</label>
+                                <label for="_email" lang="nl">{{ text.nl.contact_email }}</label>
+                            </div>
+                            <input type="text" name="_email"/>
 
-                    <div class="multi-lang-block content-block">
-                        <label for="question" lang="en">{{ text.en.contact_question }}</label>
-                        <label for="question" lang="nl">{{ text.nl.contact_question }}</label>
-                    </div>
-                    <textarea name="question"></textarea>
-                    <input type="submit" value="Send">
+                            <div class="multi-lang-block content-block">
+                                <label for="question" lang="en">{{ text.en.contact_question }}</label>
+                                <label for="question" lang="nl">{{ text.nl.contact_question }}</label>
+                            </div>
+                            <textarea name="question"></textarea>
+                        </div>
+                        <input type="submit" value="Send">
+                    </form>
                 </div>
                 <div class="col">
                     <ul class="links">
-                        <li class="email"><i class="fa fa-envelope-o"></i><a href="mailto:w.vandenheuvel@gmail.com">Email</a></li>
+                        <li class="email"><i class="fa fa-envelope-o"></i><a href="mailto:w.vandenheuvel@gmail.com" rel="author">Email</a></li>
                         <li class="phone" ><i class="fa fa-mobile" aria-hidden="true"></i><a href="tel:0031638934012">+31 6 38934012</a></li>
                         <li class="skype"><i class="fa fa-skype " aria-hidden="true"></i><a href="skype:w.vandenheuvel_4">Skype</a></li>
                         <li class="linkedin"><i class="fa fa-linkedin-square " aria-hidden="true"></i><a href="https://www.linkedin.com/in/wouter-van-den-heuvel/">LinkedIn</a></li>
@@ -144,29 +165,7 @@
                 </div>
             </div>
         </section>
-        <script>
 
-        </script>
-
-        <nav>
-        </nav>
-        <div class="container content-block">
-        
-        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Addidisti ad extremum etiam indoctum fuisse. Ne in odium veniam, si amicum destitero tueri. Hanc quoque iucunditatem, si vis, transfer in animum; Quid affers, cur Thorius, cur Caius Postumius, cur omnium horum magister, Orata, non iucundissime vixerit? Respondeat totidem verbis. Cur igitur easdem res, inquam, Peripateticis dicentibus verbum nullum est, quod non intellegatur?
-        
-        Duo Reges: constructio interrete. Conferam avum tuum Drusum cum C. Quod non faceret, si in voluptate summum bonum poneret. Satisne vobis videor pro meo iure in vestris auribus commentatus? Maximas vero virtutes iacere omnis necesse est voluptate dominante. Ut placet, inquit, etsi enim illud erat aptius, aequum cuique concedere. Quo modo autem optimum, si bonum praeterea nullum est? Nam memini etiam quae nolo, oblivisci non possum quae volo. Satis est tibi in te, satis in legibus, satis in mediocribus amicitiis praesidii.
-        
-        Venit enim mihi Platonis in mentem, quem accepimus primum hic disputare solitum; Expressa vero in iis aetatibus, quae iam confirmatae sunt. At modo dixeras nihil in istis rebus esse, quod interesset. Causa autem fuit huc veniendi ut quosdam hinc libros promerem.
-        
-        Dolere malum est: in crucem qui agitur, beatus esse non potest. Hosne igitur laudas et hanc eorum, inquam, sententiam sequi nos censes oportere? In qua quid est boni praeter summam voluptatem, et eam sempiternam? Nos paucis ad haec additis finem faciamus aliquando; Mihi quidem Antiochum, quem audis, satis belle videris attendere. Quis istud, quaeso, nesciebat?
-        
-        An potest, inquit ille, quicquam esse suavius quam nihil dolere? Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio? Nec enim, omnes avaritias si aeque avaritias esse dixerimus, sequetur ut etiam aequas esse dicamus. Qui ita affectus, beatum esse numquam probabis; Hoc ne statuam quidem dicturam pater aiebat, si loqui posset. Mihi, inquam, qui te id ipsum rogavi?
-        
-            Ut bacillum aliud est inflexum et incurvatum de industria, aliud ita natum, sic ferarum natura non est illa quidem depravata mala disciplina, sed natura sua.  -->
-        
-
-        
-        </div>
         <footer class="content-block">
 
             <section class="multi-lang-block trademark">

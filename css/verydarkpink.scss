@@ -2,7 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import '_colors.scss';
+@import '_colors_verydarkpink.scss';
 
 html {}
 
@@ -29,6 +29,7 @@ a[href] {
     text-decoration: none;
     position: relative;
     color: $color-text;
+    white-space: nowrap;
 }
 a[href]:before {
     content: '';
@@ -124,9 +125,16 @@ header h1 {
     margin-top: 40px;
 }
 
+#skills ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
 #projects {
     list-style: none;
 }
+
 
 #projects li {
     width: 300px;
@@ -142,8 +150,6 @@ header h1 {
     box-sizing: border-box;
     border: 0;
     margin-bottom: 6px;
-    //background: $color-background;
-    //color: $color-text;
 
     border-bottom: 4px solid $color-text;
     font-size: 1em;
@@ -154,8 +160,14 @@ header h1 {
 }    
 
 #contact input[type=submit] {
+    color: $color-background;
     background: $color-link-hover;
-    border-bottom-color: $color-link-hover;    
+    border-bottom-color: $color-link-hover; 
+    font-size: 1.2em;   
+}
+
+#contact input[type=submit][disabled] {
+    pointer-events: none;
 }    
 
 #contact input[type=submit]:hover {
@@ -171,7 +183,7 @@ header h1 {
 #contact input {
 }
 
-
+// 
 #contact .links {
     list-style: none;
     margin-left: 20px;
@@ -187,8 +199,7 @@ header h1 {
     top: 5px;
     left: -35px;
     text-align: center;
-    color: $color-link-hover;
-    
+    text-shadow: 1px 1px 2px  $color-special    
 }
 
 #contact .links li.phone i {
