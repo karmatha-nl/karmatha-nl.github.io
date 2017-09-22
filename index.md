@@ -1,5 +1,5 @@
 ---
-layout: verydarkpink
+layout: default
 title: karmaṭha | portfolio Wouter van den Heuvel
 text:
   en:
@@ -39,7 +39,7 @@ text:
 #      Hoi ik ben Wouter en ik doe iets met computers
     trademark: Alle woord- en beeldmerken op deze site zijn eigendom van haar rechtmatige eigenaars.
     skills_title: Vaardigheden en ervaring
-    letstalk: Zoekt u een developer voor een project? Heeft u een idee voor een game, VR experience, web app of iets compleets anders? Are you looking for a developer for your project? Have an idea for a game, a VR experience, web app or something else altogether? Dan kunnen we praten. 
+    letstalk: Zoekt u een developer voor een project? Heeft u een idee voor een game, VR experience, web app of iets compleets anders? Dan kunnen we praten. 
     contact_name: "naam:"
     contact_email: "e-mail:"
     contact_question: "uw vraag:"
