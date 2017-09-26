@@ -12,12 +12,13 @@ text:
     about: |
       Hi I'm Wouter and I can help you with *innovative solutions* in *interactive software products*. I enjoy crafting maintainable, elegant, well-documented code for any type of front-end project. I like to collaborate in (small) teams because I truly believe the synergistic effect brings out the best in any situation, but I can also work very effectively on my own.
       
-      My experience is listed [here](#skills) but I am constantly keeping up with new developments and eager to learn and apply new things. I am especially especially passionate about *Virtual Reality*, *games*, and any type of *new technology* . I am available for freelance work, so [get in touch](#contact).
+      My experience is listed [here](#skills) but I am constantly keeping up with new developments and eager to learn and apply new things. I am especially especially passionate about *Virtual Reality*, *games*, and any type of new technology. I am available for freelance work, so [get in touch](#contact).
 
 #      Hi I'm Wouter and I do computer stuff.
 #      More specifically I write concise, well-documented   
     trademark: All logos, trademarks and registered trademarks are the property of their respective owners.
-    skills_title: Skills and experience
+    skills_title: Skills and experience 
+    skills: I have more than 10 years experience in interaction design and writing front-end code. These are some of the technologies and tools I'm most comfortable with.
     letstalk: Are you looking for a developer for your project? Have an idea for a game, a VR experience, web app or something else altogether? Let's talk. I’m available for hire on a freelance or contract basis. 
     contact_name: "name:"
     contact_email: "email:"
@@ -39,6 +40,7 @@ text:
 #      Hoi ik ben Wouter en ik doe iets met computers
     trademark: Alle woord- en beeldmerken op deze site zijn eigendom van haar rechtmatige eigenaars.
     skills_title: Vaardigheden en ervaring
+    skills: Ik heb meer dan 10 jaar ervaring in interaction design en front-end code. Dit zijn een aantal van de technologieën en tools waar ik mee heb gewerkt.
     letstalk: Zoekt u een developer voor een project? Heeft u een idee voor een game, VR experience, web app of iets compleets anders? Dan kunnen we praten. 
     contact_name: "naam:"
     contact_email: "e-mail:"
@@ -65,13 +67,13 @@ skills:
 - ActionScript
 - PHP
 - Git
-- Linux
 - React.js
 - Arduino
 - Java
 - Three.js
 - SQL
 - Kinect
+- Linux
 - Premiere Pro
 - Photoshop
 - Illustrator
