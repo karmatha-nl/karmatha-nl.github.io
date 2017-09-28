@@ -98,19 +98,18 @@
                 </div>
             </div>
         </section>
-
-<!--         
-        <section class="content-block projects">
+      
+        <section class="content-block" id="projects">
             <h2><a>Projects</a></h2>
-            <ol class="projects">
+            <div id="projectlist">
                 {% for item in page.projects %}
-                <li style="background-image: url({{ item.thumb  }})">
+                <a href="projects/{{item.id}}.html" id="{{item.id}}" class="no-underline">
                     {{ item.name }}
-                </li>
+                </a>
                 {% endfor %}
-            </ol>
+            </div>
         </section> 
--->
+
 
         <section class="content-block" id="contact" >
             <h2>Contact</h2>

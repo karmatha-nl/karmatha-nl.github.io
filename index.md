@@ -49,12 +49,13 @@ text:
 
 projects:
 - name: karmatha.nl
+  id: karmatha
 - name: immersivelanguage
-  thumb: resources/projects/2014_utopolis/screenshots/carthagenians.png
+  id: immersivelanguage
 - name: bartertown
-  thumb: resources/projects/2015_bartertown/screenshots/game01.png
+  id: bartertown
 - name: utopolis
-  thumb: resources/projects/2014_utopolis/screenshots/carthagenians.png
+  id: utopolis
 
 skills:
 - JavaScript
