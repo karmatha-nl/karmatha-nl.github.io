@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: home
 title: karmaṭha | portfolio Wouter van den Heuvel
 text:
   en:
-    select_lang: Select English language
     definitions:
     - Proficient in any work, clever. skilful.
     - Working diligently.
@@ -16,17 +15,16 @@ text:
 
 #      Hi I'm Wouter and I do computer stuff.
 #      More specifically I write concise, well-documented   
-    trademark: All logos, trademarks and registered trademarks are the property of their respective owners.
     skills_title: Skills and experience 
     skills: I have more than 10 years experience in interaction design and writing front-end code. These are some of the technologies and tools I'm most comfortable with.
     letstalk: Are you looking for a developer for your project? Have an idea for a game, a VR experience, web app or something else altogether? Let's talk. I’m available for hire on a freelance or contract basis. 
+    download_cv: You can also [download my CV](/resources/CV Wouter van den Heuvel - sep 2017.pdf).
     contact_name: "name:"
     contact_email: "email:"
     contact_question: "your question:"
     thanks: "Thank you! I will contact you as soon as possible."
 
   nl:
-    select_lang: Selecteer Nederlandse taal
     definitions:
     - Bedreven in werk, handig. bekwaam.
     - IJverig werkend.
@@ -38,10 +36,10 @@ text:
       Mijn ervaring staat [hier](#skills) beschreven maar ik blijf constant op de hoogte van nieuwe ontwikkelingen en leer graag nieuwe dingen. Ik ben voornamelijk gepassioneerd over Virtual Reality, games en andere nieuwe technologieën. Ik ben beschikbaar voor freelance werk, dus [neem contact](#contact) met mij op.
 
 #      Hoi ik ben Wouter en ik doe iets met computers
-    trademark: Alle woord- en beeldmerken op deze site zijn eigendom van haar rechtmatige eigenaars.
     skills_title: Vaardigheden en ervaring
     skills: Ik heb meer dan 10 jaar ervaring in interaction design en front-end code. Dit zijn een aantal van de technologieën en tools waar ik mee heb gewerkt.
     letstalk: Zoekt u een developer voor een project? Heeft u een idee voor een game, VR experience, web app of iets compleets anders? Dan kunnen we praten. 
+    download_cv: You can also [download my CV](/resources/CV Wouter van den Heuvel - sep 2017.pdf).
     contact_name: "naam:"
     contact_email: "e-mail:"
     contact_question: "uw vraag:"

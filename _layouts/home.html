@@ -1,0 +1,148 @@
+---
+layout: default
+---
+{% assign text = page.text %}
+
+<header>
+    <h1>karmaṭha</h1>
+    <div class="multi-lang-block" id="definition">
+        <ol lang="en">
+            {% for item in text.en.definitions %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ol>
+        <ol lang="nl">
+            {% for item in text.nl.definitions %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+        
+    <div class="multi-lang-block content-block" id="portfolio">
+        <p lang="en">
+            {{ text.en.portfolio }}
+        </p>
+        <p lang="nl">
+            {{ text.nl.portfolio }}
+        </p>
+    </div>
+</header>
+{% include hero.html text="" %}
+<section class="multi-lang-block content-block" id="about">
+    <div lang="en">
+        <h2>{{ text.en.about_title }}</h2>
+        {{ text.en.about | markdownify }}
+    </div>
+    <div lang="nl">
+        <h2>{{ text.nl.about_title }}</h2>
+        {{ text.nl.about | markdownify }}
+    </div>
+</section>
+
+<section class="content-block" id="skills">
+    <div class="multi-lang-block content-block" id="skills">
+        <h2 lang="en">
+            {{ text.en.skills_title }}
+        </h2>
+        <h2 lang="nl">
+            {{ text.nl.skills_title }}
+        </h2>
+    </div>
+    <div class="multi-lang-block content-block">
+        <p lang="en">
+            {{ text.en.skills }}
+        </p>
+        <p lang="nl">
+            {{ text.nl.skills }}
+        </p>
+    </div>
+
+    <div class="flex-grid">
+        <div class="col">
+            <ul class="skill">
+                {% for item in page.skills %}
+                <li class="{{ item | downcase | replace: '.', '' | replace: ' ', '-' }}">
+                    {{ item }}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="multi-lang-block content-block">
+        <div lang="en">
+            {{ text.en.download_cv | markdownify}}
+        </div>
+        <div lang="nl">
+            {{ text.nl.download_cv | markdownify }}
+        </div>
+    </div>
+</section>
+
+<section class="content-block" id="projects">
+    <h2><a>Projects</a></h2>
+    <div id="projectlist">
+        {% for item in page.projects %}
+        <a href="projects/{{item.id}}/" id="{{item.id}}" class="no-underline">
+            {{ item.name }}
+        </a>
+        {% endfor %}
+    </div>
+</section> 
+
+
+<section class="content-block" id="contact" >
+    <h2>Contact</h2>
+    <div class="multi-lang-block">
+        <p lang="en">
+            {{ text.en.letstalk }}
+        </p>
+        <p lang="nl">
+            {{ text.nl.letstalk }}
+        </p>
+    </div>
+    <div class="flex-grid">
+        <div class="col">
+            <form action="https://formspree.io/karmatha@outlook.com" method="POST" id="contactForm">
+                <input type="text" name="_gotcha" style="display:none" />
+                <div class="multi-lang-block" id="thanks" style="display:none" >
+                    <p lang="en">
+                        {{ text.en.thanks }}
+                    </p>
+                    <p lang="nl">
+                        {{ text.nl.thanks }}
+                    </p>
+                </div>
+                <div class="fields">
+                    <div class="multi-lang-block content-block">
+                        <label for="name" lang="en">{{ text.en.contact_name }}</label>
+                        <label for="name" lang="nl">{{ text.nl.contact_name }}</label>
+                    </div>
+                    <input type="text" name="name"/>
+
+                    <div class="multi-lang-block content-block">
+                        <label for="_email" lang="en">{{ text.en.contact_email }}</label>
+                        <label for="_email" lang="nl">{{ text.nl.contact_email }}</label>
+                    </div>
+                    <input type="text" name="_email"/>
+
+                    <div class="multi-lang-block content-block">
+                        <label for="question" lang="en">{{ text.en.contact_question }}</label>
+                        <label for="question" lang="nl">{{ text.nl.contact_question }}</label>
+                    </div>
+                    <textarea name="question"></textarea>
+                </div>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        <div class="col">
+            <ul class="links">
+                <li class="email"><i class="fa fa-envelope-o"></i><a href="mailto:w.vandenheuvel@gmail.com" rel="author">Email</a></li>
+                <li class="phone" ><i class="fa fa-mobile" aria-hidden="true"></i><a href="tel:0031638934012">+31 6 38934012</a></li>
+                <li class="skype"><i class="fa fa-skype " aria-hidden="true"></i><a href="skype:w.vandenheuvel_4">Skype</a></li>
+                <li class="linkedin"><i class="fa fa-linkedin-square " aria-hidden="true"></i><a href="https://www.linkedin.com/in/wouter-van-den-heuvel/">LinkedIn</a></li>
+                <li class="github"><i class="fa fa-github " aria-hidden="true"></i><a href="https://github.com/spassvogel">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
