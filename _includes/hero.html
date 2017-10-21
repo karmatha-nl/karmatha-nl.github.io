@@ -1,22 +1,12 @@
 {% assign max_scroll = 600 	// After this amount of scroll pixels, stop animaating	%}
 <div class="hero">
-	<div class="hero-bg hero-bg1"  data-0="background-position-y: 0px" data-{{ max_scroll }}="background-position-y: -{{ max_scroll }}px"></div>
-	<div class="hero-bg hero-bg2"  data-0="background-position-y: 0px" data-{{ max_scroll }}="background-position-y: -{{ max_scroll | times: 0.6 }}px"></div>
-	<div class="hero-bg hero-bg3"  data-0="background-position-y: 0px" data-{{ max_scroll }}="background-position-y: -{{ max_scroll | times: 0.3 }}px"></div>
+	<div class="hero-bg" id="hero-bg1"  data-0="background-position-y: 0px" data-{{ max_scroll }}="background-position-y: -{{ max_scroll }}px"></div>
+	<div class="hero-bg" id="hero-bg2"  data-0="background-position-y: 0px" data-{{ max_scroll }}="background-position-y: -{{ max_scroll | times: 0.6 }}px"></div>
+	<div class="hero-bg" id="hero-bg3"  data-0="background-position-y: 0px" data-{{ max_scroll }}="background-position-y: -{{ max_scroll | times: 0.3 }}px"></div>
+	<div class="icon" id="icon1" data-0="background-position-y: 280px" data-{{ max_scroll }}="background-position-y: -300px"></div>
 	<!-- <div class="doom looking" title="{{ include.text }}"></div> -->
-	<video id="hero-video" src="/resources/output.webm" class="wouter" autoplay poster="posterimage.jpg"></video>
+	<video id="hero-video" src="/resources/output.webm" autoplay class="wouter" poster="posterimage.jpg"></video>
 </div>
 <script>
-var video = document.getElementById('hero-video');
-var current = 'idle';
-video.addEventListener('timeupdate', function () {
-	switch(current){
-		case 'idle':$
-			if (video.currentTime >= 23) {
-				video.currentTime = 7.5;
-				video.play();
-			}
-			break;
-	}
-}, false);
+
 </script>

@@ -12,6 +12,7 @@ html {}
     background: #000;
     border-radius: 5px;
     position: relative;
+    overflow: hidden;
 }
 
 .hero .wouter {
@@ -31,60 +32,73 @@ html {}
     height: 100%;
 }
 
-.hero .hero-bg1 {
+.hero #hero-bg1 {
 	background-image: url(images/scroller_bg1.png);
 }
 
-.hero .hero-bg2 {
+.hero #hero-bg2 {
 	background-image: url(images/scroller_bg2.png);
 }
 
-.hero .hero-bg3 {
+.hero #hero-bg3 {
 	background-image: url(images/scroller_bg3.png);
 }
 
-.hero .doom {
-    border: 2px solid purple;
-    width: 300px;
-    height: 90%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
+.hero .icon {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.hero .doom::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    background: url(images/doom_face.png) no-repeat;
+#icon1 {
+    // Icon to the left
+    background-image: url(images/icons/unity.png);
+    background-position-x: calc(50% - 220px);
+}
+
+// .hero .doom {
+//     border: 2px solid purple;
+//     width: 300px;
+//     height: 90%;
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     bottom: 0;
+// }
+
+// .hero .doom::before {
+//     content: '';
+//     position: absolute;
+//     z-index: -1;
+//     background: url(images/doom_face.png) no-repeat;
     
-    width: 52px;
-    height: 64px;
-    transform: scale(3.5);
-    left: 50%;
-    bottom: 20px;
-    transform-origin: 37.5px bottom;
-  }
+//     width: 52px;
+//     height: 64px;
+//     transform: scale(3.5);
+//     left: 50%;
+//     bottom: 20px;
+//     transform-origin: 37.5px bottom;
+//   }
 
-.hero .doom.forward::before {
-    background-position: #{-52 * 4}px 0px;
-}
+// .hero .doom.forward::before {
+//     background-position: #{-52 * 4}px 0px;
+// }
 
-.hero .doom.look_right::before {
-    background-position: #{-52 * 3}px 0px;
-}
+// .hero .doom.look_right::before {
+//     background-position: #{-52 * 3}px 0px;
+// }
 
-.hero .doom.look_left::before {
-    background-position: #{-52 * 5}px 0px;
-}
+// .hero .doom.look_left::before {
+//     background-position: #{-52 * 5}px 0px;
+// }
 
-.hero .doom.looking::before {
-    animation: looking 0.8s steps(3) infinite;
-    //background-position: #{-52 * 3}px 0px;
+// .hero .doom.looking::before {
+//     animation: looking 0.8s steps(3) infinite;
+//     //background-position: #{-52 * 3}px 0px;
     
-}
-@keyframes looking {
-    0% { background-position: #{-52 * 5}px 0px; }
-    100% { background-position: #{-52 * 2}px 0px; }
- }
+// }
+// @keyframes looking {
+//     0% { background-position: #{-52 * 5}px 0px; }
+//     100% { background-position: #{-52 * 2}px 0px; }
+//  }
