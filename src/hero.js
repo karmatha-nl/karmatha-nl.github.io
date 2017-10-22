@@ -70,7 +70,6 @@ $(document).ready(function() {
 		render: function(data) {
 			//Log the current scroll position.
 			if(data.curTop > 200 && data.curTop < 300 && current !== 'lookright'){
-				console.log('looking right')
 				playFragment('lookright');
 			}
 		}
