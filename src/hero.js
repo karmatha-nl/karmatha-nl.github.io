@@ -2,6 +2,11 @@
 $(document).ready(function() {    
 	var video = document.getElementById('hero-video');
 	var current = 'idle';
+
+	// Assign random icon to appear
+	var ICONS = ['icon_unity','icon_html5','icon_vr','icon_nodejs'];
+	document.getElementById('icon1').classList.add(ICONS[Math.floor(Math.random() * ICONS.length)]);
+
 	video.addEventListener('timeupdate', function () {
 		// debug: document.title = current + ' ' + video.currentTime;
 		switch(current){
@@ -31,8 +36,15 @@ $(document).ready(function() {
 		}
 	}, false);
 	
-	video.addEventListener('click', function() {
+	video.addEventListener('mousedown ', function(e) {
 		playFragment('scratch1');
+		e.preventDefault();
+	});
+    $(video).on('contextmenu', function(e) {
+		e.preventDefault();
+		playFragment('scratch1');
+		
+		return false;
 	});
 	
 	function playFragment(fragment) {
@@ -51,14 +63,13 @@ $(document).ready(function() {
 				video.currentTime = 29;
 				break;	
 		}
-		//video.play();
 		current = fragment;
 	}
 
 	var s = skrollr.init({
 		render: function(data) {
 			//Log the current scroll position.
-			if(data.curTop > 180 && data.curTop < 300 && current !== 'lookright'){
+			if(data.curTop > 200 && data.curTop < 300 && current !== 'lookright'){
 				console.log('looking right')
 				playFragment('lookright');
 			}
