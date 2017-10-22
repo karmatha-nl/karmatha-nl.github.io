@@ -3,7 +3,7 @@ $(document).ready(function() {
 	var video = document.getElementById('hero-video');
 	var current = 'idle';
 	video.addEventListener('timeupdate', function () {
-		document.title = current + ' ' + video.currentTime;
+		// debug: document.title = current + ' ' + video.currentTime;
 		switch(current){
 			case 'idle':
 				if (video.currentTime >= 23) {
@@ -32,7 +32,7 @@ $(document).ready(function() {
 	}, false);
 	
 	video.addEventListener('click', function() {
-		playFragment('lookright');
+		playFragment('scratch1');
 	});
 	
 	function playFragment(fragment) {
@@ -48,7 +48,7 @@ $(document).ready(function() {
 				video.currentTime = 36;
 				break;	
 			case 'lookright':
-				video.currentTime = 28;
+				video.currentTime = 29;
 				break;	
 		}
 		//video.play();
