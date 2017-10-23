@@ -2,16 +2,22 @@
 $(document).ready(function() {    
 	var video = document.getElementById('hero-video');
 	var current = 'idle';
-
+	var idleTime = 0;
 	// Assign random icon to appear
 	var ICONS = ['icon_unity','icon_html5','icon_vr','icon_nodejs'];
 	document.getElementById('icon1').classList.add(ICONS[Math.floor(Math.random() * ICONS.length)]);
 
 	video.addEventListener('timeupdate', function () {
-		// debug: document.title = current + ' ' + video.currentTime;
+		 //debug: document.title = current + ' ' + video.currentTime;
 		switch(current){
 			case 'idle':
-				if (video.currentTime >= 23) {
+			
+				if(idleTime++ > 60){
+					console.log(idleTime)
+					
+					playFragment('drink');					
+				}
+				else if (video.currentTime >= 23) {
 					playFragment('idle');
 				}
 				break;
@@ -64,6 +70,9 @@ $(document).ready(function() {
 				break;	
 		}
 		current = fragment;
+		if(fragment != 'idle'){
+			idleTime = 0;
+		}
 	}
 
 	var s = skrollr.init({
