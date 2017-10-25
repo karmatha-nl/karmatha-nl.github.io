@@ -18,14 +18,29 @@ layout: default
         </ol>
     </div>
         
-    <div class="multi-lang-block content-block" id="portfolio">
-        <p lang="en">
+    <div class="multi-lang-block" id="portfolio">
+        <div lang="en">
             {{ text.en.portfolio }}
-        </p>
-        <p lang="nl">
+        </div>
+        <div lang="nl">
             {{ text.nl.portfolio }}
-        </p>
+        </div>
     </div>
+    <script>
+$(document).ready(function() {    
+    // Sticky header
+	var portfolio = $("#portfolio");
+    var offsetTop = portfolio.offset().top;
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= offsetTop) {
+            portfolio.css('position', 'fixed');
+        }
+        else {
+            portfolio.css('position', 'inherit');
+        }
+    });
+});
+    </script>
 </header>
 {% include hero.html text="" %}
 <section class="multi-lang-block content-block" id="about">

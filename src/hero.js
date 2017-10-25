@@ -7,6 +7,7 @@ $(document).ready(function() {
 	var ICONS = ['icon_unity','icon_html5','icon_vr','icon_nodejs'];
 	document.getElementById('icon1').classList.add(ICONS[Math.floor(Math.random() * ICONS.length)]);
 
+
 	video.addEventListener('timeupdate', function () {
 		 //debug: document.title = current + ' ' + video.currentTime;
 		switch(current){
@@ -77,12 +78,13 @@ $(document).ready(function() {
 
 	var s = skrollr.init({
 		render: function(data) {
-			//Log the current scroll position.
 			if(data.curTop > 200 && data.curTop < 300 && current !== 'lookright'){
 				playFragment('lookright');
 			}
 		}
 	});
 	skrollr.menu.init(s);
+
+
 });
 
