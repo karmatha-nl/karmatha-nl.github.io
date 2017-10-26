@@ -2,6 +2,15 @@
 layout: default
 ---
 {% assign text = page.text %}
+<link rel="stylesheet" type="text/css" href="/css/home.css"/>
+<link rel="stylesheet" type="text/css" href="/css/hero.css"/>
+
+<script src="/lib/js/skrollr.min.js"></script>
+<script src="/lib/js/skrollr.menu.min.js"></script>
+
+<script src="/src/language.js"></script>
+<script src="/src/hero.js"></script>
+<script src="/src/form.js"></script>
 
 <header>
     <h1>karmaṭha</h1>
@@ -18,7 +27,7 @@ layout: default
         </ol>
     </div>
         
-    <div class="multi-lang-block" id="portfolio">
+    <div class="multi-lang-block sticky" id="portfolio">
         <div lang="en">
             {{ text.en.portfolio }}
         </div>
@@ -29,16 +38,19 @@ layout: default
     <script>
 $(document).ready(function() {    
     // Sticky header
-	var portfolio = $("#portfolio");
-    var offsetTop = portfolio.offset().top;
-    $(window).scroll(function(){
+	var sticky = $(".sticky");
+    var offsetTop = sticky.offset().top;
+    $(window).scroll(checkSticky);
+
+    function checkSticky(){
         if ($(window).scrollTop() >= offsetTop) {
-            portfolio.css('position', 'fixed');
+            sticky.css('position', 'fixed');
         }
         else {
-            portfolio.css('position', 'inherit');
+            sticky.css('position', 'inherit');
         }
-    });
+    }
+    checkSticky();
 });
     </script>
 </header>

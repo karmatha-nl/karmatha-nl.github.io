@@ -1,10 +1,14 @@
 ---
 layout: project
 title: karmaṭha | project Utopolis
+images: 
+- '../../css/images/projects/2014_utopolis/screenshots/carthagenians.png'
+- '../../css/images/projects/2014_utopolis/screenshots/hellenics.png'
+- '../../css/images/projects/2014_utopolis/screenshots/ptolemies_crafting.png'
 ---
 
 <section class="content-block" id="">
-    <div style="height: 800px; background-image: url('../../css/images/projects/2015_bartertown/screenshots/game01.png');  background-size: cover;"></div>
+    <!-- <div style="height: 800px; background-image: url('../../css/images/projects/2015_bartertown/screenshots/game01.png');  background-size: cover;"></div> -->
     <div class="multi-lang-block">
         <div lang="en">
             <p>

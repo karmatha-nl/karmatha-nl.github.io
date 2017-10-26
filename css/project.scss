@@ -1,0 +1,34 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+html {}
+
+#images {
+    list-style-type: none;
+}
+
+#images li {
+    width: 80%;
+    height: 400px;
+
+    padding: 0;
+    margin: 20px;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+
+    height: 80%;
+    width: 100px;
+    z-index: 1;
+    text-align: center;
+    font-size: 80px;
+    transform: translateY(-50%);
+}
+
+.nav-arrow i {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}

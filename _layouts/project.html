@@ -1,8 +1,53 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" type="text/css" href="/css/project.css"/>
+<link rel="stylesheet" type="text/css" href="/lib/css/slick.css"/>
+
+<script src="/lib/js/slick.min.js"></script>
+
 <header>
     <h1>{{ page.title | split: ' | ' | first }} </h1>
-    <h2>{{ page.title | split: ' | ' | last }}</h2>
+    <h2 class='sticky'>{{ page.title | split: ' | ' | last }}</h2>
 </header>
+
+
 {{ content }}
+
+<ul id="images">
+    {% for item in page.images %}
+    <li style="background-image: url({{item}})">
+    </li>
+    {% endfor %}
+</ul>
+<script>
+  $(document).ready(function(){
+    $('#images').slick({
+        slide: 'li',
+        prevArrow: '<div class="nav-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+        nextArrow: '<div class="nav-arrow"  style="right: 0"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
+    });
+  });
+</script>
+
+ <a href='../../' id="home"><i class="fa fa-home" aria-hidden="true"></i> Back to home </a>
+
+
+ <script>
+    $(document).ready(function() {    
+        // Sticky header
+        var sticky = $(".sticky");
+        var offsetTop = sticky.offset().top;
+        $(window).scroll(checkSticky);
+    
+        function checkSticky(){
+            if ($(window).scrollTop() >= offsetTop) {
+                sticky.css('position', 'fixed');
+            }
+            else {
+                sticky.css('position', 'inherit');
+            }
+        }
+        checkSticky();
+    });
+</script>
