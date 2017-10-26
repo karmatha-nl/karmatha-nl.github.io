@@ -21,7 +21,8 @@ $anim-timing: cubic-bezier(.68,-0.55,.27,1.55); //ease-in-out; // Animation timi
 	border: 2px solid $color-link;
 	min-width: 40px;
 	padding: 0 0 3px;
-	text-align: center;
+    text-align: center;
+    background: #402;
 }
 
 .lang-selector:hover {
