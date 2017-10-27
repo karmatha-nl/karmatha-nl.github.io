@@ -110,7 +110,7 @@ $(document).ready(function() {
     <h2><a>Projects</a></h2>
     <div id="projectlist">
         {% for item in page.projects %}
-        <a href="{{ site.baseurl }}/projects/{{item.id}}/" id="{{item.id}}" class="no-underline">
+        <a href="{{ site.baseurl }}/projects/{{item.id}}" id="{{item.id}}" class="no-underline">
             {{ item.name }}
         </a>
         {% endfor %}
