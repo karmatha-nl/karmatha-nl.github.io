@@ -18,13 +18,14 @@ html {}
 .nav-arrow {
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
 
     height: 80%;
     width: 100px;
     z-index: 1;
     text-align: center;
     font-size: 80px;
-    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .nav-arrow i {
