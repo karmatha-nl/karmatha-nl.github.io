@@ -11,6 +11,7 @@ layout: default
 <script src="/src/language.js"></script>
 <script src="/src/hero.js"></script>
 <script src="/src/form.js"></script>
+<script src="/src/sticky.js"></script>
 
 <header>
     <h1>karmaṭha</h1>
@@ -27,34 +28,17 @@ layout: default
         </ol>
     </div>
         
-    <div class="multi-lang-block sticky" id="portfolio">
-        <div lang="en">
-            {{ text.en.portfolio }}
-        </div>
-        <div lang="nl">
-            {{ text.nl.portfolio }}
-        </div>
-    </div>
-    <script>
-$(document).ready(function() {    
-    // Sticky header
-	var sticky = $(".sticky");
-    var offsetTop = sticky.offset().top;
-    $(window).scroll(checkSticky);
-
-    function checkSticky(){
-        if ($(window).scrollTop() >= offsetTop) {
-            sticky.css('position', 'fixed');
-        }
-        else {
-            sticky.css('position', 'inherit');
-        }
-    }
-    checkSticky();
-});
-    </script>
 </header>
 {% include hero.html text="" %}
+<section class="multi-lang-block sticky" id="portfolio">
+    <div lang="en">
+        {{ text.en.portfolio }}
+    </div>
+    <div lang="nl">
+        {{ text.nl.portfolio }}
+    </div>
+</section>
+
 <section class="multi-lang-block content-block" id="about">
     <div lang="en">
         <h2>{{ text.en.about_title }}</h2>

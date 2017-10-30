@@ -24,7 +24,7 @@ html {}
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    bottom: -2px;
 }
 
 .hero .hero-bg {
@@ -55,7 +55,8 @@ html {}
     background-repeat: no-repeat;
     position: relative;
     background-color: rgba(0,0,0,.2);
-    background-position-x: calc(50% - 220px);    
+    background-position-x: calc(50% + 220px);   
+    pointer-events: none; 
 }
 
 .icon_unity {

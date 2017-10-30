@@ -7,43 +7,49 @@ $(document).ready(function() {
 	var ICONS = ['icon_unity','icon_html5','icon_vr','icon_nodejs'];
 	document.getElementById('icon1').classList.add(ICONS[Math.floor(Math.random() * ICONS.length)]);
 
+	var time = {
+		IDLE: { start: 4.15, end: 19.22 },
+		DRINK: { start: 36, end: 44  },
+		LOOKRIGHT: { start: 20, end: 26 },
+		SCRATCH1: { start: 26, end: 28 },
+		SCRATCH2: { start: 30, end: 32 }
+	}
 
 	video.addEventListener('timeupdate', function () {
-		 //debug: document.title = current + ' ' + video.currentTime;
+		 //debug: 
+		// document.title = current + ' ' + video.currentTime;
 		switch(current){
 			case 'idle':
 			
-				if(idleTime++ > 60){
-					console.log(idleTime)
-					
+				if(idleTime++ > 260){					
 					playFragment('drink');					
 				}
-				else if (video.currentTime >= 23) {
+				else if (video.currentTime >= time.IDLE.end) {
 					playFragment('idle');
 				}
 				break;
 	
 			case 'drink': 
-				if (video.currentTime >= 45) {
+				if (video.currentTime >= time.DRINK.end) {
 					playFragment('idle');
 				}
 				break;
 	
 			case 'scratch1': 
-				if (video.currentTime >= 38) {
+				if (video.currentTime >= time.SCRATCH1.end) {
 					playFragment('idle');
 				}
 				break;
 	
 			case 'lookright':
-				if (video.currentTime >= 32) {
+				if (video.currentTime >= time.LOOKRIGHT.end) {
 					playFragment('idle');
 				}
 				break;
 		}
 	}, false);
 	
-	video.addEventListener('mousedown ', function(e) {
+	video.addEventListener('mousedown', function(e) {
 		playFragment('scratch1');
 		e.preventDefault();
 	});
@@ -55,19 +61,20 @@ $(document).ready(function() {
 	});
 	
 	function playFragment(fragment) {
+		console.log(fragment)
 		video.attributes.title = fragment;
 		switch(fragment	){
 			case 'idle':
-				video.currentTime = 7.5;
+				video.currentTime = time.IDLE.start;
 				break;
 			case 'drink':
-				video.currentTime = 39;
+				video.currentTime = time.DRINK.start;
 				break;	
 			case 'scratch1':
-				video.currentTime = 36;
+				video.currentTime = time.SCRATCH1.start;
 				break;	
 			case 'lookright':
-				video.currentTime = 29;
+				video.currentTime = time.LOOKRIGHT.start;
 				break;	
 		}
 		current = fragment;
