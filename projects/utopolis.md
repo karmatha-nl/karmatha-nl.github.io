@@ -8,7 +8,6 @@ images:
 ---
 
 <section class="content-block" id="">
-    <!-- <div style="height: 800px; background-image: url('../../css/images/projects/2015_bartertown/screenshots/game01.png');  background-size: cover;"></div> -->
     <div class="multi-lang-block">
         <div lang="en">
             <p>

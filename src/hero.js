@@ -1,5 +1,6 @@
 
-$(document).ready(function() {    
+
+$(document).ready(function() { return
 	var video = document.getElementById('hero-video');
 	var current = 'idle';
 	var idleTime = 0;
@@ -17,7 +18,7 @@ $(document).ready(function() {
 
 	video.addEventListener('timeupdate', function () {
 		 //debug: 
-		// document.title = current + ' ' + video.currentTime;
+		 document.title = current + ' ' + video.currentTime;
 		switch(current){
 			case 'idle':
 			
@@ -35,8 +36,14 @@ $(document).ready(function() {
 				}
 				break;
 	
-			case 'scratch1': 
+			case 'scratch0': 
 				if (video.currentTime >= time.SCRATCH1.end) {
+					playFragment('idle');
+				}
+				break;
+
+			case 'scratch1': 
+				if (video.currentTime >= time.SCRATCH2.end) {
 					playFragment('idle');
 				}
 				break;
@@ -50,12 +57,12 @@ $(document).ready(function() {
 	}, false);
 	
 	video.addEventListener('mousedown', function(e) {
-		playFragment('scratch1');
+		playFragment('scratch' + Math.round(Math.random()));
 		e.preventDefault();
 	});
     $(video).on('contextmenu', function(e) {
 		e.preventDefault();
-		playFragment('scratch1');
+		playFragment('scratch' + Math.round(Math.random()) + 1);
 		
 		return false;
 	});
@@ -70,8 +77,11 @@ $(document).ready(function() {
 			case 'drink':
 				video.currentTime = time.DRINK.start;
 				break;	
-			case 'scratch1':
+			case 'scratch0':
 				video.currentTime = time.SCRATCH1.start;
+				break;	
+			case 'scratch1':
+				video.currentTime = time.SCRATCH2.start;
 				break;	
 			case 'lookright':
 				video.currentTime = time.LOOKRIGHT.start;

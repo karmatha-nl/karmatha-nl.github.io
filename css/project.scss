@@ -5,14 +5,16 @@ html {}
 
 #images {
     list-style-type: none;
+    padding: 0;
 }
 
 #images li {
     width: 80%;
-    height: 400px;
+    height: 500px;
 
     padding: 0;
-    margin: 20px;
+    margin: auto;
+    background-size: cover;
 }
 
 .nav-arrow {

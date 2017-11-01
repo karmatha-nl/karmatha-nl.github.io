@@ -15,7 +15,7 @@ layout: default
 
 {{ content }}
 
-<ul id="images">
+<ul id="images" class="content-block">
     {% for item in page.images %}
     <li style="background-image: url({{item}})">
     </li>
@@ -23,11 +23,13 @@ layout: default
 </ul>
 <script>
   $(document).ready(function(){
-    $('#images').slick({
-        slide: 'li',
-        prevArrow: '<div class="nav-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-        nextArrow: '<div class="nav-arrow"  style="right: 0"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
-    });
+    if($('#images li').length > 1) {
+        $('#images').slick({
+            slide: 'li',
+            prevArrow: '<div class="nav-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+            nextArrow: '<div class="nav-arrow"  style="right: 0"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
+        });
+    }
   });
 </script>
 
