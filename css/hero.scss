@@ -28,10 +28,14 @@ html {}
     height: 100%;
 }
 
-#video-placeholder  video {
+#video-placeholder video {
     height: 100%;
 }
 
+#hero-spritesheet {
+    width: 400px;
+    height: 300px;
+}
 
 .hero .hero-bg {
     position: absolute;

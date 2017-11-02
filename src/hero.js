@@ -1,107 +1,168 @@
+// function SpritesheetHero() {
 
+// }
 
-$(document).ready(function() { return
-	var video = document.getElementById('hero-video');
-	var current = 'idle';
-	var idleTime = 0;
-	// Assign random icon to appear
-	var ICONS = ['icon_unity','icon_html5','icon_vr','icon_nodejs'];
-	document.getElementById('icon1').classList.add(ICONS[Math.floor(Math.random() * ICONS.length)]);
+// SpritesheetHero.prototype.playFragment = function(fragment) {
+// 	console.log(fragment);
+// }
 
-	var time = {
+// function VideoHero() {
+
+// }
+
+// VideoHero.prototype.playFragment = function(fragment) {
+// 	console.log(fragment);
+// }
+
+function Hero(container) {
+	this.container = container;
+	this.current = 'idle';
+	this.idleTime = 0;
+
+	this.spritesheet = null;
+
+	this.video = null;
+	this.videoChapters = {
 		IDLE: { start: 4.15, end: 19.22 },
-		DRINK: { start: 36, end: 44  },
+		DRINK: { start: 36, end: 42  },
 		LOOKRIGHT: { start: 20, end: 26 },
 		SCRATCH1: { start: 26, end: 28 },
 		SCRATCH2: { start: 30, end: 32 }
 	}
 
-	video.addEventListener('timeupdate', function () {
-		 //debug: 
-		 document.title = current + ' ' + video.currentTime;
-		switch(current){
-			case 'idle':
-			
-				if(idleTime++ > 260){					
-					playFragment('drink');					
-				}
-				else if (video.currentTime >= time.IDLE.end) {
-					playFragment('idle');
-				}
-				break;
-	
-			case 'drink': 
-				if (video.currentTime >= time.DRINK.end) {
-					playFragment('idle');
-				}
-				break;
-	
-			case 'scratch0': 
-				if (video.currentTime >= time.SCRATCH1.end) {
-					playFragment('idle');
-				}
-				break;
+	this.setMode('spritesheet');	
+}
 
-			case 'scratch1': 
-				if (video.currentTime >= time.SCRATCH2.end) {
-					playFragment('idle');
-				}
-				break;
-	
-			case 'lookright':
-				if (video.currentTime >= time.LOOKRIGHT.end) {
-					playFragment('idle');
-				}
-				break;
-		}
-	}, false);
-	
-	video.addEventListener('mousedown', function(e) {
-		playFragment('scratch' + Math.round(Math.random()));
-		e.preventDefault();
-	});
-    $(video).on('contextmenu', function(e) {
-		e.preventDefault();
-		playFragment('scratch' + Math.round(Math.random()) + 1);
-		
-		return false;
-	});
-	
-	function playFragment(fragment) {
-		console.log(fragment)
-		video.attributes.title = fragment;
+Hero.prototype.playFragment = function(fragment) {
+	if(this.mode === 'video') {
 		switch(fragment	){
 			case 'idle':
-				video.currentTime = time.IDLE.start;
+				this.video.currentTime = this.videoChapters.IDLE.start;
 				break;
 			case 'drink':
-				video.currentTime = time.DRINK.start;
+				this.video.currentTime = this.videoChapters.DRINK.start;
 				break;	
 			case 'scratch0':
-				video.currentTime = time.SCRATCH1.start;
+				this.video.currentTime = this.videoChapters.SCRATCH1.start;
 				break;	
 			case 'scratch1':
-				video.currentTime = time.SCRATCH2.start;
+				this.video.currentTime = this.videoChapters.SCRATCH2.start;
 				break;	
 			case 'lookright':
-				video.currentTime = time.LOOKRIGHT.start;
+				this.video.currentTime = this.videoChapters.LOOKRIGHT.start;
 				break;	
 		}
-		current = fragment;
+		this.current = fragment;
 		if(fragment != 'idle'){
-			idleTime = 0;
+			this.idleTime = 0;
 		}
 	}
+}
+
+Hero.prototype.setMode = function(mode) {
+	this.mode = mode;
+
+	if(mode === 'video') {
+		if(!this.video){
+			var ua = detect.parse(navigator.userAgent);			
+			this.container.append("<video id='hero-video' src='/resources/sequence-" + ua.browser.family.toLowerCase() + ".webm' autoplay loop></video>");
+			this.video = document.getElementById('hero-video');
+
+			this.video.addEventListener('timeupdate', this.onVideoUpdate.bind(this), false);
+
+			this.video.addEventListener('mousedown', this.onClick.bind(this));
+			$(this.video).on('contextmenu', this.onClick.bind(this));			
+		}
+		this.video.style.display = 'block';
+		if(this.spritesheet) {
+			this.spritesheet.style.display = 'none';
+		}	
+	}
+	else if (mode === 'spritesheet') {
+		if(!this.spritesheet){
+			this.container.append("<div id='hero-spritesheet' style='background-image: url(\"/resources/sequence-spritesheet.png\")'></div>");
+			this.spritesheet = document.getElementById('hero-spritesheet');			
+		}
+		this.spritesheet.style.display = 'block';
+		if(this.video) {
+			this.video.style.display = 'none';
+		}	
+	}
+}
+
+Hero.prototype.onVideoUpdate = function () {
+	//debug: ocument.title = this.current + ' ' + this.video.currentTime;
+	switch(this.current){
+		case 'idle':
+		
+			if(this.idleTime++ > 260){					
+				this.playFragment('drink');					
+			}
+			else if (this.video.currentTime >= this.videoChapters.IDLE.end) {
+				this.playFragment('idle');
+			}
+			break;
+
+		case 'drink': 
+			if (this.video.currentTime >= this.videoChapters.DRINK.end) {
+				this.playFragment('idle');
+			}
+			break;
+
+		case 'scratch0': 
+			if (this.video.currentTime >= this.videoChapters.SCRATCH1.end) {
+				this.playFragment('idle');
+			}
+			break;
+
+		case 'scratch1': 
+			if (this.video.currentTime >= this.videoChapters.SCRATCH2.end) {
+				this.playFragment('idle');
+			}
+			break;
+
+		case 'lookright':
+			if (this.video.currentTime >= this.videoChapters.LOOKRIGHT.end) {
+				this.playFragment('idle');
+			}
+			break;
+	}
+}
+
+Hero.prototype.onClick = function(e) {
+	e.preventDefault();
+	this.playFragment('scratch' + Math.round(Math.random()));
+	
+	return false;
+}
+
+
+$(document).ready(function() { 
+	// Assign random icon to appear
+	var ICONS = ['icon_unity','icon_html5','icon_vr','icon_nodejs'];
+	document.getElementById('icon1').classList.add(ICONS[Math.floor(Math.random() * ICONS.length)]);
+
+	var hero = new Hero($('#video-placeholder'));
 
 	var s = skrollr.init({
 		render: function(data) {
-			if(data.curTop > 200 && data.curTop < 300 && current !== 'lookright'){
-				playFragment('lookright');
+			if(data.curTop > 200 && data.curTop < 300 && hero.current !== 'lookright'){
+				hero.playFragment('lookright');
 			}
 		}
 	});
 	skrollr.menu.init(s);
 
-
+	// This horrible thing is needed because browser don't support webm video with transparency equally
+	var ua = detect.parse(navigator.userAgent);
+	switch (ua.browser.family) {
+		case 'Firefox':
+			if(ua.browser.version < 53) {
+				// Firefox supports transparent video after version 53
+				break;
+			}
+		case 'Chrome':
+			hero.setMode('video');
+		}
 });
 
