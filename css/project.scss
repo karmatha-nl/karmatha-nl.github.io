@@ -14,7 +14,8 @@ html {}
 
     padding: 0;
     margin: auto;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .nav-arrow {
