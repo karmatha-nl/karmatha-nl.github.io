@@ -15,7 +15,8 @@ images:
         </p>
         <p>
             I was responsible for concept, design, level design, animations and partly net-code. 
-            Technologies: Unity3D, C#, Google Cardboard, VoIP         
+            Technologies: Unity3D, C#, Google Cardboard, VoIP    <br>
+            Project URL: <a href="https://github.com/spassvogel/ImmersiveLanguage">https://github.com/spassvogel/ImmersiveLanguage</a>       
         </p>
     </div>
     <div lang="nl">
@@ -26,8 +27,9 @@ images:
             Deelnemers dragen  (Google cardboard) headsets en gebruiken de microfoon van de smartphone om te praten. Wanneer zij rondkijken is de stand van het hoofd zichtbaar voor de andere deelnemer. Tevens, wanneer een een student praat zal de andere student de lippen van de avater zien bewegen. Op deze manier kunnende deelnemers volledig op gaan in de ervaring wat een beter leerervaring met zich mee brengt.
         </p>
         <p>
-            Ik was verantwoordelijk voor concept, design, level design, animaties en net-code. 
-            Technologieën: Unity3D, C#, Google Cardboard, VoIP         
+            Ik was verantwoordelijk voor concept, design, level design, animaties en net-code. <br>
+            Technologie: Unity3D, C#, Google Cardboard, VoIP <br>
+            Project URL: <a href="https://github.com/spassvogel/ImmersiveLanguage">https://github.com/spassvogel/ImmersiveLanguage</a>       
         </p>
     </div>
 </section>

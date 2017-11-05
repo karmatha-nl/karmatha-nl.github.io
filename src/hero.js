@@ -1,19 +1,3 @@
-// function SpritesheetHero() {
-
-// }
-
-// SpritesheetHero.prototype.playFragment = function(fragment) {
-// 	console.log(fragment);
-// }
-
-// function VideoHero() {
-
-// }
-
-// VideoHero.prototype.playFragment = function(fragment) {
-// 	console.log(fragment);
-// }
-
 function Hero(container) {
 	this.container = container;
 	this.current = 'idle';
@@ -42,7 +26,7 @@ Hero.prototype.init = function() {
 		if(location.search.indexOf('?spritesheet') > -1){
 			useVideo = false;
 		}
-		this.setMode(useVideo ? 'video' : 'spritesheet');		
+		this.setMode(useVideo ? 'video' : 'spritesheet');
 	}.bind(this));
 
 	// calls 'callback' with a boolean indicating whether we an support
@@ -131,8 +115,17 @@ Hero.prototype.setMode = function(mode) {
 
 	if(mode === 'video') {
 		if(!this.video){
-			var ua = detect.parse(navigator.userAgent);			
-			this.container.append("<video id='hero-video' src='/resources/sequence-" + ua.browser.family.toLowerCase() + ".webm' autoplay loop></video>");
+			var ua = detect.parse(navigator.userAgent);
+			var path = '';
+			switch(ua.browser.family){
+				case "Firefox":
+					path = "/resources/sequence-firefox.webm";
+					break;
+				default:
+					path = "/resources/sequence-chrome.webm";
+			}
+
+			this.container.append("<video id='hero-video' src='" + path + "' autoplay loop></video>");
 			this.video = document.getElementById('hero-video');
 
 			this.video.addEventListener('timeupdate', this.onVideoUpdate.bind(this), false);
