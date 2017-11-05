@@ -9,7 +9,6 @@ layout: default
 <script src="/lib/js/skrollr.menu.min.js"></script>
 <script src="/lib/js/detect.min.js"></script>
 
-<script src="/src/language.js"></script>
 <script src="/src/hero.js"></script>
 <script src="/src/form.js"></script>
 <script src="/src/sticky.js"></script>
@@ -93,6 +92,14 @@ layout: default
 
 <section class="content-block" id="projects">
     <h2><a>Projects</a></h2>
+    <div class="multi-lang-block content-block">
+        <div lang="en">
+            {{ text.en.projects | markdownify}}
+        </div>
+        <div lang="nl">
+            {{ text.nl.projects | markdownify }}
+        </div>
+    </div>
     <div id="projectlist">
         {% for item in page.projects %}
         <a href="{{ site.baseurl }}/projects/{{item.id}}" id="{{item.id}}" class="no-underline">

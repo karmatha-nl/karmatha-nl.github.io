@@ -39,9 +39,13 @@ function Hero(container) {
 Hero.prototype.init = function() {
 	// Check if we can support alpha WebM video 
 	supportsWebMAlpha(function(useVideo){
+		if(location.search.indexOf('?spritesheet') > -1){
+			useVideo = false;
+		}
 		this.setMode(useVideo ? 'video' : 'spritesheet');		
 	}.bind(this));
 
+	// calls 'callback' with a boolean indicating whether we an support
 	function supportsWebMAlpha(callback){
 		var vid = document.createElement('video');
 		vid.autoplay = false;
@@ -145,7 +149,9 @@ Hero.prototype.setMode = function(mode) {
 		
 		if(!this.spritesheet){
 			this.container.append("<div id='hero-spritesheet' style='background-image: url(\"/resources/sequence-spritesheet.png\")'></div>");
-			this.spritesheet = document.getElementById('hero-spritesheet');			
+			this.spritesheet = document.getElementById('hero-spritesheet');
+			
+			this.spritesheet.className = 'idle'
 		}
 		this.spritesheet.style.display = 'block';
 		if(this.video) {
@@ -234,17 +240,5 @@ $(document).ready(function() {
 		}
 	});
 	skrollr.menu.init(s);
-
-	// // This horrible thing is needed because browser don't support webm video with transparency equally
-	// var ua = detect.parse(navigator.userAgent);
-	// switch (ua.browser.family) {
-	// 	case 'Firefox':
-	// 		if(ua.browser.version < 53) {
-	// 			// Firefox supports transparent video after version 53
-	// 			break;
-	// 		}
-	// 	case 'Chrome':
-	// 		hero.setMode('video');
-	// 	}
 });
 
