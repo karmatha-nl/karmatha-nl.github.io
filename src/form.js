@@ -20,7 +20,6 @@ $(document).ready(function() {
 			},
 			success: function(data) {
 				$(this).find('.fields').promise().done(function(){
-					console.log($('#contactForm #thanks'));
 					$('#contactForm #thanks').show().slideDown(500);
 				});
 			},
