@@ -7,4 +7,4 @@ The choice for a static site was a logical one, I don't need a CMS and complete 
 To run locally: 
 - install jekyll
 - clone the repo: `git clone git@github.com:spassvogel/spassvogel.github.io.git` 
-- run jekyll: `$jekyll serve --watch`
+- run jekyll: `$jekyll serve --watch --baseurl=''`
