@@ -1,6 +1,7 @@
 ---
 layout: home
 title: karmaṭha | portfolio Wouter van den Heuvel
+email: w.vandenheuvel@gmail.com
 text:
   en:
     definitions:
@@ -24,6 +25,7 @@ text:
     contact_email: "email:"
     contact_question: "your question:"
     thanks: "Thank you! I will contact you as soon as possible."
+    formerror: "Something went wrong. You can also contact me via <a href='mailto:[email] rel='author'>[email]</a>."
 
   nl:
     definitions:
@@ -46,6 +48,7 @@ text:
     contact_email: "e-mail:"
     contact_question: "uw vraag:"
     thanks: "Bedankt! Ik neem zo snel mogelijk contact met u op."
+    formerror: "Er is iets fout gegaan. U kunt ook contact opnemen via <a href='mailto:[email] rel='author'>[email]</a>."
 
 projects:
 - name: karmatha.nl

@@ -14,6 +14,7 @@ $(document).ready(function() {
 		if(animate){
 			$('html').addClass('lang-animate').attr('lang', lang);					
 		}
+		window.dispatchEvent(new CustomEvent('languageChanged', { 'language': lang }));
 	}
 
 	// Set initial language to browser language
