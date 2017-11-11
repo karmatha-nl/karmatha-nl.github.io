@@ -16,11 +16,11 @@ $(document).ready(function() {
 	})
 	submit.removeAttr('disabled')
 		.attr('text', 'send')
-		.trigger('textChanged')
+		.trigger('textChanged');
 
 		window.addEventListener('languageChanged', function() {
-		submit.trigger('textChanged')
-	});
+			submit.trigger('textChanged');
+		});
 	
 	$('#contactForm').submit(function(e) {
 		e.preventDefault();
