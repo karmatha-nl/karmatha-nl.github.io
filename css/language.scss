@@ -46,6 +46,7 @@ html[lang=nl] .lang-selector li[lang=nl] {
 .multi-lang-block *[lang] {
     display: block;
     width: 100%;
+    padding-left: 1px;
 }
 
 // ENGLISH (is to the left of Dutch) 
