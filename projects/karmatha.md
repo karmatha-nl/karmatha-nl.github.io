@@ -1,6 +1,6 @@
 ---
 layout: project
-title: karmaṭha | project karmata.nl
+title: karmaṭha | project karmata.nl (this website  )
 images: 
 - '../../css/images/projects/2017_karmatha/code.png'
 - '../../css/images/projects/2017_karmatha/home.png'
