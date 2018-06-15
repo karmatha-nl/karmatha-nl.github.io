@@ -51,6 +51,8 @@ text:
     formerror: "Er is iets fout gegaan. U kunt ook contact opnemen via <a href='mailto:[email] rel='author'>[email]</a>."
 
 projects:
+- name: tekentoverkist
+  id: tekentoverkist
 - name: karmatha.nl
   id: karmatha
 - name: immersivelanguage
