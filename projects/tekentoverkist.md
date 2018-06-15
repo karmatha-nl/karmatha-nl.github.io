@@ -6,6 +6,9 @@ images:
 ---
 <section class="content-block multi-lang-block">
     <div lang="en">
+        <p>
+            What if your drawings became reality? With 
+        </p>
         <!-- <p>
             For my portfolio website I'm using <a href='https://jekyllrb.com/'>Jekyll</a> site generator on GitHub pages. I wanted full creative freedom without being restrained by a CMS or template. The ease of setting up and the ability of updating it through git from anywhere is a huge bonus. The site is set up fairly static, no database is needed, but uses <a href='https://shopify.github.io/liquid/'>Liquid templates</a> for dynamic aspects and to seperate content from markup.
         </p> 
@@ -15,7 +18,7 @@ images:
         <p>
             Technologies: HTML5, Javascript, Sass, Jekyll, git
             <br>
-            Project URL: <a href="https://www.tekentoverkist.nl">https://www.tekentoverkist.nl</a>
+            Project URL: <a href="http://www.tekentoverkist.nl">http://www.tekentoverkist.nl</a>
         </p> -->
     </div>
     <div lang="nl">
@@ -28,7 +31,7 @@ images:
         <p>
             Technologie: HTML5, Javascript,  Sass, Jekyll, git
             <br>
-            Project URL: <a href="https://www.tekentoverkist.nl">https://www.tekentoverkist.nl</a>
+            Project URL: <a href="http://www.tekentoverkist.nl">http://www.tekentoverkist.nl</a>
         </p> -->
     </div>
 </section>
