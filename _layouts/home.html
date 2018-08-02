@@ -82,13 +82,13 @@ layout: default
 
     <div class="multi-lang-block content-block">
         <div lang="en">
-            {{ text.en.download_cv | markdownify}}
+            {{ text.en.download_cv | replace: 'URL', page.cvUrl | markdownify }}
         </div>
         <div lang="nl">
-            {{ text.nl.download_cv | markdownify }}
+            {{ text.nl.download_cv | replace: 'URL', page.cvUrl | markdownify }}
         </div>
     </div>
-</section>
+</section>  
 
 <section class="content-block" id="projects">
     <h2><a>Projects</a></h2>
