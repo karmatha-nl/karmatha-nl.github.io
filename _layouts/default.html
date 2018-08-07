@@ -39,15 +39,15 @@ text:
         {{ content }}
 
         <footer class="content-block">
-
-            <section class="multi-lang-block trademark">
-                <p lang="en">
-                    {{ text.en.trademark }}
-                        
-                </p>
-                <p lang="nl">
-                    {{ text.nl.trademark }}
-                </p>
+            <section class="multi-lang-block">
+                <div lang="en">
+                    {{ page.text.en.privacy | markdownify }}
+                    {{ text.en.trademark | markdownify }}
+                </div>
+                <div lang="nl">
+                    {{ page.text.nl.privacy | markdownify }}
+                    {{ text.nl.trademark | markdownify}}
+                </div>
             </section>
         </footer>
     </body>

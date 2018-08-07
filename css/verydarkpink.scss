@@ -130,8 +130,12 @@ footer {
     text-align: center;
 }
 
-footer .trademark {
+footer section {
     color: $color-text;
     opacity: .3;
     font-size: small;
+}
+
+footer section p {
+    line-height: initial;
 }

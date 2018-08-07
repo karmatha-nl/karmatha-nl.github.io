@@ -13,7 +13,7 @@ text:
     about: |
       Hi I'm Wouter and I can help you with *innovative solutions* in *interactive software products*. I enjoy crafting maintainable, elegant, well-documented code for any type of front-end project. I like to collaborate in (small) teams because I truly believe the synergistic effect brings out the best in any situation, but I can also work very effectively on my own.
       
-      My experience is listed [here](#skills) but I am constantly keeping up with new developments and eager to learn and apply new things. I am especially especially passionate about *Virtual Reality*, *games*, and any type of new technology. I am available for freelance work, so [get in touch](#contact).
+      My experience is listed [here](#skills) but I am constantly keeping up with new developments and eager to learn and apply new things. I am especially especially passionate about *Virtual Reality*, *games*, and any type of new technology. I am available for freelance work, so [get in touch](#contact). 
 
 #      Hi I'm Wouter and I do computer stuff.
 #      More specifically I write concise, well-documented   
@@ -27,6 +27,8 @@ text:
     contact_question: "your question:"
     thanks: "Thank you! I will contact you as soon as possible."
     formerror: "Something went wrong. You can also contact me via <a href='mailto:[email] rel='author'>[email]</a>."
+    privacy: This website does *not* use cookies to track you. It only stores your language preference on your browser. View our [Privacy policy](/privacy).
+
 
   nl:
     definitions:
@@ -50,6 +52,7 @@ text:
     contact_question: "uw vraag:"
     thanks: "Bedankt! Ik neem zo snel mogelijk contact met u op."
     formerror: "Er is iets fout gegaan. U kunt ook contact opnemen via <a href='mailto:[email] rel='author'>[email]</a>."
+    privacy: Deze website gebruikt *geen* cookies om u te volgen. We slaan alleen uw taalvoorkeur op. Bekijk onze [Privacy policy](/privacy).
 
 projects:
 - name: "medical competence trainings: javascript"  
