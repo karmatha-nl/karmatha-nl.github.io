@@ -1,9 +1,6 @@
 ---
 layout: default
 ---
-<style>
-    .lang-selector { xdisplay: none }
-</style>
 <section class="content-block multi-lang-block">
     <div lang="en">
         <h1>Privacy notice</h1>
