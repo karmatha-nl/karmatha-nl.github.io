@@ -2,11 +2,70 @@
 layout: default
 ---
 <style>
-    .lang-selector { display: none }
+    .lang-selector { xdisplay: none }
 </style>
-<section class="content-block">
+<section class="content-block multi-lang-block">
+    <div lang="en">
+        <h1>Privacy notice</h1>
+        <p>
+            karmatha, housed at Bussumsestraat 40, 2574 JL The Hague, provides this privacy notice to inform you how we treat your data.
+        </p>
+        <p>
+            <h2>Contact:</h2>
+            http://www.karmatha.nl Bussumsestraat 40, 2574 JL The Hague, Netherlands +31638934012
+        </p>
+        <p>
+            <h2>Information we collect</h2>
+            karmatha only collects the data you provide in the contact form
+        </p>
+        <p>
+            The type of data collected is
+            <ul>
+                <li>Name</li>
+                <li>E mail address</li>
+            </ul>
+        </p>
+        <p>
+            <h2>Sensitive data</h2>
+            This website does not intend to collect data of visitors younger than 16 years. However there is no way for us to reliably know the age of our visitors. We recommend proper parental supervision over online activities of children.
+            If you suspect we have collected data of a minor, please contact us at info@karmatha.nl and we will remove the data.
+        </p>
+        <p>
+            <h2>How we use your data</h2>
+            karmatha uses the data you provide to do business:
+            - We may use a visitors email address to contact them, if they have used the contact form.
+        </p>
+        <p>
+            <h2>Automated decision making and profiling</h2>
+            karmatha does not use automated decision making and / or profiling. 
+        </p>
+        <p>
+            <h2>Data retention</h2>
+            karmatha only retains your personal data for as long as necesary to fulfill the purposes for which we have initially collected it.
+        </p>
+        <p>
+            <h2>How we share your data</h2>
+            karmatha will not rent or sell your personally identifiable information with others.  We will only share the data with governmental agencies when there is a legal requirement to do so.
+        </p>
+        <p>
+            <h2>Cookies</h2>
+            karmatha.nl only uses a cookie to save the language setting. You are free to delete or modify this cookie. 
+        </p>
+        <p>
+            <h2>View, delete or modify data</h2>
+            You have the right to view your personal data, to correct it or to hae it removed. In addition you have the right to revoke your permission for processing of your data. You can also ask us to provide you with a document with all of your data.
+            <br><br>
+            You can direct this request for viewing, correction or deletion of personal data to info@karmatha.nl
+        </p>
+        <p>
+            <h2>Information security</h2>
+            karmatha is concerned with protecting your privacy and data but we cannot ensure or warrant the security of any information to transmit. If you have any doubts or questions feel free to contact me at info@karmatha.nl
+        </p> 
+    </div>
     <div lang="nl">
-        <p >
+        <h1>Privacyverklaring</h1>
+
+        <p>
             karmatha, gevestigd aan Bussumsestraat 40, 2574 JL &#39;s-Gravenhage, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.
         </p>
         <p>
@@ -62,7 +121,7 @@ layout: default
         <p>
             <h2>Hoe wij persoonsgegevens beveiligen</h2>
             karmatha neemt de bescherming van jouw gegevens serieus en neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan. Als jij het idee hebt dat jouw gegevens toch niet goed beveiligd zijn of er aanwijzingen zijn van misbruik, neem dan contact op met info@karmatha.nl
-        </p>
+        </p> 
     </div>
 </section>
 
