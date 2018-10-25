@@ -2,6 +2,7 @@
 layout: project
 title: karmaṭha | project tekentoverkist
 images: 
+- '../../css/images/projects/2018_tekentoverkist/tekentoverkist_ddw.jpg'
 - '../../css/images/projects/2018_tekentoverkist/klaslokaal.jpg'
 - '../../css/images/projects/2018_tekentoverkist/tekentoverkist_unity.png'
 - '../../css/images/projects/2018_tekentoverkist/tekentoverkist_unity2.png'
