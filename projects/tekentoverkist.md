@@ -11,6 +11,14 @@ images:
         <p>
             What if your drawings could come to life? With tekentoverkist (magic drawing box) you can unleash your creativity upon a colouring picture of one of ten possible farm animals. Then place the colouring picture in the box and, like magic, the animal you created appears on screen, in the farm and will roam around, eat, sleep and more!
         </p>
+        <video controls
+            muted
+            src="/movies/tekentoverkist.mp4"
+            width="848"
+            height="480"
+        >
+            Sorry, your browser doesn't support embedded videos.
+        </video>
         <p>
             Tekentoverkist is a project, aimed at young children. They are given a colouring picture of a farm animal (alpaca, cat, chicken, cow, dog, duck, goat, horse, pig, rabbit or sheep). After finishing colouring it they will place it in a specially designed box. The box has a camera and will scan the colouring picture. Reading the AR marker on the drawing, a Unity application will spawn a 3D model of the animal that was coloured, and apply the drawing as a texture on the model. After a short animation, the animal will start to exhibit certain behaviour, like foraging for food, resting, idling etc. When more than 10 animals have been created, the oldest one will leave the farm.
         </p>
@@ -30,6 +38,14 @@ images:
         <p>
             Wat als jouw tekeningen tot leven gewekt konden worden? Met tekentoverkist kun je je creativiteit loslaten op een kleurplaat met een boerderijdier. Plaats dan de kleurplaat in de kist en zie dan het dier wat jij gekleurd hebt op het scherm rondlopen, eten, slapen en meer!
         </p>
+        <video controls
+            muted
+            src="/movies/tekentoverkist.mp4"
+            width="848"
+            height="480"
+        >
+            Sorry, je browser ondersteund geen video.
+        </video>
         <p>
             Tekentoverkist is een project voor jonge kinderen. Zij krijgen een kleurplaat met een boerderijdier erop (alpaca, kat, kip, koe, hond, eend, geit, varken, konijn of schaap). Nadat ze het gekleurd hebben plaatsen ze het in een speciaal ontworpen kist. De kist heeft een camera en zal de kleurplaat scannen. Met behulp van een AR marker op de kleurplaat zal een Unity applicatie een 3D model van het dier wat gekleurd is in de wereld plaatsen, met de kleurplaat als textuur. Na een korte animatie zal het dier bepaald gedrag vertonen, zoals zoeken naar eten, uitrusten of slapen. Wanneer er meer dan 10 dieren zijn zal de oudste de boerderij verlaten.
         </p>
