@@ -2,7 +2,7 @@
 layout: home
 title: karmaṭha | portfolio Wouter van den Heuvel
 email: w.vandenheuvel@gmail.com
-cvUrl: /resources/CV Wouter van den Heuvel - mar 2018.pdf
+cvUrl: /resources/CV Wouter van den Heuvel - nov 2018.pdf
 text:
   en:
     definitions:
