@@ -20,7 +20,7 @@ images:
             Sorry, your browser doesn't support embedded videos.
         </video>
         <p>
-            Tekentoverkist is a project, aimed at young children. They are given a colouring picture of a farm animal (alpaca, cat, chicken, cow, dog, duck, goat, horse, pig, rabbit or sheep). After finishing colouring it they will place it in a specially designed box. The box has a camera and will scan the colouring picture. Reading the AR marker on the drawing, a Unity application will spawn a 3D model of the animal that was coloured, and apply the drawing as a texture on the model. After a short animation, the animal will start to exhibit certain behaviour, like foraging for food, resting, idling etc. When more than 10 animals have been created, the oldest one will leave the farm.
+            Tekentoverkist is a project aimed at young children. They are given a colouring picture of a farm animal (alpaca, cat, chicken, cow, dog, duck, goat, horse, pig, rabbit or sheep). After finishing colouring it they will place it in a specially designed box. The box has a camera and will scan the colouring picture. Reading the AR marker on the drawing, a Unity application will spawn a 3D model of the animal that was coloured, and apply the drawing as a texture on the model. After a short animation, the animal will start to exhibit certain behaviour, like foraging for food, resting, idling etc. When more than 10 animals have been created, the oldest one will leave the farm.
         </p>
         <p>
             The scanning was realized through OpenCV. I was responsible for creating the farm 3D world, ensuring the right model was spawned upon scanning and the behaviour of the animals. To that end I created a comprehensive animal behaviour script that could be applied to a Unity object. Within it the characteristics of each animal type can be defined: some animals are jittery, always on the move. Some animals are lazy and sleep for a long while, while other animals have shorter but more frequent sleep cycles, etc etc. The likelihood and duration of each action (including random variation) can be tweaked using GUI tools. These tools also provide useful debugging options.
@@ -44,7 +44,7 @@ images:
             width="848"
             height="480"
         >
-            Sorry, je browser ondersteund geen video.
+            Sorry, je browser ondersteunt geen video.
         </video>
         <p>
             Tekentoverkist is een project voor jonge kinderen. Zij krijgen een kleurplaat met een boerderijdier erop (alpaca, kat, kip, koe, hond, eend, geit, varken, konijn of schaap). Nadat ze het gekleurd hebben plaatsen ze het in een speciaal ontworpen kist. De kist heeft een camera en zal de kleurplaat scannen. Met behulp van een AR marker op de kleurplaat zal een Unity applicatie een 3D model van het dier wat gekleurd is in de wereld plaatsen, met de kleurplaat als textuur. Na een korte animatie zal het dier bepaald gedrag vertonen, zoals zoeken naar eten, uitrusten of slapen. Wanneer er meer dan 10 dieren zijn zal de oudste de boerderij verlaten.
