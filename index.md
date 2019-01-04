@@ -2,7 +2,7 @@
 layout: home
 title: karmaṭha | portfolio Wouter van den Heuvel
 email: w.vandenheuvel@gmail.com
-cvUrl: /resources/CV Wouter van den Heuvel - nov 2018.pdf
+cvUrl: https://docs.google.com/document/d/1pzCgF_7U9JE1rfkdS-1nORigOuEuw2gdhyHdS3iUrF0/export?format=pdf
 text:
   en:
     definitions:
@@ -55,6 +55,8 @@ text:
     privacy: Deze website gebruikt *geen* cookies om u te volgen. We slaan alleen uw taalvoorkeur op. Bekijk onze [Privacy policy](/privacy).
 
 projects:
+- name: "Joyn Me"  
+  id: joynme
 - name: "medical competence trainings: javascript"  
   id: ct_ignaz
 - name: tekentoverkist
