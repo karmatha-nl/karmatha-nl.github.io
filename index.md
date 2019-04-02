@@ -57,8 +57,8 @@ text:
 projects:
 - name: "Joyn Me"  
   id: joynme
-- name: "medical competence trainings: javascript"  
-  id: ct_ignaz
+#- name: "medical competence trainings: javascript"  
+#  id: ct_ignaz
 - name: tekentoverkist
   id: tekentoverkist
 - name: karmatha.nl
