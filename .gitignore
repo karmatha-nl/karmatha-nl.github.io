@@ -1,5 +1,5 @@
 # jekyll
 _site/
-bin/
+#bin/
 .sass-cache/
 .jekyll-metadata
