@@ -74,6 +74,7 @@ skills:
 - JavaScript
 - Unity3D
 - C#
+- Typescript
 - HTML
 - CSS
 - Node.js
