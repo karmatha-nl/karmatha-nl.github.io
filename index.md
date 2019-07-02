@@ -80,7 +80,6 @@ skills:
 - Node.js
 - ASP.NET
 - ActionScript
-- PHP
 - Git
 - React.js
 - Arduino
