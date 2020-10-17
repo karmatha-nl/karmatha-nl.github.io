@@ -3,3 +3,4 @@ _site/
 bin/
 .sass-cache/
 .jekyll-metadata
+.jekyll-cache
