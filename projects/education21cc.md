@@ -21,7 +21,7 @@ images:
             width="966"
         ></video>
         <p>
-                For 21CC education I conceptualized, prototyped and developed various e-learning games surrounding the logistics sector. Some products were made in Unity3D and some using ReactJs, Typescript, PixiJs and NodeJs.
+                For 21CC education I conceptualized, prototyped and developed various e-learning games surrounding the logistics sector. Some products were made in Unity3D and some using ReactJs, Typescript, PixiJs (webgl) and NodeJs.
         </p>
         <p>
                 I also helped developed the hybrid mobile app using Angular and Capacitor.
@@ -37,7 +37,7 @@ images:
             width="966"
         ></video>
         <p>      
-                Voor 21CC Education heb ik verscheidene logistieke e-learning games geconceptualiseerd, prototyped en ontwikkeld. Bepaalde producten zijn gemaakt in Unity3D en andere in ReactJs, Typescript, PixiJS en NodeJs.
+                Voor 21CC Education heb ik verscheidene logistieke e-learning games geconceptualiseerd, prototyped en ontwikkeld. Bepaalde producten zijn gemaakt in Unity3D en andere in ReactJs, Typescript, PixiJS (webgl) en NodeJs.
         </p>
         <p>
                 Ik heb ook delen van de hybride mobile app ontwikkeld met behulp van Angular en Capacitor.
