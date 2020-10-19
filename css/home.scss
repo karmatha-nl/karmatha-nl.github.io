@@ -29,24 +29,6 @@
     list-style-position: inside;    
 }
 
-// #projectlist {
-//     list-style: none;
-//     display: flex;
-// }
-
-// #projectlist li {
-//     flex: 1;
-//     min-width: 100px;
-//     height: 400px;
-//     display: inline-block;
-//     text-align: center;
-//     margin: 6px;
-
-//     background-size: cover;
-//     background-position: center;
-// }
-
-
 #projectlist {
     list-style: none;
     display: flex;
@@ -81,6 +63,10 @@
 
 #projectlist a+a {
     margin-left: 6px;
+}
+
+#projectlist a#education21cc {
+    background-image: url('images/projects/2019_education21cc/logistics-101.png');
 }
 
 #projectlist a#joynme {
