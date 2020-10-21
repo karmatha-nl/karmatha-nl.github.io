@@ -11,17 +11,26 @@ body {
     line-height: 1.5em;
     background: $color-background;
     color: $color-text;
-    padding: 0 45px 0 45px;
+    padding: 0 16px 0 16px;
 }
 
 .content-block {
-// 
     margin: auto;
     max-width: 1030px;
+    margin-top: 16px;
 }
 
 h1 {
     text-shadow: 1px 1px 2px $color-link-hover;    
+}
+
+section {
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .6);
+}
+
+section {
+    padding: 32px;
 }
 
 // Links (that don't have the 'no-underline' class)

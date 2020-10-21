@@ -39,14 +39,16 @@ layout: default
     </div>
 </section>
 
-<section class="multi-lang-block content-block" id="about">
-    <div lang="en">
-        <h2>{{ text.en.about_title }}</h2>
-        {{ text.en.about | markdownify }}
-    </div>
-    <div lang="nl">
-        <h2>{{ text.nl.about_title }}</h2>
-        {{ text.nl.about | markdownify }}
+<section class="content-block" id="about">
+    <div class="multi-lang-block">
+        <div lang="en">
+            <h2>{{ text.en.about_title }}</h2>
+            {{ text.en.about | markdownify }}
+        </div>
+        <div lang="nl">
+            <h2>{{ text.nl.about_title }}</h2>
+            {{ text.nl.about | markdownify }}
+        </div>
     </div>
 </section>
 
