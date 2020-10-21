@@ -82,7 +82,7 @@ layout: default
         </div>
     </div>
 
-    <div class="multi-lang-block content-block">
+    <div class="multi-lang-block">
         <div lang="en">
             {{ text.en.download_cv | replace: 'URL', page.cvUrl | markdownify }}
         </div>
@@ -94,7 +94,7 @@ layout: default
 
 <section class="content-block" id="projects">
     <h2><a>Projects</a></h2>
-    <div class="multi-lang-block content-block">
+    <div class="multi-lang-block">
         <div lang="en">
             {{ text.en.projects | markdownify}}
         </div>
@@ -135,19 +135,19 @@ layout: default
                     <p lang="nl"> {{ text.nl.formerror | replace: "[email]", page.email }}</p>
                 </div>
                 <div class="fields">
-                    <div class="multi-lang-block content-block">
+                    <div class="multi-lang-block">
                         <label for="name" lang="en">{{ text.en.contact_name }}</label>
                         <label for="name" lang="nl">{{ text.nl.contact_name }}</label>
                     </div>
                     <input type="text" name="name"/>
 
-                    <div class="multi-lang-block content-block">
+                    <div class="multi-lang-block">
                         <label for="_email" lang="en">{{ text.en.contact_email }}</label>
                         <label for="_email" lang="nl">{{ text.nl.contact_email }}</label>
                     </div>
                     <input type="text" name="_email"/>
 
-                    <div class="multi-lang-block content-block">
+                    <div class="multi-lang-block">
                         <label for="question" lang="en">{{ text.en.contact_question }}</label>
                         <label for="question" lang="nl">{{ text.nl.contact_question }}</label>
                     </div>

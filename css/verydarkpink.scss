@@ -18,22 +18,29 @@ body {
     margin: auto;
     max-width: 1280px;
     margin-top: 16px;
+    padding: 32px;
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .6);
+    border-radius: 5px;
 }
+
 p {
     margin: 0;
+    margin-bottom: 16px;
 }
 
 h1 {
     text-shadow: 1px 1px 2px $color-link-hover;    
 }
 
-section {
-    box-sizing: border-box;
-    background: rgba(0, 0, 0, .6);
+h2 {
+    padding-bottom: 4px;
 }
 
 section {
-    padding: 32px;
+
+    
 }
 
 // Links (that don't have the 'no-underline' class)
@@ -141,11 +148,11 @@ header h1 {
 
 footer {
     text-align: center;
+    opacity: .3;
 }
 
 footer section {
     color: $color-text;
-    opacity: .3;
     font-size: small;
 }
 
