@@ -17,4 +17,4 @@ The choice for a static site was a logical one, I don't need a CMS and complete 
 - In `/css/home.scss`, add a css declaration like so `#projectlist a#<projectname>` 
 
 ## To deploy
-Just git push and deploy will happen automatically
+Just git push and deploy will happen automatically.
