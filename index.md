@@ -76,14 +76,14 @@ skills:
 - JavaScript
 - Unity3D
 - C#
+- React.js
 - Typescript
 - HTML
-- CSS
+- CSS (& SASS)
 - Node.js
 - ASP.NET
 - ActionScript
 - Git
-- React.js
 - Arduino
 - Java
 - Three.js
