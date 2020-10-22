@@ -17,7 +17,7 @@ images:
             <p>
                 Technologies: HTML5, Javascript, Sass, Jekyll, git
                 <br>
-                Project URL: <a href="https://github.com/karmatha-nl/karmatha.github.io">https://github.com/karmatha-nl/karmatha.github.io</a>
+                Project URL: <a href="https://github.com/karmatha-nl/karmatha-nl.github.io">https://github.com/karmatha-nl/karmatha-nl.github.io</a>
             </p>
         </div>
         <div lang="nl">
@@ -30,7 +30,7 @@ images:
             <p>
                 Technologie: HTML5, Javascript,  Sass, Jekyll, git
                 <br>
-                Project URL: <a href="https://github.com/karmatha-nl/karmatha.github.io">https://github.com/karmatha-nl/karmatha.github.io</a>
+                Project URL: <a href="https://github.com/karmatha-nl/karmatha-nl.github.io">https://github.com/karmatha-nl/karmatha-nl.github.io</a>
             </p>
         </div>
       </div>
