@@ -125,7 +125,7 @@ Hero.prototype.setMode = function(mode) {
 					path = "/resources/sequence-chrome.webm";
 			}
 
-			this.container.append("<video id='hero-video' src='" + path + "' autoplay loop></video>");
+			this.container.append("<video id='hero-video' src='" + path + "' autoplay muted loop></video>");
 			this.video = document.getElementById('hero-video');
 
 			this.video.addEventListener('timeupdate', this.onVideoUpdate.bind(this), false);
