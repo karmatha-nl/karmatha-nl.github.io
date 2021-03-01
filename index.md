@@ -55,6 +55,8 @@ text:
     privacy: Deze website gebruikt *geen* cookies om u te volgen. We slaan alleen uw taalvoorkeur op. Bekijk onze [Privacy policy](/privacy).
 
 projects:
+- name: suguru
+  id: suguru
 - name: "21cc Education games"
   id: education21cc
 - name: "Joyn Me"  
