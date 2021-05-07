@@ -1,6 +1,6 @@
 ---
 layout: project
-title: karmaṭha | project karmata.nl (this website  )
+title: karmaṭha | project karmatha.nl (this website)
 images: 
 - '../../css/images/projects/2017_karmatha/code.png'
 - '../../css/images/projects/2017_karmatha/home.png'
@@ -28,7 +28,7 @@ images:
                 Voor de animatie op de front page heb ik de hulp van goede vriendin en designer <a href="https://www.linkedin.com/in/claudia-agostinho-28522582/">Claudia Agostinho</a> mogen ontvangen.
             </p> 
             <p>
-                Technologie: HTML5, Javascript,  Sass, Jekyll, git
+                Technologie: HTML5, Javascript, Sass, Jekyll, git
                 <br>
                 Project URL: <a href="https://github.com/karmatha-nl/karmatha-nl.github.io">https://github.com/karmatha-nl/karmatha-nl.github.io</a>
             </p>
