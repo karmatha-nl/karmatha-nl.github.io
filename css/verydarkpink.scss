@@ -40,7 +40,6 @@ h2 {
 
 section {
 
-  
 }
 
 // Links (that don't have the 'no-underline' class)
@@ -101,16 +100,16 @@ a[href]:not(.no-underline):hover:after {
 
 header {
   min-height: 260px;
-}
 
-header h1, header h2 {
-  text-align: center;  
-}
+  h1 {
+    font-size: 80px;
+    line-height: 40px;
+    font-family: Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
+  }
 
-header h1 {
-  font-size: 80px;
-  line-height: 40px;
-  font-family: Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
+  h1, h2 {
+    text-align: center;
+  }
 }
 
 .sticky {
@@ -128,13 +127,13 @@ header h1 {
 footer {
   text-align: center;
   opacity: .3;
-}
-
-footer section {
-  color: $color-text;
-  font-size: small;
-}
-
-footer section p {
-  line-height: initial;
+  
+  section {
+    color: $color-text;
+    font-size: small;
+    
+    p {
+      line-height: initial;
+    }
+  }
 }
