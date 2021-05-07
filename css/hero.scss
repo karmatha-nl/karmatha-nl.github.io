@@ -23,6 +23,44 @@ html {}
     height: 100%;
     background-color: rgba(0,0,0,.5);
   }
+
+  #hero-bg1 {
+    background-image: url(images/scroller_bg1.png);
+  }
+  
+  #hero-bg2 {
+    background-image: url(images/scroller_bg2.png);
+  }
+  
+  #hero-bg3 {
+    background-image: url(images/scroller_bg3.png);
+  }
+  
+  .icon {   // Icon to the left  
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(0,0,0,.2);
+    background-position-x: calc(50% + 220px);   
+    pointer-events: none; 
+  }
+  
+  .icon_unity {
+    background-image: url(images/icons/unity.png);
+  }
+  
+  .icon_html5 {
+    background-image: url(images/icons/html5.png);
+  }
+  
+  .icon_vr {
+    background-image: url(images/icons/vr.png);
+  }
+  
+  .icon_nodejs {
+    background-image: url(images/icons/nodejs.png);
+  }
 }
 
 ::-webkit-media-controls {
@@ -36,10 +74,10 @@ html {}
   transform: translateX(-50%);
   bottom: -4px;
   height: 100%;
-}
 
-#video-placeholder video {
-  height: 100%;
+  video {
+    height: 100%;
+  }
 }
 
 $spritesheet-width: 400;
@@ -61,40 +99,3 @@ $fps: 25;
   100% { background-position-x: -#{ $spritesheet-width * $idle-totalframes }px }
 }
 
-.hero #hero-bg1 {
-	background-image: url(images/scroller_bg1.png);
-}
-
-.hero #hero-bg2 {
-	background-image: url(images/scroller_bg2.png);
-}
-
-.hero #hero-bg3 {
-	background-image: url(images/scroller_bg3.png);
-}
-
-.hero .icon {   // Icon to the left  
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  background-color: rgba(0,0,0,.2);
-  background-position-x: calc(50% + 220px);   
-  pointer-events: none; 
-}
-
-.icon_unity {
-  background-image: url(images/icons/unity.png);
-}
-
-.icon_html5 {
-  background-image: url(images/icons/html5.png);
-}
-
-.icon_vr {
-  background-image: url(images/icons/vr.png);
-}
-
-.icon_nodejs {
-  background-image: url(images/icons/nodejs.png);
-}

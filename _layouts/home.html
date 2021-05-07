@@ -4,14 +4,18 @@ layout: default
 {% assign text = page.text %}
 <link rel="stylesheet" type="text/css" href="/css/home.css"/>
 <link rel="stylesheet" type="text/css" href="/css/hero.css"/>
+<link rel="stylesheet" type="text/css" href="/lib/css/slick.css"/>
 
 <script src="/lib/js/skrollr.min.js"></script>
 <script src="/lib/js/skrollr.menu.min.js"></script>
 <script src="/lib/js/detect.min.js"></script>
+<script src="/lib/js/slick.min.js"></script>
 
 <script src="/src/hero.js"></script>
 <script src="/src/form.js"></script>
 <script src="/src/sticky.js"></script>
+<script src="/src/project-list.js"></script>
+
 
 <header>
     <h1>karmaṭha</h1>
@@ -105,12 +109,11 @@ layout: default
     <div id="projectlist">
         {% for item in page.projects %}
         <a href="/projects/{{item.id}}" id="{{item.id}}" class="no-underline">
-            {{ item.name }}
+            <div class="label">{{ item.name }}</div>
         </a>
         {% endfor %}
     </div>
 </section> 
-
 
 <section class="content-block" id="contact" >
     <h2>Contact</h2>
