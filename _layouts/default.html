@@ -8,47 +8,48 @@ text:
     trademark: Alle woord- en beeldmerken op deze site zijn eigendom van haar rechtmatige eigenaars.    
 ---
 {% assign text = layout.text %}
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.75">
-        <meta name="description" content="{{ text.en.portfolio }}" />
-        <meta name="author" content="Wouter van den Heuvel">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
+    <meta name="description" content="{{ text.en.portfolio }}" />
+    <meta name="author" content="Wouter van den Heuvel">
 
-        <title>{{ page.title }}</title>
+    <title>{{ page.title }}</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
 
-        <link rel="stylesheet" type="text/css" href="/css/verydarkpink.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/language.css"/>
-        <link rel="stylesheet" type="text/css" href="/lib/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/verydarkpink.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/language.css"/>
+    <link rel="stylesheet" type="text/css" href="/lib/css/font-awesome.min.css"/>
 
-        <link rel="icon" type="image/png" href="css/images/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="css/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="css/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="css/images/favicon-16x16.png" sizes="16x16" />
 
-        <script src="/lib/js/jquery-3.2.1.min.js"></script>
-        <script src="/src/language.js"></script>
-        
-    </head>
-    <body id="skrollr-body">
-        <ul class="lang-selector">
-            <li lang="en" title="{{ text.en.select_lang }}">en</li>
-            <li lang="nl" title="{{ text.nl.select_lang }}">nl</li>
-        </ul>
-        {{ content }}
+    <script src="/lib/js/jquery-3.2.1.min.js"></script>
+    <script src="/src/language.js"></script>
+    
+  </head>
+  <body id="skrollr-body">
+    <ul class="lang-selector">
+      <li lang="en" title="{{ text.en.select_lang }}">en</li>
+      <li lang="nl" title="{{ text.nl.select_lang }}">nl</li>
+    </ul>
+    {{ content }}
 
-        <footer class="content-block">
-            <section class="multi-lang-block">
-                <div lang="en">
-                    {{ page.text.en.privacy | markdownify }}
-                    {{ text.en.trademark | markdownify }}
-                </div>
-                <div lang="nl">
-                    {{ page.text.nl.privacy | markdownify }}
-                    {{ text.nl.trademark | markdownify}}
-                </div>
-            </section>
-        </footer>
-    </body>
+    <footer class="content-block">
+      <section class="multi-lang-block">
+        <div lang="en">
+          {{ page.text.en.privacy | markdownify }}
+          {{ text.en.trademark | markdownify }}
+        </div>
+        <div lang="nl">
+          {{ page.text.nl.privacy | markdownify }}
+          {{ text.nl.trademark | markdownify}}
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
