@@ -14,15 +14,19 @@ body {
   padding: 0 16px 0 16px;
 }
 
-.content-block {
+.content {
   margin: auto;
   max-width: 1280px;
+}
+
+.content-block {
   margin-top: 16px;
   padding: 32px;
   padding-bottom: 16px;
   box-sizing: border-box;
   background: rgba(0, 0, 0, .6);
   border-radius: 5px;
+  @extend .content;
 }
 
 p {

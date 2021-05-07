@@ -1,6 +1,6 @@
 ---
 layout: project
-title: karmaṭha | project 21cc Education games
+title: karmaṭha | project 21cc Education
 images: 
 - '../../css/images/projects/2019_education21cc/conflict-resolution.png'
 - '../../css/images/projects/2019_education21cc/conveyor-game.png'
@@ -8,7 +8,6 @@ images:
 - '../../css/images/projects/2019_education21cc/scan-and-store.png'
 - '../../css/images/projects/2019_education21cc/vca-warehouse.png'
 ---
-
 
 <section class="content-block" id="">
     <div class="multi-lang-block">

@@ -16,157 +16,159 @@ layout: default
 <script src="/src/sticky.js"></script>
 <script src="/src/project-list.js"></script>
 
+<div class="home">
 
-<header>
-    <h1>karmaṭha</h1>
-    <div class="multi-lang-block" id="definition">
-        <ol lang="en">
-            {% for item in text.en.definitions %}
-            <li>{{ item }}</li>
-            {% endfor %}
-        </ol>
-        <ol lang="nl">
-            {% for item in text.nl.definitions %}
-            <li>{{ item }}</li>
-            {% endfor %}
-        </ol>
-    </div>
-        
-</header>
-{% include hero.html text="" %}
-<section class="multi-lang-block sticky" id="portfolio">
-    <div lang="en">
-        {{ text.en.portfolio }}
-    </div>
-    <div lang="nl">
-        {{ text.nl.portfolio }}
-    </div>
-</section>
-
-<section class="content-block" id="about">
-    <div class="multi-lang-block">
-        <div lang="en">
-            <h2>{{ text.en.about_title }}</h2>
-            {{ text.en.about | markdownify }}
-        </div>
-        <div lang="nl">
-            <h2>{{ text.nl.about_title }}</h2>
-            {{ text.nl.about | markdownify }}
-        </div>
-    </div>
-</section>
-
-<section class="content-block" id="skills">
-    <div class="multi-lang-block">
-        <h2 lang="en">
-            {{ text.en.skills_title }}
-        </h2>
-        <h2 lang="nl">
-            {{ text.nl.skills_title }}
-        </h2>
-    </div>
-    <div class="multi-lang-block">
-        <p lang="en">
-            {{ text.en.skills }}
-        </p>
-        <p lang="nl">
-            {{ text.nl.skills }}
-        </p>
-    </div>
-
-    <div class="flex-grid">
-        <div class="col">
-            <ul class="skill">
-                {% for item in page.skills %}
-                <li class="{{ item | downcase | replace: '.', '' | replace: ' ', '-' }}">
-                    {{ item }}
-                </li>
+    <header>
+        <h1>karmaṭha</h1>
+        <div class="multi-lang-block" id="definition">
+            <ol lang="en">
+                {% for item in text.en.definitions %}
+                <li>{{ item }}</li>
                 {% endfor %}
-            </ul>
+            </ol>
+            <ol lang="nl">
+                {% for item in text.nl.definitions %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ol>
         </div>
-    </div>
-
-    <div class="multi-lang-block">
+            
+    </header>
+    {% include hero.html text="" %}
+    <section class="multi-lang-block sticky" id="portfolio">
         <div lang="en">
-            {{ text.en.download_cv | replace: 'URL', page.cvUrl | markdownify }}
+            {{ text.en.portfolio }}
         </div>
         <div lang="nl">
-            {{ text.nl.download_cv | replace: 'URL', page.cvUrl | markdownify }}
+            {{ text.nl.portfolio }}
         </div>
-    </div>
-</section>  
+    </section>
 
-<section class="content-block" id="projects">
-    <h2><a>Projects</a></h2>
-    <div class="multi-lang-block">
-        <div lang="en">
-            {{ text.en.projects | markdownify}}
+    <section class="content-block" id="about">
+        <div class="multi-lang-block">
+            <div lang="en">
+                <h2>{{ text.en.about_title }}</h2>
+                {{ text.en.about | markdownify }}
+            </div>
+            <div lang="nl">
+                <h2>{{ text.nl.about_title }}</h2>
+                {{ text.nl.about | markdownify }}
+            </div>
         </div>
-        <div lang="nl">
-            {{ text.nl.projects | markdownify }}
-        </div>
-    </div>
-    <div id="projectlist">
-        {% for item in page.projects %}
-        <a href="/projects/{{item.id}}" data-project="{{item.id}}" class="no-underline">
-            <div class="label">{{ item.name }}</div>
-        </a>
-        {% endfor %}
-    </div>
-</section> 
+    </section>
 
-<section class="content-block" id="contact" >
-    <h2>Contact</h2>
-    <div class="multi-lang-block">
-        <p lang="en">
-            {{ text.en.letstalk }}
-        </p>
-        <p lang="nl">
-            {{ text.nl.letstalk }}
-        </p>
-    </div>
-    <div class="flex-grid">
-        <div class="col">
-            <form action="https://formspree.io/karmatha@hotmail.com" method="POST" id="contactForm">
-                <input type="text" name="_gotcha" style="display:none" />
-                <div class="multi-lang-block" id="thanks" style="display:none" >
-                    <p lang="en"> {{ text.en.thanks }}</p>
-                    <p lang="nl"> {{ text.nl.thanks }}</p>
-                </div>
-                <div class="multi-lang-block" id="formerror" style="display:none" >
-                    <p lang="en"> {{ text.en.formerror | replace: "[email]", page.email }}</p>
-                    <p lang="nl"> {{ text.nl.formerror | replace: "[email]", page.email }}</p>
-                </div>
-                <div class="fields">
-                    <div class="multi-lang-block">
-                        <label for="name" lang="en">{{ text.en.contact_name }}</label>
-                        <label for="name" lang="nl">{{ text.nl.contact_name }}</label>
+    <section class="content-block" id="skills">
+        <div class="multi-lang-block">
+            <h2 lang="en">
+                {{ text.en.skills_title }}
+            </h2>
+            <h2 lang="nl">
+                {{ text.nl.skills_title }}
+            </h2>
+        </div>
+        <div class="multi-lang-block">
+            <p lang="en">
+                {{ text.en.skills }}
+            </p>
+            <p lang="nl">
+                {{ text.nl.skills }}
+            </p>
+        </div>
+
+        <div class="flex-grid">
+            <div class="col">
+                <ul class="skill">
+                    {% for item in page.skills %}
+                    <li class="{{ item | downcase | replace: '.', '' | replace: ' ', '-' }}">
+                        {{ item }}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="multi-lang-block">
+            <div lang="en">
+                {{ text.en.download_cv | replace: 'URL', page.cvUrl | markdownify }}
+            </div>
+            <div lang="nl">
+                {{ text.nl.download_cv | replace: 'URL', page.cvUrl | markdownify }}
+            </div>
+        </div>
+    </section>  
+
+    <section class="content-block" id="projects">
+        <h2><a>Projects</a></h2>
+        <div class="multi-lang-block">
+            <div lang="en">
+                {{ text.en.projects | markdownify}}
+            </div>
+            <div lang="nl">
+                {{ text.nl.projects | markdownify }}
+            </div>
+        </div>
+        <div id="projectlist">
+            {% for item in page.projects %}
+            <a href="/projects/{{item.id}}" data-project="{{item.id}}" class="no-underline">
+                <div class="label">{{ item.name }}</div>
+            </a>
+            {% endfor %}
+        </div>
+    </section> 
+
+    <section class="content-block" id="contact" >
+        <h2>Contact</h2>
+        <div class="multi-lang-block">
+            <p lang="en">
+                {{ text.en.letstalk }}
+            </p>
+            <p lang="nl">
+                {{ text.nl.letstalk }}
+            </p>
+        </div>
+        <div class="flex-grid">
+            <div class="col">
+                <form action="https://formspree.io/karmatha@hotmail.com" method="POST" id="contactForm">
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <div class="multi-lang-block" id="thanks" style="display:none" >
+                        <p lang="en"> {{ text.en.thanks }}</p>
+                        <p lang="nl"> {{ text.nl.thanks }}</p>
                     </div>
-                    <input type="text" name="name"/>
-
-                    <div class="multi-lang-block">
-                        <label for="_email" lang="en">{{ text.en.contact_email }}</label>
-                        <label for="_email" lang="nl">{{ text.nl.contact_email }}</label>
+                    <div class="multi-lang-block" id="formerror" style="display:none" >
+                        <p lang="en"> {{ text.en.formerror | replace: "[email]", page.email }}</p>
+                        <p lang="nl"> {{ text.nl.formerror | replace: "[email]", page.email }}</p>
                     </div>
-                    <input type="text" name="_email"/>
+                    <div class="fields">
+                        <div class="multi-lang-block">
+                            <label for="name" lang="en">{{ text.en.contact_name }}</label>
+                            <label for="name" lang="nl">{{ text.nl.contact_name }}</label>
+                        </div>
+                        <input type="text" name="name"/>
 
-                    <div class="multi-lang-block">
-                        <label for="question" lang="en">{{ text.en.contact_question }}</label>
-                        <label for="question" lang="nl">{{ text.nl.contact_question }}</label>
+                        <div class="multi-lang-block">
+                            <label for="_email" lang="en">{{ text.en.contact_email }}</label>
+                            <label for="_email" lang="nl">{{ text.nl.contact_email }}</label>
+                        </div>
+                        <input type="text" name="_email"/>
+
+                        <div class="multi-lang-block">
+                            <label for="question" lang="en">{{ text.en.contact_question }}</label>
+                            <label for="question" lang="nl">{{ text.nl.contact_question }}</label>
+                        </div>
+                        <textarea name="question"></textarea>
                     </div>
-                    <textarea name="question"></textarea>
-                </div>
-                <input type="submit" value="Send">
-            </form>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div class="col">
+                <ul class="links">
+                    <li class="email"><i class="fa fa-envelope-o"></i><a href="mailto:{{ page.email }}" rel="author">Email</a></li>
+                    <li class="phone" ><i class="fa fa-mobile" aria-hidden="true"></i><a href="tel:0031638934012"  target="_blank">+31 6 38934012</a></li>
+                    <li class="skype"><i class="fa fa-skype " aria-hidden="true"></i><a href="skype:w.vandenheuvel_4"  target="_blank">Skype</a></li>
+                    <li class="linkedin"><i class="fa fa-linkedin-square " aria-hidden="true"></i><a href="https://www.linkedin.com/in/wouter-van-den-heuvel/" target="_blank">LinkedIn</a></li>
+                    <li class="github"><i class="fa fa-github " aria-hidden="true"></i><a href="https://github.com/karmatha-nl"  target="_blank">GitHub</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col">
-            <ul class="links">
-                <li class="email"><i class="fa fa-envelope-o"></i><a href="mailto:{{ page.email }}" rel="author">Email</a></li>
-                <li class="phone" ><i class="fa fa-mobile" aria-hidden="true"></i><a href="tel:0031638934012"  target="_blank">+31 6 38934012</a></li>
-                <li class="skype"><i class="fa fa-skype " aria-hidden="true"></i><a href="skype:w.vandenheuvel_4"  target="_blank">Skype</a></li>
-                <li class="linkedin"><i class="fa fa-linkedin-square " aria-hidden="true"></i><a href="https://www.linkedin.com/in/wouter-van-den-heuvel/" target="_blank">LinkedIn</a></li>
-                <li class="github"><i class="fa fa-github " aria-hidden="true"></i><a href="https://github.com/karmatha-nl"  target="_blank">GitHub</a></li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
+</div>
