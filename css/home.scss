@@ -31,9 +31,9 @@
 
 #projectlist {
   list-style: none;
-  display: flex;
+  // display: flex;
   margin-top: 8px;
-  padding-bottom: 32px;
+  padding-bottom: 8px;
 
   .nav-arrow {
     position: absolute;
@@ -52,6 +52,74 @@
       position: relative;
       transform: translateY(-50%);
       text-shadow: 2px 2px rgba(0,0,0, .5);
+    }
+  }
+
+  .slick-list {
+    // background: orange;
+  }
+
+  .slick-dots {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+    li {
+      position: relative;
+
+      display: inline-block;
+
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+
+      cursor: pointer;
+  
+      button {
+        font-size: 0;
+        line-height: 0;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+
+        &:before {
+          font-size: 2rem;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          width: 20px;
+          height: 20px;
+          content: '•';
+          text-align: center;
+
+          opacity: .25;
+          color: white;
+        }
+
+        &:hover, &:focus {
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+
+      &.slick-active { 
+        button:before {
+         opacity: .75;
+        }
+      }
     }
   }
 
@@ -78,59 +146,43 @@
     border-radius: 5px;
   }
 
-  a+a {
-    margin-left: 6px;
-  }
-
-  a#suguru {
+  [data-project="suguru"] {
     background-image: url('images/projects/2021_suguru/suguru_1.png');
   }
 
-  a#education21cc {
+  [data-project="education21cc"] {
     background-image: url('images/projects/2019_education21cc/logistics-101.png');
   }
 
-  a#joynme {
+  [data-project="joynme"] {
     background-image: url('images/projects/2018_joynme/joynme_02.png');
   }
 
-  a#ct_ignaz {
+  [data-project="ct_ignaz"] {
     background-image: url('images/projects/2018_ct_ignaz/screenshot_3.png');
   }
 
-  a#tekentoverkist {
+  [data-project="tekentoverkist"] {
     background-image: url('images/projects/2018_tekentoverkist/tekentoverkist_unity.png');
   }
 
-  a#karmatha {
+  [data-project="karmatha"] {
     background-image: url('images/projects/2017_karmatha/code.png');
   }
 
-  a#immersivelanguage {
+  [data-project="immersivelanguage"] {
     background-image: url('images/projects/2015_immersivelanguage/screenshot.png');
-    //background-position: calc(50% - 50px) 50%;
   }
 
-  a#bartertown {
+  [data-project="bartertown"] {
     background-image: url('images/projects/2015_bartertown/screenshots/game01.png');
     background-position: calc(50% - 85px) 50%;
   }
 
-  a#utopolis {
+  [data-project="utopolis"] {
     background-image: url('images/projects/2014_utopolis/screenshots/carthagenians.png');
     background-position: calc(50% - 50px) 50%;
   }
-
-  // a:before {
-  //   content: '';
-  //   display: block;
-  //   height: 100%;
-  //   transition: margin .5s;
-  // }
-
-  // a:hover:before {
-  //   margin-top: -30px;
-  // }
 }
 
 #contact{

@@ -108,7 +108,7 @@ layout: default
     </div>
     <div id="projectlist">
         {% for item in page.projects %}
-        <a href="/projects/{{item.id}}" id="{{item.id}}" class="no-underline">
+        <a href="/projects/{{item.id}}" data-project="{{item.id}}" class="no-underline">
             <div class="label">{{ item.name }}</div>
         </a>
         {% endfor %}
