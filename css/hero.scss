@@ -4,59 +4,61 @@
 html {}
 
 .hero {
-    height: 300px;
-    margin-bottom: 30px;
-    max-width: 1280px;
-    //min-width: 500px;
-    margin: auto;
-    background: #000;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
+  height: 300px;
+  margin-bottom: 30px;
+  max-width: 1280px;
+  //min-width: 500px;
+  margin: auto;
+  background: #000;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    background-repeat: repeat;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+  }
 }
 
 ::-webkit-media-controls {
-    display:none !important;
+  display:none !important;
 }
 
 #video-placeholder {
-    width: 400px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -4px;
-    height: 100%;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -4px;
+  height: 100%;
 }
 
 #video-placeholder video {
-    height: 100%;
-}
-
-#hero-spritesheet {
-    width: 400px;
-    height: 300px;
+  height: 100%;
 }
 
 $spritesheet-width: 400;
 $idle-totalframes: 24;
 $fps: 25;
 
-#hero-spritesheet.idle {
+#hero-spritesheet {
+  width: 400px;
+  height: 300px;
+
+  &.idle {
     animation: idle #{ $idle-totalframes / $fps}s steps($idle-totalframes) infinite;
+  }
 }
+
+
 
 @keyframes idle {
-    100% { background-position-x: -#{ $spritesheet-width * $idle-totalframes }px }
-}
-
-.hero .hero-bg {
-    position: absolute;
-    top: 0;
-    background-repeat: repeat;
-    background-position-x: center;
-	width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.5);
+  100% { background-position-x: -#{ $spritesheet-width * $idle-totalframes }px }
 }
 
 .hero #hero-bg1 {
@@ -71,28 +73,28 @@ $fps: 25;
 	background-image: url(images/scroller_bg3.png);
 }
 
-.hero .icon {     // Icon to the left    
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    background-color: rgba(0,0,0,.2);
-    background-position-x: calc(50% + 220px);   
-    pointer-events: none; 
+.hero .icon {   // Icon to the left  
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: rgba(0,0,0,.2);
+  background-position-x: calc(50% + 220px);   
+  pointer-events: none; 
 }
 
 .icon_unity {
-    background-image: url(images/icons/unity.png);
+  background-image: url(images/icons/unity.png);
 }
 
 .icon_html5 {
-    background-image: url(images/icons/html5.png);
+  background-image: url(images/icons/html5.png);
 }
 
 .icon_vr {
-    background-image: url(images/icons/vr.png);
+  background-image: url(images/icons/vr.png);
 }
 
 .icon_nodejs {
-    background-image: url(images/icons/nodejs.png);
+  background-image: url(images/icons/nodejs.png);
 }

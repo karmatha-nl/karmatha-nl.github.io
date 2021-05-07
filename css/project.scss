@@ -4,18 +4,17 @@
 html {}
 
 video {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    margin-bottom: 16px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 16px;
 }
 
 #images {
-    list-style-type: none;
-    padding: 0;
-}
-
-#images li {
+  list-style-type: none;
+  padding: 0;
+  
+  li {
     width: 80%;
     height: 500px;
 
@@ -24,24 +23,26 @@ video {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+  }
 }
 
 .nav-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
-    height: 80%;
-    width: 100px;
-    z-index: 1;
-    text-align: center;
-    font-size: 80px;
-    cursor: pointer;
-}
+  height: 80%;
+  width: 100px;
+  z-index: 1;
+  text-align: center;
+  font-size: 80px;
+  cursor: pointer;
 
-.nav-arrow i {
+  i {
     top: 50%;
     position: relative;
     transform: translateY(-50%);
     text-shadow: 2px 2px rgba(0,0,0, .5);
+  }
 }
+
