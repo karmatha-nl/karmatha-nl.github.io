@@ -37,7 +37,7 @@
 
   .nav-arrow {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
   
     height: 80%;
@@ -53,10 +53,6 @@
       transform: translateY(-50%);
       text-shadow: 2px 2px rgba(0,0,0, .5);
     }
-  }
-
-  .slick-list {
-    // background: orange;
   }
 
   .slick-dots {
@@ -135,16 +131,18 @@
     flex: 1;
     color: $color-text;
     text-shadow: 2px 2px #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    margin-left: 6px;
+
+    .label {
+      background: rgba(black, .7 );
+      margin: 1rem;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      min-width: calc(100% - 2rem);
+    }
   }
 
-  .label {
-    background: rgba(black, .7 );
-    margin: 1rem;
-    border-radius: 5px;
-  }
 
   [data-project="suguru"] {
     background-image: url('images/projects/2021_suguru/suguru_1.png');
