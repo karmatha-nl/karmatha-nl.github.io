@@ -25,11 +25,17 @@
   }
 
   #skills ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    list-style-position: inside;  
+    list-style-position: inside;
   }
+  @media only screen and (min-width: 500px)  {
+    #skills ul {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      list-style-position: inside;
+    }
+  }
+
 
   #projectlist {
     list-style: none;
@@ -41,14 +47,14 @@
       position: absolute;
       top: 40%;
       transform: translateY(-50%);
-    
+
       height: 80%;
       width: 100px;
       z-index: 1;
       text-align: center;
       font-size: 80px;
       cursor: pointer;
-    
+
       i {
         top: 50%;
         position: relative;
@@ -73,7 +79,7 @@
         padding: 0;
 
         cursor: pointer;
-    
+
         button {
           font-size: 0;
           line-height: 0;
@@ -113,7 +119,7 @@
           }
         }
 
-        &.slick-active { 
+        &.slick-active {
           button:before {
           opacity: .75;
           }
@@ -200,34 +206,34 @@
 
     input:focus,textarea:focus {
       border-bottom-color: $color-link-hover;
-    }  
-  
+    }
+
     input[type=submit] {
       color: $color-text;
       background: $color-link-hover;
-      border-bottom-color: $color-link-hover; 
-      font-size: 1.2em;   
+      border-bottom-color: $color-link-hover;
+      font-size: 1.2em;
     }
-  
+
     input[type=submit][disabled] {
       pointer-events: none;
-    }  
-    
+    }
+
     input[type=submit]:hover {
       background: $color-link-hover;
-      border-bottom-color: $color-text;  
-    }  
-    
+      border-bottom-color: $color-text;
+    }
+
     textarea {
       resize: none;
       min-height: 180px;
     }
-  
-    // 
+
+    //
     .links {
       list-style: none;
       margin-left: 20px;
-      
+
       li {
         position: relative;
 
@@ -237,14 +243,14 @@
           top: 5px;
           left: -35px;
           text-align: center;
-          text-shadow: 1px 1px 2px  $color-special  
+          text-shadow: 1px 1px 2px  $color-special
         }
 
         &.phone i {
           top: 0px;
           font-size: 1.5em;
         }
-      }   
+      }
     }
   }
 
