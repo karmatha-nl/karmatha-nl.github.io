@@ -26,7 +26,7 @@ text:
     contact_email: "email:"
     contact_question: "your question:"
     thanks: "Thank you! I will contact you as soon as possible."
-    formerror: "Something went wrong. You can also contact me via <a href='mailto:[email] rel='author'>[email]</a>."
+    formerror: "Something went wrong. You can also contact me via <a href='mailto:[email]' rel='author'>[email]</a>."
     privacy: This website does *not* use cookies to track you. It only stores your language preference on your browser. View our [Privacy policy](/privacy).
 
 
