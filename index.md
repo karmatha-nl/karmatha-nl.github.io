@@ -13,7 +13,7 @@ text:
     about: |
       Hi I'm Wouter and I can help you with *innovative solutions* in *interactive software products*. I enjoy crafting maintainable, elegant, well-documented code for any type of front-end project. I like to collaborate in (small) teams because I truly believe the synergistic effect brings out the best in any situation, but I can also work very effectively on my own.
       
-      My experience is listed [here](#skills) but I am constantly keeping up with new developments and eager to learn and apply new things. I am especially especially passionate about *Virtual Reality*, *games*, and any type of new technology. I am available for freelance work, so [get in touch](#contact). 
+      My experience is listed [here](#skills) but I am constantly keeping up with new developments and eager to learn and apply new things. I am especially passionate about *Virtual Reality*, *games*, and any type of new technology. I am available for freelance work, so [get in touch](#contact). 
 
 #      Hi I'm Wouter and I do computer stuff.
 #      More specifically I write concise, well-documented   
