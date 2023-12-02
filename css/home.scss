@@ -14,10 +14,10 @@
   #portfolio {
     text-align: center;
     padding: 2px;
-  }
 
-  #portfolio p {
-    margin: 0;
+    p {
+      margin: 0;
+    }
   }
 
   #about {
@@ -26,12 +26,10 @@
 
   #skills ul {
     list-style-position: inside;
-  }
-  @media only screen and (min-width: 500px)  {
-    #skills ul {
+
+    @media only screen and (min-width: 500px)  {
       columns: 2;
       -webkit-columns: 2;
-      -moz-columns: 2;
       list-style-position: inside;
     }
   }
@@ -39,7 +37,6 @@
 
   #projectlist {
     list-style: none;
-    // display: flex;
     margin-top: 8px;
     padding-bottom: 8px;
 
