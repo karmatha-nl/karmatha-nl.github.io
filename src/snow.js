@@ -23,9 +23,9 @@ let count = 0;
 const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 const selectRandom = (items) => items[rand(0, items.length - 1)];
 
-const withUnit = (value, unit) => `${value}${unit}`,
-      px = value => withUnit(value, "px"),
-      ms = value => withUnit(value, "ms");
+const withUnit = (value, unit) => `${value}${unit}`;
+const px = value => withUnit(value, "px");
+const ms = value => withUnit(value, "ms");
 
 const calcDistance = (a, b) => {
   const diffX = b.x - a.x,
@@ -52,7 +52,7 @@ const createSnowflake = (position) => {
 
   appendElement(snowflake);
 
-  // removeElement(star, config.snowflakeAnimationDuration);
+  removeElement(snowflake, config.snowflakeAnimationDuration);
 }
 
 
