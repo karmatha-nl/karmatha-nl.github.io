@@ -5,21 +5,20 @@ layout: default
 <link rel="stylesheet" type="text/css" href="/lib/css/slick.css"/>
 
 <script src="/lib/js/slick.min.js"></script>
-<script src="/src/sticky.js"></script>
 
-<div class="project">
-  <div class="content">
+<main class="project">
+  <section class="content">
     <a href='../../' id="home"><i class="fa fa-home" aria-hidden="true"></i> Back to home </a>
-  </div>
-   
+  </section>
+
   <header>
     <h1>{{ page.title | split: ' | ' | first }} </h1>
     <h2 class='sticky'>{{ page.title | split: ' | ' | last }}</h2>
   </header>
-  
-  
+
+
   {{ content }}
-  
+
   <ul id="images" class="content-block">
     {% for item in page.images %}
     <li style="background-image: url({{item}})">
@@ -37,8 +36,8 @@ layout: default
     }
     });
   </script>
-  
+
   <div class="content footer">
    <a href='../../' id="home"><i class="fa fa-home" aria-hidden="true"></i> Back to home </a>
   </div>
-</div>
+</main>

@@ -3,13 +3,20 @@
 ---
 html {}
 
+
+
 .project {
+
+  .content-block:not(.content-block ~ .content-block) {
+    // first content block gets extra margin
+    margin-top: 10rem;
+  }
 
   video {
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 
   #images {
@@ -49,7 +56,7 @@ html {}
   }
 
   .footer {
-    margin-top: 16px;
+    margin-top: 1rem;
   }
 
   iframe {

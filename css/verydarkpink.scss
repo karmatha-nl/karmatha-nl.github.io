@@ -11,7 +11,7 @@ body {
   line-height: 1.5em;
   background: $color-background;
   color: $color-text;
-  padding: 0 16px 0 16px;
+  padding: 0 1rem;
 }
 
 .content {
@@ -20,9 +20,9 @@ body {
 }
 
 .content-block {
-  margin-top: 16px;
-  padding: 32px;
-  padding-bottom: 16px;
+  margin-top: 1rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
   box-sizing: border-box;
   background: rgba(0, 0, 0, .6);
   border-radius: 5px;
@@ -31,11 +31,11 @@ body {
 
 p {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 h1 {
-  text-shadow: 1px 1px 2px $color-link-hover;  
+  text-shadow: 1px 1px 2px $color-link-hover;
 }
 
 h2 {
@@ -80,7 +80,7 @@ a[href]:not(.no-underline):hover:after {
 
   left: 0;
   animation: myfirst 1s infinite;
-  animation-direction: alternate;  
+  animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
 
@@ -88,7 +88,7 @@ a[href]:not(.no-underline):hover:after {
   50% { transform: scale(2, 1) translate(0, 0);}
   //99% {  transform: scale(1, 1) }
   100% { left: 100%; transform: translate(-100%, 0); }
-}  
+}
 
 // Two-column
 .flex-grid {
@@ -103,7 +103,8 @@ a[href]:not(.no-underline):hover:after {
 }
 
 header {
-  min-height: 260px;
+  // min-height: 260px;
+  display: contents;
 
   h1 {
     font-size: 80px;
@@ -117,11 +118,12 @@ header {
 }
 
 .sticky {
+  position: sticky;
   width: 100%;
   margin-top: 0;
-  top: 0px;
-  z-index: 1;
   left: 0;
+  top: 0;
+  z-index: 1;
   text-align: center;
   min-height: 46px;
   background: #440022;
@@ -131,11 +133,11 @@ header {
 footer {
   text-align: center;
   opacity: .3;
-  
+
   section {
     color: $color-text;
     font-size: small;
-    
+
     p {
       line-height: initial;
     }
