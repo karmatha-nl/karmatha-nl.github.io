@@ -1,4 +1,4 @@
-{% assign max_scroll = 600   // After this amount of scroll pixels, stop animaating  %}
+{% assign max_scroll = 600   // After this amount of scroll pixels, stop animating  %}
 <div class="hero">
   <div class="hero-bg" id="hero-bg1"  data-0="background-position-y: 0px" data-{{ max_scroll }}="background-position-y: -{{ max_scroll }}px"></div>
   <div class="hero-bg" id="hero-bg2"  data-0="background-position-y: 0px" data-{{ max_scroll }}="background-position-y: -{{ max_scroll | times: 0.6 }}px"></div>

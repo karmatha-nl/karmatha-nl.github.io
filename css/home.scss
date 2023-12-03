@@ -13,7 +13,9 @@
 
   #portfolio {
     text-align: center;
-    padding: 2px;
+    > div {
+      padding: 0 2rem;
+    }
 
     p {
       margin: 0;
