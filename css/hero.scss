@@ -7,7 +7,6 @@ html {}
   height: 300px;
   margin-bottom: 30px;
   max-width: 1280px;
-  //min-width: 500px;
   margin: auto;
   background: #000;
   border-radius: 5px;
@@ -48,23 +47,24 @@ html {}
     background-color: rgba(0,0,0,.2);
     background-position-x: calc(50% + 220px);   
     pointer-events: none; 
+    
+    &_unity {
+      background-image: url(images/icons/unity.png);
+    }
+    
+    &_html5 {
+      background-image: url(images/icons/html5.png);
+    }
+    
+    &_vr {
+      background-image: url(images/icons/vr.png);
+    }
+    
+    &_nodejs {
+      background-image: url(images/icons/nodejs.png);
+    }
   }
   
-  .icon_unity {
-    background-image: url(images/icons/unity.png);
-  }
-  
-  .icon_html5 {
-    background-image: url(images/icons/html5.png);
-  }
-  
-  .icon_vr {
-    background-image: url(images/icons/vr.png);
-  }
-  
-  .icon_nodejs {
-    background-image: url(images/icons/nodejs.png);
-  }
 }
 
 ::-webkit-media-controls {

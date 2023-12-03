@@ -37,22 +37,23 @@ text:
     portfolio:      Portfolio van Wouter van den Heuvel. Front-end development guru in Den Haag, Nederland
     about_title: Omtrent
     about: |
-      Hallo ik ben Wouter en ik kan u helpen met innovatieve oplossingen op het gebied van interactieve softwareproducten. Ik creëer graag onderhoudbare, elegante en goed gedocumenteerde code voor ieder soort front-end project. Ik werk graag samen in (kleine) teams omdat ik geloof dat de synergetische werking het beste in iedere situatie naar boven brengt, maar kan ook uitstekend zelfstandig werken. 
+      Hallo ik ben Wouter en ik kan je helpen met innovatieve oplossingen op het gebied van interactieve softwareproducten. Ik creëer graag onderhoudbare, elegante en goed gedocumenteerde code voor ieder soort front-end project. Ik werk graag samen in kleine, dynamische teams, 
+      maar kan ook uitstekend zelfstandig werken. 
       
       Mijn ervaring staat [hier](#skills) beschreven maar ik blijf constant op de hoogte van nieuwe ontwikkelingen en leer graag nieuwe dingen. Ik ben voornamelijk gepassioneerd over Virtual Reality, games en andere nieuwe technologieën. Ik ben beschikbaar voor freelance werk, dus [neem contact](#contact) met mij op.
 
 #      Hoi ik ben Wouter en ik doe iets met computers
     skills_title: Vaardigheden en ervaring
     skills: Ik heb meer dan 10 jaar ervaring in interaction design en front-end code. Dit zijn een aantal van de technologieën en tools waar ik mee heb gewerkt.
-    letstalk: Zoekt u een developer voor een project? Heeft u een idee voor een game, VR experience, web app of iets compleets anders? Dan kunnen we praten. 
+    letstalk: Zoek je een developer voor een project? Heb je een idee voor een game, VR experience, web app of iets compleets anders? Dan kunnen we praten. 
     download_cv: You can also [download my CV](URL).
     projects: Een aantal projecten waar ik mee bezig ben geweest in het verleden.
     contact_name: "naam:"
     contact_email: "e-mail:"
     contact_question: "uw vraag:"
-    thanks: "Bedankt! Ik neem zo snel mogelijk contact met u op."
-    formerror: "Er is iets fout gegaan. U kunt ook contact opnemen via <a href='mailto:[email] rel='author'>[email]</a>."
-    privacy: Deze website gebruikt *geen* cookies om u te volgen. We slaan alleen uw taalvoorkeur op. Bekijk onze [Privacy policy](/privacy).
+    thanks: "Bedankt! Ik neem zo snel mogelijk contact op."
+    formerror: "Er is iets fout gegaan. Je kunt ook contact opnemen via <a href='mailto:[email] rel='author'>[email]</a>."
+    privacy: Deze website gebruikt *geen* cookies om je te volgen. We slaan alleen je taalvoorkeur op. Bekijk onze [Privacy policy](/privacy).
 
 projects:
 - name: suguru
