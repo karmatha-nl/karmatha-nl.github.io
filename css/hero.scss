@@ -24,6 +24,10 @@ html {}
     background-color: rgba(0,0,0,.5);
   }
 
+  #hero-video:focus-visible {
+    outline: none;
+  }
+
   #hero-bg1 {
     background-image: url(images/scroller_bg1.png);
   }

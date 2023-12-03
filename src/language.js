@@ -4,7 +4,7 @@
 
 $(document).ready(function() {    
 	// Handle clicking on the language selector menu 
-  	$('.lang-selector li').click(function( event ) {
+  $('.lang-selector li').click(function( event ) {
 		setLanguage(event.target.getAttribute('lang'), true);  
 	}); 
 	
@@ -18,7 +18,7 @@ $(document).ready(function() {
 	}
 
 	// Set initial language to browser language
-	var lang = localStorage.getItem("language") || navigator.language.substr(0, 2);
+	const lang = localStorage.getItem("language") ?? navigator.language.substr(0, 2);
 
 	if(['en', 'nl'].indexOf(lang) > -1){
 		setLanguage(lang);

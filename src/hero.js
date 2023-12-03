@@ -213,12 +213,32 @@ Hero.prototype.onVideoUpdate = function () {
 
 Hero.prototype.onClick = function(e) {
 	e.preventDefault();
-	this.playFragment('scratch' + Math.round(Math.random()));
+	if (clickedHead(e)) {
+		this.playFragment('scratch' + Math.round(Math.random()));
+	}
+	// console.log(e.target.clientWidth)
 
 	return false;
 }
 this.fps = 30;
 this.lastUpdate = Date.now();
+
+// returns true if and only if we clicked on the general area of the face
+function clickedHead(e) {
+	if (e.offsetX < 160) {
+		return false
+	}
+	if (e.offsetX > 312) {
+		return false
+	}	
+	if (e.offsetY < 40) {
+		return false
+	}
+	if (e.offsetY > 200) {
+		return false
+	}
+	return true
+}
 
 // Spritesheet update
 Hero.prototype.update = function() {
