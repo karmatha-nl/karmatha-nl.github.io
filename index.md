@@ -8,7 +8,7 @@ text:
     definitions:
     - Proficient in any work, clever. skilful.
     - Working diligently.
-    portfolio: Portfolio of Wouter van den Heuvel. Front-end development guru based in The Hague, Netherlands
+    portfolio: Portfolio of <br class="show-xs">Wouter van den Heuvel<span class="hide-xs">. Front-end development guru<span class="hide-sm"> based in The Hague, Netherlands</span></span>
     about_title: About
     about: |
       Hi I'm Wouter and I can help you with *innovative solutions* in *interactive software products*. I enjoy crafting maintainable, elegant, well-documented code for any type of front-end project. I like to collaborate in (small) teams because I truly believe the synergistic effect brings out the best in any situation, but I can also work very effectively on my own.
@@ -34,7 +34,7 @@ text:
     definitions:
     - Bedreven in werk, handig. bekwaam.
     - IJverig werkend.
-    portfolio:      Portfolio van Wouter van den Heuvel. Front-end development guru in Den Haag, Nederland
+    portfolio: Portfolio van <br class="show-xs">Wouter van den Heuvel<span class="hide-xs">. Front-end development guru<span class="hide-sm"> in Den Haag, Nederland</span></span>
     about_title: Omtrent
     about: |
       Hallo ik ben Wouter en ik kan je helpen met innovatieve oplossingen op het gebied van interactieve softwareproducten. Ik creëer graag onderhoudbare, elegante en goed gedocumenteerde code voor ieder soort front-end project. Ik werk graag samen in kleine, dynamische teams, 
@@ -50,7 +50,7 @@ text:
     projects: Een aantal projecten waar ik mee bezig ben geweest in het verleden.
     contact_name: "naam:"
     contact_email: "e-mail:"
-    contact_question: "uw vraag:"
+    contact_question: "je vraag:"
     thanks: "Bedankt! Ik neem zo snel mogelijk contact op."
     formerror: "Er is iets fout gegaan. Je kunt ook contact opnemen via <a href='mailto:[email] rel='author'>[email]</a>."
     privacy: Deze website gebruikt *geen* cookies om je te volgen. We slaan alleen je taalvoorkeur op. Bekijk onze [Privacy policy](/privacy).

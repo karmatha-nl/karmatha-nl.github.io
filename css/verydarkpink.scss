@@ -2,16 +2,29 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import '_colors_verydarkpink.scss';
+@import 'colors_verydarkpink.scss';
+@import 'mixins.scss';
 
-html {}
+html {
+  @include md-max {
+    font-size: 16px;
+  }
+
+  @include sm-max {
+    font-size: 14px;
+  }
+}
 
 body {
-  font: 300 20px Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 300 1.25rem Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.5em;
   background: $color-background;
   color: $color-text;
   padding: 0 1rem;
+
+  @include sm-max {
+    padding: 0;
+  }
 }
 
 .content {
@@ -86,7 +99,6 @@ a[href]:not(.no-underline):hover:after {
 
 @keyframes myfirst {
   50% { transform: scale(2, 1) translate(0, 0);}
-  //99% {  transform: scale(1, 1) }
   100% { left: 100%; transform: translate(-100%, 0); }
 }
 
@@ -94,12 +106,12 @@ a[href]:not(.no-underline):hover:after {
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .col {
   flex: 1;
   min-width: 300px;
-  padding-right: 20px;
 }
 
 header {
@@ -110,6 +122,13 @@ header {
     font-size: 80px;
     line-height: 40px;
     font-family: Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
+
+    @include sm-max {
+      font-size: 60px;
+    }
+    @include xs-max {
+      font-size: 40px;
+    }
   }
 
   h1, h2 {
@@ -126,7 +145,7 @@ header {
   z-index: 1;
   text-align: center;
   min-height: 46px;
-  background: #440022;
+  background: $color-background;
 }
 
 footer {

@@ -2,7 +2,8 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-@import '_colors_verydarkpink.scss';
+@import 'colors_verydarkpink.scss';
+@import 'mixins.scss';
 
 .home {
 
@@ -11,10 +12,10 @@
     list-style-position: inside;
   }
 
-  #portfolio {
+  #tagline {
     text-align: center;
     > div {
-      padding: 0 2rem;
+      padding: 0 2.5rem;
     }
 
     p {
@@ -28,6 +29,7 @@
 
   #skills ul {
     list-style-position: inside;
+    padding-left: 1rem;
 
     @media only screen and (min-width: 500px)  {
       columns: 2;
@@ -39,8 +41,8 @@
 
   #projectlist {
     list-style: none;
-    margin-top: 8px;
-    padding-bottom: 8px;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
     .nav-arrow {
       position: absolute;
@@ -248,8 +250,26 @@
     }
   }
 
+  .hide-sm {
+    @media only screen and (max-width: 575px)  {
+      display: none;
+    }
+  }
+
+  .hide-xs {
+    @media only screen and (max-width: 375px)  {
+      display: none;
+    }
+  }
+
+  .show-xs {
+    display: none;
+    @include xs-max {
+      display: inline;
+    }
+  }
 
   #formerror {
-    color: #1b36ff;
+    color: $color-special;
   }
 }
