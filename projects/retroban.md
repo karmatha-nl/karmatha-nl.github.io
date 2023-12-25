@@ -12,7 +12,7 @@ images:
     </div>
     <div lang="nl">
     </div>
-    <iframe src="https://spassvogel.github.io/retroban/"></iframe>
+    <iframe src="https://spassvogel.github.io/retroban/" class="iframe"></iframe>
   </div>
 </section>
 
