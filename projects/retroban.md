@@ -4,6 +4,7 @@ title: karmaṭha | project Retroban
 # images: 
 project-name: retroban
 retroban-url: https://spassvogel.github.io/retroban/
+# retroban-url: http://localhost:5173/retroban/
 ---
 
 <script>
@@ -19,31 +20,48 @@ retroban-url: https://spassvogel.github.io/retroban/
 
     // go to fullscreen on click
     const iFrameEl = document.getElementById('retroban');
-    if (iFrameEl.requestFullscreen || iFrameEl.msRequestFullscreen || iFrameEl.mozRequestFullScreen || iFrameEl.webkitRequestFullScreen) {
-      
-      const icon = $('.retroban-supportsfullscreen-icon');
-      icon.show();
-      icon.on('click', () => {
-        
-        // take away the theme url param
-        iFrameEl.src = '{{ page.retroban-url }}';
-        if (iFrameEl.requestFullscreen) {
-          fullscreen = true
-          iFrameEl.requestFullscreen();
-        } else if (iFrameEl.msRequestFullscreen) {
-          fullscreen = true
-          iFrameEl.msRequestFullscreen();
-        } else if (iFrameEl.mozRequestFullScreen) {
-          fullscreen = true
-          iFrameEl.mozRequestFullScreen();
-        } else if (iFrameEl.webkitRequestFullScreen) {
-          fullscreen = true
-          iFrameEl.webkitRequestFullScreen();
-        }
-      })
-    } else {
-      document.href = "{{ page.retroban-url }}";
-    }   
+    const icon = $('.retroban-fullscreen-icon');
+    icon.show();
+
+    icon.on('click', () => {
+      if (fullscreen) {
+        document.body.classList.remove('body-noscroll')
+        icon.removeClass('retroban-fullscreen-icon--active')
+        iFrameEl.parentNode.classList.remove('pseudo-fullscreen')
+        iFrameEl.contentWindow.postMessage({ fullscreen: false }, "{{ page.retroban-url }}")
+
+        $('body').unbind('touchmove')
+        fullscreen = false
+        return
+      }      
+
+      fullscreen = true
+      if (iFrameEl.requestFullscreen) {
+        iFrameEl.src = '{{ page.retroban-url }}';         // take away the theme url param
+
+        iFrameEl.requestFullscreen();
+      } else if (iFrameEl.msRequestFullscreen) {
+        iFrameEl.src = '{{ page.retroban-url }}';         // take away the theme url param
+
+        iFrameEl.msRequestFullscreen();
+      } else if (iFrameEl.mozRequestFullScreen) {
+        iFrameEl.src = '{{ page.retroban-url }}';         // take away the theme url param
+
+        iFrameEl.mozRequestFullScreen();
+      } else if (iFrameEl.webkitRequestFullScreen) {
+        iFrameEl.src = '{{ page.retroban-url }}';         // take away the theme url param
+
+        iFrameEl.webkitRequestFullScreen();
+      } else {
+        document.body.classList.add('body-noscroll')
+        icon.addClass('retroban-fullscreen-icon--active')
+
+        iFrameEl.parentNode.classList.add('pseudo-fullscreen')
+        iFrameEl.contentWindow.postMessage({ fullscreen: true }, "{{ page.retroban-url }}")
+
+        $('body').bind('touchmove', (e) => {e.preventDefault()})
+      }
+    })
 
     $(window).on('resize', () => {
       if (!document.fullscreenElement && fullscreen) {
@@ -51,6 +69,7 @@ retroban-url: https://spassvogel.github.io/retroban/
         iFrameEl.src = '{{ page.retroban-url }}?theme=karmatha';
         fullscreen = false;
       }
+
     });
   })
 
@@ -92,11 +111,12 @@ retroban-url: https://spassvogel.github.io/retroban/
 </section>
 <section class="content-block">
   <div class="retroban-container">
-    <svg height="14px" class="retroban-supportsfullscreen-icon" title="Go fullscreen" version="1.1" viewBox="0 0 14 14" width="14px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="white" transform="translate(-215.000000, -257.000000)"><g id="fullscreen" transform="translate(215.000000, 257.000000)"><path d="M2,9 L0,9 L0,14 L5,14 L5,12 L2,12 L2,9 L2,9 Z M0,5 L2,5 L2,2 L5,2 L5,0 L0,0 L0,5 L0,5 Z M12,12 L9,12 L9,14 L14,14 L14,9 L12,9 L12,12 L12,12 Z M9,0 L9,2 L12,2 L12,5 L14,5 L14,0 L9,0 L9,0 Z" id="Shape"/></g></g></g></svg>
+    <div class="retroban-fullscreen-icon">
+      <span class="retroban-fullscreen-text">close fullscreen</span>
+      <svg height="14px" title="Go fullscreen" version="1.1" viewBox="0 0 14 14" width="14px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g fill="white" transform="translate(-215.000000, -257.000000)"><g transform="translate(215.000000, 257.000000)"><path d="M2,9 L0,9 L0,14 L5,14 L5,12 L2,12 L2,9 L2,9 Z M0,5 L2,5 L2,2 L5,2 L5,0 L0,0 L0,5 L0,5 Z M12,12 L9,12 L9,14 L14,14 L14,9 L12,9 L12,12 L12,12 Z M9,0 L9,2 L12,2 L12,5 L14,5 L14,0 L9,0 L9,0 Z"/></g></g></g></svg>
+    </div>
 
     <iframe src="{{ page.retroban-url }}?theme=karmatha" id="retroban" class="retroban iframe"></iframe>
-
-    <!-- <iframe src="http://localhost:5173/retroban/?theme=karmatha" id="retroban" class="retroban iframe"></iframe> -->
   </div>
 </section>
 

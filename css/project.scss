@@ -4,6 +4,7 @@
 html {}
 
 
+@import 'mixins.scss';
 
 .project {
 
@@ -67,26 +68,69 @@ html {}
 
   &.project-retroban {
 
-    .project-title::after {
-      content: '';
-      background-image: url("https://spassvogel.github.io/retroban/img/crate.png");
-      width: 1.5rem;
-      height: 1.5rem;
-      background-size: cover;
-      display: inline-block;
-      margin-left: 0.5rem;
+    @include md {
+      .project-title::after {
+        content: '';
+        background-image: url("https://spassvogel.github.io/retroban/img/crate.png");
+        width: 1.5rem;
+        height: 1.5rem;
+        background-size: cover;
+        display: inline-block;
+        margin-left: 0.5rem;
+      }
     }
 
     .retroban-container {
       position: relative;
     }
 
-    .retroban-supportsfullscreen-icon {
+    .retroban-container.pseudo-fullscreen {
+      // fake fullscreen
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: black;
+      z-index: 2;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
+      padding-top: 2rem;
+
+      .retroban-fullscreen-icon {
+        right: 0.5rem;
+        top: 0.2rem;
+      }
+
+      .iframe {
+        min-height: calc(100%);
+      }
+    }
+
+    .retroban-fullscreen-icon {
       display: none;
       position: absolute;
       right: -1.5rem;
-      top: -1.5rem;
+      top: -2rem;
       cursor: pointer;
+
+      .retroban-fullscreen-text {
+        display: none;
+        font-size: 0.75rem;
+        padding-bottom: 0.25rem;
+      }
+
+      &--active {
+        .retroban-fullscreen-text {
+          display: inline;
+        }
+      }
     }
   }
+}
+
+.body-noscroll {
+  height: 100%;
+  overflow: hidden;
 }
