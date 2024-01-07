@@ -9,14 +9,14 @@ layout: default
 <script src="/lib/js/slick.min.js"></script>
 <script src="/src/snow.js"></script>
 
-<main class="project">
+<main class="project project-{{ page.project-name }}">
   <section class="content">
     <a href='../../' id="home"><i class="fa fa-home" aria-hidden="true"></i> Back to home </a>
   </section>
 
   <header>
     <h1>{{ page.title | split: ' | ' | first }} </h1>
-    <h2 class='sticky'>{{ page.title | split: ' | ' | last }}</h2>
+    <h2 class='sticky project-title'>{{ page.title | split: ' | ' | last }}</h2>
   </header>
 
 

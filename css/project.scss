@@ -65,19 +65,28 @@ html {}
     min-height: 800px;
   }
 
-  .retroban-icon {
-    width: 1.5rem;
-  }
+  &.project-retroban {
 
-  .retroban-container {
-    position: relative;
-  }
+    .project-title::after {
+      content: '';
+      background-image: url("https://spassvogel.github.io/retroban/img/crate.png");
+      width: 1.5rem;
+      height: 1.5rem;
+      background-size: cover;
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
 
-  .retroban-supportsfullscreen-icon {
-    display: none;
-    position: absolute;
-    right: -1.5rem;
-    top: -1.5rem;
-    cursor: pointer;
+    .retroban-container {
+      position: relative;
+    }
+
+    .retroban-supportsfullscreen-icon {
+      display: none;
+      position: absolute;
+      right: -1.5rem;
+      top: -1.5rem;
+      cursor: pointer;
+    }
   }
 }
