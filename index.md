@@ -56,6 +56,8 @@ text:
     privacy: Deze website gebruikt *geen* cookies om je te volgen. We slaan alleen je taalvoorkeur op. Bekijk onze [Privacy policy](/privacy).
 
 projects:
+- name: retroban
+  id: retroban
 - name: suguru
   id: suguru
 - name: "21cc Education games"

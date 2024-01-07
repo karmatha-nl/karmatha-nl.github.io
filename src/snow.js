@@ -88,8 +88,8 @@ const handleOnMove = e => {
 }
 
 const DECEMBER = 11;
-$(document).ready(function(){
-  // let it snow!
+$(document).ready(() => {
+  // let it snow (in december)!
   if (new Date().getMonth() === DECEMBER) {
     window.onmousemove = e => handleOnMove(e);
     window.ontouchmove = e => handleOnMove(e.touches[0]);

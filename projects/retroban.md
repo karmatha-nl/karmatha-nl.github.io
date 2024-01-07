@@ -8,7 +8,7 @@ retroban-url: https://spassvogel.github.io/retroban/
 <script>
   window.addEventListener("message", (event) => {
     if (!event.data.levelCount) {
-      return
+      return;
     }
     $('.retroban-level-count').html(event.data.levelCount);
   });
@@ -20,12 +20,12 @@ retroban-url: https://spassvogel.github.io/retroban/
     const iFrameEl = document.getElementById('retroban');
     if (iFrameEl.requestFullscreen || iFrameEl.msRequestFullscreen || iFrameEl.mozRequestFullScreen || iFrameEl.webkitRequestFullScreen) {
       
-      const icon = $('.retroban-supportsfullscreen-icon')
-      icon.show()
+      const icon = $('.retroban-supportsfullscreen-icon');
+      icon.show();
       icon.on('click', () => {
         
         // take away the theme url param
-        iFrameEl.src = '{{ page.retroban-url }}'
+        iFrameEl.src = '{{ page.retroban-url }}';
         if (iFrameEl.requestFullscreen) {
           fullscreen = true
           iFrameEl.requestFullscreen();
@@ -45,7 +45,7 @@ retroban-url: https://spassvogel.github.io/retroban/
     $(window).on('resize', () => {
       if (!document.fullscreenElement && fullscreen) {
         // if coming back from fullscreen, put the theme param back
-        iFrameEl.src = '{{ page.retroban-url }}?theme=karmatha'
+        iFrameEl.src = '{{ page.retroban-url }}?theme=karmatha';
         fullscreen = false;
       }
     });

@@ -1,5 +1,5 @@
 // responsive carousel with projects
-$(document).ready(function(){
+$(document).ready(() => {
   $('#projectlist').slick({
     dots: true,
     slide: 'a',

@@ -2,17 +2,17 @@
 
 
 
-$(document).ready(function() {    
-	// Handle clicking on the language selector menu 
+$(document).ready(() => {
+	// Handle clicking on the language selector menu
   $('.lang-selector li').click(function( event ) {
-		setLanguage(event.target.getAttribute('lang'), true);  
-	}); 
-	
+		setLanguage(event.target.getAttribute('lang'), true);
+	});
+
 	function setLanguage(lang, animate) {
 		localStorage.setItem('language', lang);
 		$('html').attr('lang', lang);
 		if(animate){
-			$('html').addClass('lang-animate').attr('lang', lang);					
+			$('html').addClass('lang-animate').attr('lang', lang);
 		}
 		window.dispatchEvent(new CustomEvent('languageChanged', { 'language': lang }));
 	}
