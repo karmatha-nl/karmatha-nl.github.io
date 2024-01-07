@@ -68,4 +68,16 @@ html {}
   .retroban-icon {
     width: 1.5rem;
   }
+
+  .retroban-container {
+    position: relative;
+  }
+
+  .retroban-supportsfullscreen-icon {
+    display: none;
+    position: absolute;
+    right: -1.5rem;
+    top: -1.5rem;
+    cursor: pointer;
+  }
 }
