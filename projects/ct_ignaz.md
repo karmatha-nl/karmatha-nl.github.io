@@ -11,7 +11,8 @@ images:
 - '../../css/images/projects/2018_ct_ignaz/screenshot_7.png'
 
 ---
-<section class="content-block multi-lang-block">
+<section class="content-block">
+  <div class="multi-lang-block">
     <div lang="en">
         <p>
             For LeQuest I developed e-trainings for training of healthcare professionals in the use of medical devices in the hospital. A combination of gamified simulations and theory ensures the trainees are competent and certified. The simulations offer a realistic display and interactivity with the devices.
@@ -37,5 +38,6 @@ images:
             <br>
             Project URL: <a href="https://www.lequest.nl/nl/product.html">https://www.lequest.nl/nl/product.html</a>
         </p>
+    </div>
     </div>
 </section>
