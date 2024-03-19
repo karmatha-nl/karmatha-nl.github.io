@@ -58,6 +58,8 @@ text:
 projects:
 - name: retroban
   id: retroban
+- name: "Narrative Training games"
+  id: narrative_games
 - name: suguru
   id: suguru
 - name: "21cc Education games"
