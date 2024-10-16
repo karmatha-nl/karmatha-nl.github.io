@@ -14,6 +14,8 @@
 
   #tagline {
     text-align: center;
+    padding-bottom: 0.5rem;
+
     > div {
       padding: 0 2.5rem;
     }
@@ -203,25 +205,33 @@
   #contact{
     input, textarea {
       width: 100%;
-      padding: 10px;
+      padding: 0.75rem;
       box-sizing: border-box;
       border: 0;
-      margin-bottom: 6px;
+      margin-bottom: 1rem;
 
       border-bottom: 4px solid $color-text;
-      font-size: 1em;
+      font-size: 1rem;
     }
 
 
-    input:focus,textarea:focus {
+    input:focus,
+    textarea:focus {
       border-bottom-color: $color-link-hover;
+    }
+
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: 0;
+      box-shadow: none;
     }
 
     input[type=submit] {
       color: $color-text;
       background: $color-link-hover;
       border-bottom-color: $color-link-hover;
-      font-size: 1.2em;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
 
     input[type=submit][disabled] {
@@ -245,6 +255,7 @@
 
       li {
         position: relative;
+        margin-bottom: 0.5rem;
 
         i {
           width: 25px;

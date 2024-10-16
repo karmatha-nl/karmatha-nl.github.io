@@ -21,6 +21,7 @@ text:
     skills: I have more than 10 years experience in interaction design and writing front-end code. These are some of the technologies and tools I'm most comfortable with.
     letstalk: Are you looking for a developer for your project? Have an idea for a game, a VR experience, web app or something else altogether? Let's talk. I’m available for hire on a freelance or contract basis. 
     download_cv: You can also [download my CV](URL).
+    projects_title: Projects
     projects: A selection of projects I've been working on in the past.
     contact_name: "name:"
     contact_email: "email:"
@@ -47,6 +48,7 @@ text:
     skills: Ik heb meer dan 10 jaar ervaring in interaction design en front-end code. Dit zijn een aantal van de technologieën en tools waar ik mee heb gewerkt.
     letstalk: Zoek je een developer voor een project? Heb je een idee voor een game, VR experience, web app of iets compleets anders? Dan kunnen we praten. 
     download_cv: You can also [download my CV](URL).
+    projects_title: Projecten
     projects: Een aantal projecten waar ik mee bezig ben geweest in het verleden.
     contact_name: "naam:"
     contact_email: "e-mail:"

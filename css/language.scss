@@ -112,22 +112,12 @@ html[lang=nl].lang-animate .multi-lang-block *[lang=nl] {
   animation-name: nl_to_nl;
 }
 
-@keyframes en_to_nl {
-  from {
-    margin-left: 0;    
-  }
-  
-  to {
-    margin-left: -100%;    
-  }
+html[lang=nl] .change-language *[lang=en], 
+html[lang=nl] .change-language[lang=en] {
+  display: none;
 }
 
-@keyframes nl_to_nl {
-  from {
-    margin-right: -100%;
-  }
-  
-  to {
-    margin-right: 0;
-  }
+html[lang=en] .change-language *[lang=nl],
+html[lang=en] .change-language[lang=nl] {
+  display: none;
 }

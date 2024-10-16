@@ -40,6 +40,10 @@ body {
   background: rgba(0, 0, 0, .6);
   border-radius: 5px;
   @extend .content;
+
+  @include sm {
+    padding: 3rem;
+  }
 }
 
 p {

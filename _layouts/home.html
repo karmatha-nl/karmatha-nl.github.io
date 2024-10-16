@@ -93,7 +93,16 @@ layout: default
        </div>
     </section>
     <section class="content-block" id="projects">
-       <h2><a>Projects</a></h2>
+       <h2>
+         <a class="multi-lang-block">
+            <div lang="en">
+               {{ text.en.projects_title}}
+            </div>
+            <div lang="nl">
+               {{ text.nl.projects_title }}
+            </div>
+         </a>
+      </h2>
        <div class="multi-lang-block">
           <div lang="en">
              {{ text.en.projects | markdownify}}
@@ -154,7 +163,7 @@ layout: default
           </div>
           <div class="col">
              <ul class="links">
-                <li class="email"><i class="fa fa-envelope"></i><a href="mailto:{{ page.email }}" rel="author">Email</a></li>
+                <li class="email"><i class="fa fa-envelope"></i><a href="mailto:{{ page.email }}" rel="author">E<span class="change-language" lang="nl">-</span>mail</a></li>
                 <li class="phone" ><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0031638934012" target="_blank">+31 6 38934012</a></li>
                 <li class="skype"><i class="fa-brands fa-skype " aria-hidden="true"></i><a href="skype:w.vandenheuvel_4" target="_blank">Skype</a></li>
                 <li class="linkedin"><i class="fa-brands fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/wouter-van-den-heuvel/" target="_blank">LinkedIn</a></li>
