@@ -93,7 +93,7 @@ $fps: 25;
   height: 300px;
 
   &.idle {
-    animation: idle #{ $idle-totalframes / $fps}s steps($idle-totalframes) infinite;
+    animation: idle calc($idle-totalframes / $fps)s steps($idle-totalframes) infinite;
   }
 }
 
