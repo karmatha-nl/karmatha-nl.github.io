@@ -15,6 +15,7 @@
   #tagline {
     text-align: center;
     padding-bottom: 0.5rem;
+    text-wrap: balance;
 
     > div {
       padding: 0 2.5rem;
@@ -25,8 +26,19 @@
     }
   }
 
+  .hero {
+    margin-top: 2rem;
+    @include md {
+      margin-top: 6rem;
+    }
+  }
+
   #about {
-    margin-top: 40px;
+    margin-top: 3rem;
+
+    @include md {
+      margin-top: 6rem;
+    }
   }
 
   #skills ul {
@@ -147,7 +159,7 @@
       .label {
         background: rgba(black, .7 );
         margin: 1rem;
-        border-radius: 5px;
+        border-radius: 0.5rem;
         position: absolute;
         bottom: 0;
         min-width: calc(100% - 2rem);

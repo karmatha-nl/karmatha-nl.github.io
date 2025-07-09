@@ -29,16 +29,16 @@ body {
 
 .content {
   margin: auto;
-  max-width: 1280px;
+  max-width: 80rem;
 }
 
 .content-block {
-  margin-top: 1rem;
+  margin-top: 5rem;
   padding: 2rem;
   padding-bottom: 1rem;
   box-sizing: border-box;
   background: rgba(0, 0, 0, .6);
-  border-radius: 5px;
+  border-radius: 0.5rem;
   @extend .content;
 
   @include sm {
@@ -57,10 +57,6 @@ h1 {
 
 h2 {
   padding-bottom: 4px;
-}
-
-section {
-
 }
 
 // Links (that don't have the 'no-underline' class)
@@ -123,15 +119,15 @@ header {
   display: contents;
 
   h1 {
-    font-size: 80px;
+    font-size: 5rem;
     line-height: 40px;
     font-family: Tahoma,'Segoe UI', Geneva, Verdana, sans-serif;
 
     @include sm-max {
-      font-size: 60px;
+      font-size: 3.5rem;
     }
     @include xs-max {
-      font-size: 40px;
+      font-size: 2.5rem;
     }
   }
 
