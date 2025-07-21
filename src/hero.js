@@ -265,7 +265,7 @@ Hero.prototype.determineVideoPath = function() {
 
 $(document).ready(function() {
 	// Assign random icon to appear
-	var ICONS = ['icon_unity','icon_html5','icon_vr','icon_nodejs'];
+	var ICONS = ['icon_nextjs', 'icon_unity','icon_html5','icon_vr','icon_nodejs'];
 	document.getElementById('icon1').classList.add(ICONS[Math.floor(Math.random() * ICONS.length)]);
 
 	var hero = new Hero($('#video-placeholder'));
