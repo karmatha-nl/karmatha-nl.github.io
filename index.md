@@ -91,7 +91,7 @@ skills:
 - CSS (& SASS)
 - Node.js
 - ASP.NET
-- ActionScript
+- Next.js
 - Git
 - Arduino
 - Java
