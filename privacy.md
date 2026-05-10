@@ -5,11 +5,11 @@ layout: default
     <div lang="en">
         <h1>Privacy notice</h1>
         <p>
-            karmatha, housed at Bussumsestraat 40, 2574 JL The Hague, provides this privacy notice to inform you how we treat your data.
+            karmatha provides this privacy notice to inform you how we treat your data.
         </p>
         <p>
             <h2>Contact:</h2>
-            http://www.karmatha.nl Bussumsestraat 40, 2574 JL The Hague, Netherlands +31638934012
+            https://karmatha.nl +31638934012
         </p>
         <p>
             <h2>Information we collect</h2>
@@ -25,7 +25,7 @@ layout: default
         <p>
             <h2>Sensitive data</h2>
             This website does not intend to collect data of visitors younger than 16 years. However there is no way for us to reliably know the age of our visitors. We recommend proper parental supervision over online activities of children.
-            If you suspect we have collected data of a minor, please contact us at info@karmatha.nl and we will remove the data.
+            If you suspect we have collected data of a minor, please contact us at w.vandenheuvel@gmail.com and we will remove the data.
         </p>
         <p>
             <h2>How we use your data</h2>
@@ -52,22 +52,23 @@ layout: default
             <h2>View, delete or modify data</h2>
             You have the right to view your personal data, to correct it or to hae it removed. In addition you have the right to revoke your permission for processing of your data. You can also ask us to provide you with a document with all of your data.
             <br><br>
-            You can direct this request for viewing, correction or deletion of personal data to info@karmatha.nl
+            You can direct this request for viewing, correction or deletion of personal data to w.vandenheuvel@gmail.com
         </p>
         <p>
             <h2>Information security</h2>
-            karmatha is concerned with protecting your privacy and data but we cannot ensure or warrant the security of any information to transmit. If you have any doubts or questions feel free to contact me at info@karmatha.nl
+            karmatha is concerned with protecting your privacy and data but we cannot ensure or warrant the security of any information to transmit. If you have any doubts or questions feel free to contact me at w.vandenheuvel@gmail.com
         </p> 
     </div>
     <div lang="nl">
         <h1>Privacyverklaring</h1>
 
         <p>
-            karmatha, gevestigd aan Bussumsestraat 40, 2574 JL &#39;s-Gravenhage, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.
+            karmatha, is verantwoordelijk voor de verwerking van persoonsgegevens zoals weergegeven in deze privacyverklaring.
         </p>
         <p>
             <h2>Contactgegevens:</h2>
-            http://www.karmatha.nl Bussumsestraat 40, 2574 JL &#39;s-Gravenhage +31638934012
+            https://karmatha.nl
+            +31638934012
         </p>
         <p>
             <h2>Persoonsgegevens die wij verwerken</h2>
@@ -82,7 +83,7 @@ layout: default
         </p>
         <p>
             <h2>Bijzondere en/of gevoelige persoonsgegevens die wij verwerken</h2>
-            Onze website en/of dienst heeft niet de intentie gegevens te verzamelen over websitebezoekers die jonger zijn dan 16 jaar. Tenzij ze toestemming hebben van ouders of voogd. We kunnen echter niet controleren of een bezoeker ouder dan 16 is. Wij raden ouders dan ook aan betrokken te zijn bij de online activiteiten van hun kinderen, om zo te voorkomen dat er gegevens over kinderen verzameld worden zonder ouderlijke toestemming. Als je er van overtuigd bent dat wij zonder die toestemming persoonlijke gegevens hebben verzameld over een minderjarige, neem dan contact met ons op via info@karmatha.nl, dan verwijderen wij deze informatie.
+            Onze website en/of dienst heeft niet de intentie gegevens te verzamelen over websitebezoekers die jonger zijn dan 16 jaar. Tenzij ze toestemming hebben van ouders of voogd. We kunnen echter niet controleren of een bezoeker ouder dan 16 is. Wij raden ouders dan ook aan betrokken te zijn bij de online activiteiten van hun kinderen, om zo te voorkomen dat er gegevens over kinderen verzameld worden zonder ouderlijke toestemming. Als je er van overtuigd bent dat wij zonder die toestemming persoonlijke gegevens hebben verzameld over een minderjarige, neem dan contact met ons op via w.vandenheuvel@gmail.com, dan verwijderen wij deze informatie.
         </p>
         <p>
             <h2>Met welk doel en op basis van welke grondslag wij persoonsgegevens verwerken</h2>
@@ -109,7 +110,7 @@ layout: default
             <h2>Gegevens inzien, aanpassen of verwijderen</h2>
             Je hebt het recht om je persoonsgegevens in te zien, te corrigeren of te verwijderen. Daarnaast heb je het recht om je eventuele toestemming voor de gegevensverwerking in te trekken of bezwaar te maken tegen de verwerking van jouw persoonsgegevens door karmatha en heb je het recht op gegevensoverdraagbaarheid. Dat betekent dat je bij ons een verzoek kan indienen om de persoonsgegevens die wij van jou beschikken in een computerbestand naar jou of een ander, door jou genoemde organisatie, te sturen.
             <br><br>
-            Je kunt een verzoek tot inzage, correctie, verwijdering, gegevensoverdraging van je persoonsgegevens of verzoek tot intrekking van je toestemming of bezwaar op de verwerking van jouw persoonsgegevens sturen naar info@karmatha.nl.
+            Je kunt een verzoek tot inzage, correctie, verwijdering, gegevensoverdraging van je persoonsgegevens of verzoek tot intrekking van je toestemming of bezwaar op de verwerking van jouw persoonsgegevens sturen naar w.vandenheuvel@gmail.com.
             <br><br>
             Om er zeker van te zijn dat het verzoek tot inzage door jou is gedaan, vragen wij jou een kopie van je identiteitsbewijs met het verzoek mee te sturen. Maak in deze kopie je pasfoto, MRZ (machine readable zone, de strook met nummers onderaan het paspoort), paspoortnummer en Burgerservicenummer (BSN) zwart. Dit ter bescherming van je privacy. We reageren zo snel mogelijk, maar binnen vier weken, op jouw verzoek .
             <br><br>
@@ -117,7 +118,7 @@ layout: default
         </p>
         <p>
             <h2>Hoe wij persoonsgegevens beveiligen</h2>
-            karmatha neemt de bescherming van jouw gegevens serieus en neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan. Als jij het idee hebt dat jouw gegevens toch niet goed beveiligd zijn of er aanwijzingen zijn van misbruik, neem dan contact op met info@karmatha.nl
+            karmatha neemt de bescherming van jouw gegevens serieus en neemt passende maatregelen om misbruik, verlies, onbevoegde toegang, ongewenste openbaarmaking en ongeoorloofde wijziging tegen te gaan. Als jij het idee hebt dat jouw gegevens toch niet goed beveiligd zijn of er aanwijzingen zijn van misbruik, neem dan contact op met w.vandenheuvel@gmail.com
         </p> 
     </div>
 </section>
