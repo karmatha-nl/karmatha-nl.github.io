@@ -19,7 +19,7 @@ text:
     skills_title: Skills and experience 
     skills: I have more than 10 years experience in interaction design and writing front-end code. These are some of the technologies and tools I'm most comfortable with.
     letstalk: Are you looking for a developer for your project? Have an idea for a game, a VR experience, web app or something else altogether? Let's talk. I’m available for hire on a freelance or contract basis. 
-    download_cv: You can also [view my CV](URL).
+    download_cv: You can also [view my CV](/cv).
     projects_title: Projects
     projects: A selection of projects I've been working on in the past.
     contact_name: "name:"
