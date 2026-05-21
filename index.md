@@ -2,7 +2,6 @@
 layout: home
 title: karmaṭha | portfolio Wouter van den Heuvel
 email: w.vandenheuvel@gmail.com
-cvUrl: https://docs.google.com/document/d/1pzCgF_7U9JE1rfkdS-1nORigOuEuw2gdhyHdS3iUrF0/export?format=pdf
 text:
   en:
     definitions:

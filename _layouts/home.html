@@ -85,10 +85,10 @@ layout: default
        </div>
        <div class="multi-lang-block">
           <div lang="en">
-             {{ text.en.download_cv | replace: 'URL', page.cvUrl | markdownify }}
+             {{ text.en.download_cv | replace: 'URL', site.cv_url | markdownify }}
           </div>
           <div lang="nl">
-             {{ text.nl.download_cv | replace: 'URL', page.cvUrl | markdownify }}
+             {{ text.nl.download_cv | replace: 'URL', site.cv_url | markdownify }}
           </div>
        </div>
     </section>
