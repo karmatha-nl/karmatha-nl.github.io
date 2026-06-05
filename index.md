@@ -84,6 +84,7 @@ skills:
 - React.js
 - Typescript
 - JavaScript
+- TailwindCSS
 - Next.js
 - Node.js
 - HTML
