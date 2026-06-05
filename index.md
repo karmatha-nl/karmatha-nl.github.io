@@ -12,7 +12,7 @@ text:
     about: |
       Hi I'm Wouter and I can help you with *innovative solutions* in *interactive software products*. I enjoy crafting maintainable, elegant, well-documented code for any type of front-end project. I like to collaborate in (small) teams because I truly believe the synergistic effect brings out the best in any situation, but I can also work very effectively on my own.
       
-      My experience is listed [here](#skills) but I am constantly keeping up with new developments and eager to learn and apply new things. I am especially passionate about *Virtual Reality*, *games*, and any type of new technology. I am available for freelance work, so [get in touch](#contact). 
+      My experience is listed [here](#skills) but I am constantly keeping up with new developments and eager to learn and apply new things. My specialty is React and I am a TypeScript evangelist, but I don't shy away from doing some backend work and I speak SQL as well. I am available for freelance work, so [get in touch](#contact). 
 
 #      Hi I'm Wouter and I do computer stuff.
 #      More specifically I write concise, well-documented   
@@ -40,7 +40,7 @@ text:
       Hallo ik ben Wouter en ik kan je helpen met innovatieve oplossingen op het gebied van interactieve softwareproducten. Ik creëer graag onderhoudbare, elegante en goed gedocumenteerde code voor ieder soort front-end project. Ik werk graag samen in kleine, dynamische teams, 
       maar kan ook uitstekend zelfstandig werken. 
       
-      Mijn ervaring staat [hier](#skills) beschreven maar ik blijf constant op de hoogte van nieuwe ontwikkelingen en leer graag nieuwe dingen. Ik ben voornamelijk gepassioneerd over Virtual Reality, games en andere nieuwe technologieën. Ik ben beschikbaar voor freelance werk, dus [neem contact](#contact) met mij op.
+      Mijn ervaring staat [hier](#skills) beschreven maar ik blijf constant op de hoogte van nieuwe ontwikkelingen en leer graag nieuwe dingen. Mijn specialiteit is React en ik ben een groot TypeScript evangelist, maar ik schuw backend-ontwikkeling ook niet en ik spreek ook SQL. Ik ben beschikbaar voor freelance werk, dus [neem contact](#contact) met mij op.
 
 #      Hoi ik ben Wouter en ik doe iets met computers
     skills_title: Vaardigheden en ervaring
@@ -81,16 +81,16 @@ projects:
   id: utopolis
 
 skills:
-- JavaScript
-- Unity3D
-- C#
 - React.js
 - Typescript
-- HTML
-- CSS (& SASS)
-- Node.js
-- ASP.NET
+- JavaScript
 - Next.js
+- Node.js
+- HTML
+- Unity3D
+- CSS (& SASS)
+- C#
+- ASP.NET
 - Git
 - Arduino
 - Java
