@@ -249,6 +249,10 @@
       font-size: 1rem;
       border-bottom-width: 4px;
       border-bottom-style: solid;
+      
+      &:not([type=submit]) {
+        font-family: monospace;
+      }
     }
 
     .fields {
@@ -271,19 +275,23 @@
     input[type=submit] {
       color: $color-text;
       background: $color-link-hover;
-      border-bottom-color: $color-link-hover;
       font-size: 1.2rem;
       margin-top: 0.5rem;
+      border-bottom-width: 4px;
+      border-bottom-color: transparent;
+      border-bottom-style: solid;
     }
 
     input[type=submit][disabled] {
       pointer-events: none;
     }
 
-    input[type=submit]:hover {
+    input[type=submit]:hover,
+    input[type=submit]:focus-visible {
       background: $color-link-hover;
       border-bottom-color: $color-text;
     }
+
 
     textarea {
       resize: none;

@@ -150,17 +150,17 @@ layout: default
                       <label for="name" lang="en">{{ text.en.contact_name }}</label>
                       <label for="name" lang="nl">{{ text.nl.contact_name }}</label>
                    </div>
-                   <input type="text" name="name"/>
+                   <input type="text" name="name" required/>
                    <div class="multi-lang-block">
                       <label for="_email" lang="en">{{ text.en.contact_email }}</label>
                       <label for="_email" lang="nl">{{ text.nl.contact_email }}</label>
                    </div>
-                   <input type="text" name="_email"/>
+                   <input type="email" name="_email"/>
                    <div class="multi-lang-block">
                       <label for="question" lang="en">{{ text.en.contact_question }}</label>
                       <label for="question" lang="nl">{{ text.nl.contact_question }}</label>
                    </div>
-                   <textarea name="question"></textarea>
+                   <textarea name="question" required></textarea>
                 </div>
                 <input type="submit" value="Send">
              </form>
