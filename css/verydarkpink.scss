@@ -47,6 +47,8 @@ body {
   h1, h2, h3 {
     font-family: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: $color-section-heading;
+    border-bottom: 2px solid $color-text;
+    margin-bottom: 3rem;
   }
 
   @include sm {
