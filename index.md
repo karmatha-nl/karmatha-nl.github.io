@@ -18,7 +18,7 @@ text:
 #      More specifically I write concise, well-documented   
     skills_title: Skills and experience 
     skills: I have more than 10 years experience in interaction design and writing front-end code. These are some of the technologies and tools I'm most comfortable with.
-    letstalk: Are you looking for a developer for your project? Have an idea for a game, a VR experience, web app or something else altogether? Let's talk. I’m available for hire on a freelance or contract basis. 
+    letstalk: Are you looking for a developer for your project? Have an idea for a app, a game, a VR experience, or something else altogether? Let's talk. I’m available for hire on a freelance or contract basis. 
     download_cv: You can also [view my CV](/cv).
     projects_title: Projects
     projects: A selection of projects I've been working on in the past.
@@ -45,7 +45,7 @@ text:
 #      Hoi ik ben Wouter en ik doe iets met computers
     skills_title: Vaardigheden en ervaring
     skills: Ik heb meer dan 10 jaar ervaring in interaction design en front-end code. Dit zijn een aantal van de technologieën en tools waar ik mee heb gewerkt.
-    letstalk: Zoek je een developer voor een project? Heb je een idee voor een game, VR experience, web app of iets compleets anders? Dan kunnen we praten. 
+    letstalk: Zoek je een developer voor een project? Heb je een idee voor een app, een game, VR experience of iets compleets anders? Dan kunnen we praten. 
     download_cv: Je kunt hier [mijn CV](URL) bekijken.
     projects_title: Projecten
     projects: Een aantal projecten waar ik mee bezig ben geweest in het verleden.
