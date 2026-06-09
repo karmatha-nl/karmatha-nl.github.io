@@ -42,7 +42,7 @@ body {
   @extend .content;
 
   @include sm {
-    padding: 3rem;
+    padding: 4rem;
   }
 }
 
@@ -56,7 +56,7 @@ h1 {
 }
 
 h2 {
-  padding-bottom: 4px;
+  padding-bottom: 1rem;
 }
 
 // Links (that don't have the 'no-underline' class)
