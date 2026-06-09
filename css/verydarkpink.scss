@@ -41,6 +41,12 @@ body {
   border-radius: 0.5rem;
   @extend .content;
 
+  color: $color-section-text;
+
+  h1, h2, h3 {
+    color: $color-section-heading;
+  }
+
   @include sm {
     padding: 4rem;
   }
@@ -57,13 +63,14 @@ h1 {
 
 h2 {
   padding-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 // Links (that don't have the 'no-underline' class)
 a[href]:not(.no-underline) {
   text-decoration: none;
   position: relative;
-  color: $color-text;
+  color: $color-links;
   white-space: nowrap;
 }
 
