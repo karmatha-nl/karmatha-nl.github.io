@@ -39,11 +39,13 @@ body {
   box-sizing: border-box;
   background: rgba(0, 0, 0, .6);
   border-radius: 0.5rem;
+  border: 2px solid $color-section-border;
   @extend .content;
 
   color: $color-section-text;
 
   h1, h2, h3 {
+    font-family: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: $color-section-heading;
   }
 
@@ -70,7 +72,7 @@ h2 {
 a[href]:not(.no-underline) {
   text-decoration: none;
   position: relative;
-  color: $color-links;
+  color: $color-link;
   white-space: nowrap;
 }
 
@@ -155,6 +157,13 @@ header {
   background: $color-background;
 }
 
+input, textarea {
+  color: $color-text;
+  border: 0;
+  background-color: $color-form-bg;
+  border-color: $color-form-border;
+}
+
 footer {
   text-align: center;
   opacity: .3;
@@ -167,4 +176,10 @@ footer {
       line-height: initial;
     }
   }
+}
+
+.badge {
+  background: #0e2a3f;
+  color: #7dd3fc;
+  border: 1px solid #38bdf830;
 }

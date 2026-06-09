@@ -44,18 +44,37 @@
     }
   }
 
-  #skills ul {
-    list-style-position: inside;
-    padding-left: 1rem;
+  #skills {
+    .skill-list {
+      display: grid;
+      list-style: none;
+      gap: 0.75rem;
+      margin-bottom: 3rem;
+      padding: 0;
 
-    @media only screen and (min-width: 500px)  {
-      columns: 2;
-      -webkit-columns: 2;
-      list-style-position: inside;
+     @include md {
+        grid-auto-flow: column;
+        grid-template-rows: repeat(var(--rows-2), auto);
+      }
+
+      @include lg {
+        grid-template-rows: repeat(var(--rows-3), auto);
+      }
     }
 
-    li::marker {
-      color: $color-special;
+    .badge {
+      width: fit-content;
+      height: 1.8rem;
+      list-style: none;
+      
+      color: #7dd3fc;
+      padding: 2px 1rem;
+
+      border-radius: 999px;
+      font-size: 1rem;
+
+      font-weight: 500;
+      font-family: Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
   }
 
@@ -226,13 +245,17 @@
       width: 100%;
       padding: 0.75rem;
       box-sizing: border-box;
-      border: 0;
       margin-bottom: 1rem;
-
-      border-bottom: 4px solid $color-text;
       font-size: 1rem;
+      border-bottom-width: 4px;
+      border-bottom-style: solid;
     }
 
+    .fields {
+      div {
+        margin-top: 1rem;
+      }
+    }
 
     input:focus,
     textarea:focus {

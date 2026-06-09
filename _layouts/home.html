@@ -74,9 +74,13 @@ layout: default
        </div>
        <div class="flex-grid">
           <div class="col">
-             <ul class="skill">
-                {% for item in page.skills %}
-                <li class="{{ item | downcase | replace: '.', '' | replace: ' ', '-' }}">
+            
+            {% assign total = page.skills | size %}
+            {% assign rows_3 = total | divided_by: 3 | plus: 1 %}
+            {% assign rows_2 = total | divided_by: 2 | plus: 1 %}
+            <ul class="skill-list" style="--rows-3: {{ rows_3 }}; --rows-2: {{ rows_2 }}">
+               {% for item in page.skills %}
+                <li class="badge {{ item | downcase | replace: '.', '' | replace: ' ', '-' }}">
                    {{ item }}
                 </li>
                 {% endfor %}

@@ -45,7 +45,7 @@ text:
 #      Hoi ik ben Wouter en ik doe iets met computers
     skills_title: Vaardigheden en ervaring
     skills: Ik heb meer dan 10 jaar ervaring in interaction design en front-end code. Dit zijn een aantal van de technologieën en tools waar ik mee heb gewerkt.
-    letstalk: Zoek je een developer voor een project? Heb je een idee voor een app, een game, VR experience of iets compleets anders? Dan kunnen we praten. 
+    letstalk: Zoek je een ontwikkelaar voor een project? Heb je een idee voor een app, een game, VR experience of iets compleets anders? Dan kunnen we praten. 
     download_cv: Je kunt hier [mijn CV](URL) bekijken.
     projects_title: Projecten
     projects: Een aantal projecten waar ik mee bezig ben geweest in het verleden.
